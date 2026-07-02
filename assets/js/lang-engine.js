@@ -88,28 +88,28 @@ const translations = {
         footValAddress: "ภาควิชากายวิภาคศาสตร์ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย ถนนอังรีดูนังต์ แขวงปทุมวัน เขตปทุมวัน กรุงเทพฯ 10330 ประเทศไทย",
         footLblTel: "โทร:",
         
-        // ฐานข้อมูลสำหรับสไลด์อาจารย์ (เวอร์ชันภาษาไทย)
+        // ฐานข้อมูลสำหรับสไลด์อ.(เวอร์ชันภาษาไทย)
         facultyBadge: "คณาจารย์ประจำหลักสูตร",
         facultyData: [
-            { name: "รองศาสตราจารย์ สัตวแพทย์หญิง ดร. กรรณาภรณ์ สุริยผล", res: "Dr. rer. nat. (Biology)", img: "assets/images/faculty/prof1.jpg" },
-            { name: "รองศาสตราจารย์ นายสัตวแพทย์ ดร. สฤษฏิ์วิชญ์ ปัญญาบริบาลบ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (วิทยาการสืบพันธุ์สัตว์)", img: "assets/images/faculty/prof2.jpg" },
-            { name: "ผู้ช่วยศาสตราจารย์ สัตวแพทย์หญิง ดร. เบญจพร ลิ้มเจริญ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (พยาธิชีววิทยาทางสัตวแพทย์)", img: "assets/images/faculty/prof3.jpg" },
-            { name: "ศาสตราจารย์ นายสัตวแพทย์ ดร. ไพศาล เทียนไทย", res: "Ph.D (Obstetrics and Gynaecology)", img: "assets/images/faculty/prof4.jpg" },
-            { name: "รองศาสตราจารย์ สัตวแพทย์หญิง ศริยา อัศวกาญจน์", res: "M.Sc (Biochemistry)", img: "assets/images/faculty/prof5.jpg" },
-            { name: "รองศาสตราจารย์ สัตวแพทย์หญิง ดร. ศยามณ ศรีสุวัฒนาสกุล", res: "Ph.D (Anatomy and cell biology)", img: "assets/images/faculty/prof6.jpg" },
-            { name: "รองศาสตราจารย์ สัตวแพทย์หญิง ดร. สฤณี กลันทกานนท์ ทองทรง", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof7.jpg" },
-            { name: "รองศาสตราจารย์ นายสัตวแพทย์ ดร. เจนภพ สว่างเมฆ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof8.jpg" },
-            { name: "รองศาสตราจารย์ นายสัตวแพทย์ ดร. สัมพันธ์ ธรรมเจริญ", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof9.jpg" },
-            { name: "รองศาสตราจารย์ นายสัตวแพทย์ ก้องเกียรติ ศรีสุวัฒนาสกุล", res: "วิทยาศาสตรมหาบัณฑิต (ศัลยศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof10.jpg" },
-            { name: "รองศาสตราจารย์ สัตวแพทย์หญิง ดร. แนน ช้อยสุนิรชร", res: "Ph.D. (Veterinary Medical Science)", img: "assets/images/faculty/prof11.jpg" },
-            { name: "รองศาสตราจารย์ สัตวแพทย์หญิง ดร. ชุติมน ธนบูรณ์นิพัทธ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof12.jpg" },
-            { name: "ผู้ช่วยศาสตราจารย์ นายสัตวแพทย์ ดร. ประพฤติดี ปิยะวิริยะกุล", res: "Ph.D. (Applied Marine Bioscience)", img: "assets/images/faculty/prof13.jpg" },
-            { name: "ผู้ช่วยศาสตราจารย์ นายสัตวแพทย์ ดร. กิตติพงษ์ ทาจําปา", res: "Ph.D. (Physiology & biophysics)", img: "assets/images/faculty/prof14.jpg" },
-            { name: "ผู้ช่วยศาสตราจารย์ สัตวแพทย์หญิง ดร. ศิริรัตน์ รัตนภุชพงศ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof15.jpg" },
-            { name: "อาจารย์ สัตวแพทย์หญิง ดร. เพราพิลาส ภักดีดินแดน", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof16.jpg" },
-            { name: "อาจารย์ สัตวแพทย์หญิง ดร. ศิรินันท์ พิสมัย ทับเที่ยง", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof17.jpg" },
-            { name: "อาจารย์ สัตวแพทย์หญิง ดร. ศิริวรรณ สาครินทร์", res: "วิทยาศาสตรดุษฎีบัณฑิต (อายุรศาสตรสัตวแพทย์)", img: "assets/images/faculty/prof18.jpg" },
-            { name: "อาจารย์ นายสัตวแพทย์ ดร. สพล เสมเสริมบุญ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (สรีรวิทยาการสัตว์)", img: "assets/images/faculty/prof19.jpg" }
+            { name: "รศ.สพ.ญ.ดร. กรรณภรณ์ สุริยผล", res: "Dr. rer. nat. (Biology)", img: "assets/images/faculty/prof1.jpg" },
+            { name: "รศ.นสพ.ดร. สฤษฎิ์วิชญ์ ปัญญาบริบาลบ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (วิทยาการสืบพันธุ์สัตว์)", img: "assets/images/faculty/prof2.jpg" },
+            { name: "ผศ.สพ.ญ.ดร. เบญจพร ลิ้มเจริญ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (พยาธิชีววิทยาทางสัตวแพทย์)", img: "assets/images/faculty/prof3.jpg" },
+            { name: "ศ.นสพ.ดร. ไพศาล เทียนไทย", res: "Ph.D (Obstetrics and Gynaecology)", img: "assets/images/faculty/prof4.jpg" },
+            { name: "รศ.สพ.ญ. ศริยา อัศวกาญจน์", res: "M.Sc (Biochemistry)", img: "assets/images/faculty/prof5.jpg" },
+            { name: "รศ.สพ.ญ.ดร. ศยามณ ศรีสุวัฒนาสกุล", res: "Ph.D (Anatomy and cell biology)", img: "assets/images/faculty/prof6.jpg" },
+            { name: "รศ.สพ.ญ.ดร. สาริณี กลันทานนท์ ทรงทรง", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof7.jpg" },
+            { name: "ศ.นสพ.ดร. เจนภพ สว่างเมฆ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof8.jpg" },
+            { name: "รศ.นสพ.ดร. สัมพันธ์ ธรรมเจริญ", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof9.jpg" },
+            { name: "รศ.นสพ. ก้องเกียรติ ศรีสุวัฒนาสกุล", res: "วิทยาศาสตร์มหาบัณฑิต (ศัลยศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof10.jpg" },
+            { name: "รศ.สพ.ญ.ดร. แนน ช้อยสุนิรชร", res: "Ph.D. (Veterinary Medical Science)", img: "assets/images/faculty/prof11.jpg" },
+            { name: "รศ.สพ.ญ.ดร. ชุติมน ธนบรูณ์นิพัทธ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof12.jpg" },
+            { name: "ผศ.นสพ.ดร. ประพฤติดี ปิยะวิริยะกุล", res: "Ph.D. (Applied Marine Bioscience)", img: "assets/images/faculty/prof13.jpg" },
+            { name: "รศ.นสพ.ดร. กิตติพงษ์ ทาจำปา", res: "Ph.D. (Physiology & biophysics)", img: "assets/images/faculty/prof14.jpg" },
+            { name: "ผศ.สพ.ญ.ดร. ศิริรัตน์ รัตนภุชพงศ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof15.jpg" },
+            { name: "ผศ.สพ.ญ.ดร. เพราพิลาส ภักดีธนแดน", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof16.jpg" },
+            { name: "ผศ.สพ.ญ.ดร. ศิรินันท์ ทับเที่ยง", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof17.jpg" },
+            { name: "ผศ.สพ.ญ.ดร. ศิริวรรณ สาครินทร์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (อายุรศาสตร์สัตวแพทย์)", img: "assets/images/faculty/prof18.jpg" },
+            { name: "ผศ.นสพ.ดร. สพล เสริมเสริมบุญ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (สรีรวิทยาการสัตว์)", img: "assets/images/faculty/prof19.jpg" }
         ]
     },
     en: {
@@ -195,28 +195,28 @@ const translations = {
         footValAddress: "Department of Anatomy, Faculty of Veterinary Science, Chulalongkorn University, Henri-Dunant Rd., Pathumwan, Bangkok 10330, Thailand.",
         footLblTel: "Tel:",
         
-        // ฐานข้อมูลสำหรับสไลด์อาจารย์ (เวอร์ชันภาษาอังกฤษ)
+        // ฐานข้อมูลสำหรับสไลด์อ.(เวอร์ชันภาษาอังกฤษ)
         facultyBadge: "Faculty Members",
         facultyData: [
-            { name: "Assoc. Prof. Kannaporn Suriyaphol, D.V.M., Dr. rer. nat.", res: "Dr. rer. nat. (Biology)", img: "assets/images/faculty/prof1.jpg" },
+            { name: "Assoc. Prof. Kannaporn Suriyaphol, D.V.M., Ph.D.", res: "Dr. rer. nat. (Biology)", img: "assets/images/faculty/prof1.jpg" },
             { name: "Assoc. Prof. Saritvich Panyaboriban, D.V.M., Ph.D.", res: "Doctor of Philosophy (Animal Theriogenology)", img: "assets/images/faculty/prof2.jpg" },
             { name: "Asst. Prof. Benjapon Limcharoen, D.V.M., Ph.D.", res: "Doctor of Philosophy (Veterinary Pathobiology)", img: "assets/images/faculty/prof3.jpg" },
             { name: "Prof. Paisan Tienthai, D.V.M., Ph.D.", res: "Ph.D. (Obstetrics and Gynaecology)", img: "assets/images/faculty/prof4.jpg" },
             { name: "Assoc. Prof. Sariya Asavakarn, D.V.M., M.Sc.", res: "M.Sc. (Biochemistry)", img: "assets/images/faculty/prof5.jpg" },
             { name: "Assoc. Prof. Sayamon Srisuwatanasagul, D.V.M., Ph.D.", res: "Ph.D. (Anatomy and cell biology)", img: "assets/images/faculty/prof6.jpg" },
             { name: "Assoc. Prof. Sarinee Kalandakanond Thongsong, D.V.M., Ph.D.", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof7.jpg" },
-            { name: "Assoc. Prof. Janpop Sawangmake, D.V.M., Ph.D.", res: "Doctor of Philosophy (Veterinary Biosciences)", img: "assets/images/faculty/prof8.jpg" },
+            { name: "Prof. Janpop Sawangmake, D.V.M., Ph.D.", res: "Doctor of Philosophy (Veterinary Biosciences)", img: "assets/images/faculty/prof8.jpg" },
             { name: "Assoc. Prof. Sumphan Thammacharoen, D.V.M., Ph.D.", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof9.jpg" },
             { name: "Assoc. Prof. Kongkiat Srisuwatanasagul, D.V.M., M.V.Sc.", res: "Master of Veterinary Science (Veterinary Surgery)", img: "assets/images/faculty/prof10.jpg" },
             { name: "Assoc. Prof. Nan Choisunirachon, D.V.M., Ph.D.", res: "Ph.D. (Veterinary Medical Science)", img: "assets/images/faculty/prof11.jpg" },
             { name: "Assoc. Prof. Chutimon Thanaboonnipat, D.V.M., Ph.D.", res: "Doctor of Philosophy (Veterinary Biosciences)", img: "assets/images/faculty/prof12.jpg" },
-            { name: "Asst. Prof. Prapructdee Piyaviriyakul, D.V.M., Ph.D.", res: "Ph.D. (Applied Marine Bioscience)", img: "assets/images/faculty/prof13.jpg" },
-            { name: "Asst. Prof. Kittipong Tachampa, D.V.M., Ph.D.", res: "Ph.D. (Physiology & biophysics)", img: "assets/images/faculty/prof14.jpg" },
+            { name: "Asst. Prof. Praprudtee Piyaviriyakul, D.V.M., Ph.D.", res: "Ph.D. (Applied Marine Bioscience)", img: "assets/images/faculty/prof13.jpg" },
+            { name: "Assoc. Prof. Kittipong Tachampa, D.V.M., Ph.D.", res: "Ph.D. (Physiology & Biophysics)", img: "assets/images/faculty/prof14.jpg" },
             { name: "Asst. Prof. Sirirat Rattanaphuchapong, D.V.M., Ph.D.", res: "Doctor of Philosophy (Veterinary Biosciences)", img: "assets/images/faculty/prof15.jpg" },
-            { name: "Lect. Prapilas Bhakdeetondan, D.V.M., Ph.D.", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof16.jpg" },
-            { name: "Lect. Sirinun Pissamai Tubtiang, D.V.M., Ph.D.", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof17.jpg" },
-            { name: "Lect. Siriwan Sakarin, D.V.M., Ph.D.", res: "Doctor of Philosophy (Veterinary Medicine)", img: "assets/images/faculty/prof18.jpg" },
-            { name: "Lect. Sapol Semisermboon, D.V.M., Ph.D.", res: "Doctor of Philosophy (Animal Physiology)", img: "assets/images/faculty/prof19.jpg" }
+            { name: "Asst. Prof. Prapilas Bhakdeetondan, D.V.M., Ph.D.", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof16.jpg" },
+            { name: "Asst. Prof. Sirinun Tubtiang, D.V.M., Ph.D.", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof17.jpg" },
+            { name: "Asst. Prof. Siriwan Sakarin, D.V.M., Ph.D.", res: "Doctor of Philosophy (Veterinary Medicine)", img: "assets/images/faculty/prof18.jpg" },
+            { name: "Asst. Prof. Sapol Semisermboon, D.V.M., Ph.D.", res: "Doctor of Philosophy (Animal Physiology)", img: "assets/images/faculty/prof19.jpg" }
         ]
     }
 };
