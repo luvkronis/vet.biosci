@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หลักสูตรชีวศาสตร์ทางสัตวแพทย์ | Veterinary Biosciences Programs</title>
+    
+    <!-- โหลดฟอนต์พรีเมียม Sans-serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- ลิงก์เชื่อมโยงไปยังไฟล์ CSS แยก -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+
+<!-- แถบเมนูด้านบนสุดสไตล์ Floating Glassmorphism & Bento Dropdown -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div id="text-top-brand" class="nav-logo">หลักสูตรบัณฑิตศึกษา คณะสัตวแพทยศาสตร์</div>
+            
+            <!-- แผงลิงก์เมนูหลัก (แสดงเฉพาะ PC / iPad) -->
+            <ul class="nav-links">
+                <li><a href="#" class="nav-item active">หน้าแรก</a></li>
+                <li class="has-bento-dropdown">
+                    <a href="#" class="nav-item">หลักสูตร <span class="arrow-icon">▾</span></a>
+                    <div class="bento-dropdown-matrix">
+                        <div class="bento-drop-grid">
+                            <a href="programs/master.html" class="drop-sub-card">
+                                <span class="drop-badge">M.Sc.</span>
+                                <h4>วิทยาศาสตรมหาบัณฑิต</h4>
+                                <p>สาขาวิชาชีวศาสตร์ทางสัตวแพทย์ (หลักสูตร 2 ปี)</p>
+                            </a>
+                            <a href="programs/phd.html" class="drop-sub-card phd-theme">
+                                <span class="drop-badge">Ph.D.</span>
+                                <h4>วิทยาศาสตรดุษฎีบัณฑิต</h4>
+                                <p>สาขาวิชาชีวศาสตร์ทางสัตวแพทย์ (หลักสูตร 3 หรือ 5 ปี)</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="news.html" class="nav-item">ข่าวสาร</a></li>
+                <li><a href="contact.html" class="nav-item">ติดต่อสอบถาม</a></li>
+            </ul>
+
+            <!-- ตัวสลับภาษา (แสดงทุกอุปกรณ์) -->
+            <div class="lang-switcher">
+                <button id="btn-th" onclick="changeLang('th')" class="active">TH</button>
+                <span>|</span>
+                <button id="btn-en" onclick="changeLang('en')">EN</button>
+            </div>
+
+            <!-- 🛠️ เพิ่มจุดที่ 1: ปุ่ม Hamburger สำหรับจอมือถือ (จิ้มกดเปิด-ปิด) -->
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </div>
+
+        <!-- 🛠️ เพิ่มจุดที่ 2: แผงกล่องเมนูสำหรับแสดงผลบนจอมือถือโดยเฉพาะ -->
+        <div class="mobile-menu-container" id="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="#" class="mobile-nav-item">หน้าแรก</a></li>
+                <li class="mobile-divider">หลักสูตรที่เปิดสอน</li>
+                <li>
+                    <a href="programs/master.html" class="mobile-drop-card">
+                        <span class="m-badge">M.Sc.</span> วิทยาศาสตรมหาบัณฑิต
+                    </a>
+                </li>
+                <li>
+                    <a href="programs/phd.html" class="mobile-drop-card m-phd-theme">
+                        <span class="m-badge">Ph.D.</span> วิทยาศาสตรดุษฎีบัณฑิต
+                    </a>
+                </li>
+                <li class="mobile-divider">เมนูอื่น ๆ</li>
+                <li><a href="news.html" class="mobile-nav-item">ข่าวสาร</a></li>
+                <li><a href="contact.html" class="mobile-nav-item">ติดต่อสอบถาม</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- พื้นหลังหลักครอบคลุมเนื้อหา -->
+    <main class="main-content">
+        <div class="main-container">
+            
+            <!-- รูปภาพแบนเนอร์ส่วนหัวโปรแกรม (ปรับแก้เครื่องหมาย / เรียบร้อยแล้ว) -->
+            <div class="banner-wrapper">
+                <img class="header-banner-img" src="assets/images/banners/head-banner.png" alt="Header Image" />
+            </div>
+
+            <!-- Bento Grid Section: จัดเลย์เอาต์โมเดิร์นกล่องเล็กใหญ่สลับกันอย่างลงตัว -->
+            <div class="bento-grid">
+                
+                <!-- กล่องที่ 1: ชื่อหลักสูตรและภาควิชา (กล่องเด่นขนาดใหญ่ไล่เฉดสีพรีเมียม) -->
+                <div class="bento-card bento-hero">
+                    <div class="badge-row">
+                        <span id="badge-program-type" class="ui-badge">CU Graduate Program</span>
+                    </div>
+                    <h1 id="text-main-title">ชีวศาสตร์ทางสัตวแพทย์ (2022)</h1>
+                    <p id="text-sub-title" class="sub-program-title">หลักสูตรบัณฑิตศึกษา สาขาวิชาชีวศาสตร์ทางสัตวแพทย์</p>
+                    <hr class="divider">
+                    <div class="meta-info-stack">
+                        <p><strong id="lbl-deg-offered">คุณวุฒิที่เปิดสอน:</strong> <span id="val-deg-offered">วิทยาศาสตรดุษฎีบัณฑิต (วท.ด.) และ วิทยาศาสตรมหาบัณฑิต (วท.ม) สาขาวิชาชีวศาสตร์ทางสัตวแพทย์</span></p>
+                        <p><strong id="lbl-responsible">รับผิดชอบโดย:</strong> <span id="val-responsible">ภาควิชากายวิภาคศาสตร์ และภาควิชาสรีรวิทยา: หน่วยชีวเคมี</span></p>
+                    </div>
+                </div>
+
+                <!-- กล่องที่ 2: เปลี่ยนจากภาพนิ่งเป็น Bento Slider โชว์คณาจารย์และผลงาน -->
+    <div class="bento-card bento-slider-card">
+        <div class="slider-wrapper" id="faculty-slider">
+        
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <img src="assets\images\faculty\kk.jpg" alt="Faculty 1" class="slider-img">
+                <div class="slider-overlay">
+                    <span class="slider-badge">Faculty Members</span>
+                    <h3 class="prof-name">รศ.น.สพ. ดร. ก้องเกียรติ ศรีสุวัฒนาสกุล</h3>
+                    <p class="prof-res">ผู้เชี่ยวชาญด้านกายวิภาคศาสตร์ระบบสืบพันธุ์และการวิจัยสเต็มเซลล์สัตว์</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=80" alt="Faculty 2" class="slider-img">
+                <div class="slider-overlay">
+                    <span class="slider-badge">Faculty Members</span>
+                    <h3 class="prof-name">ผศ.สพ.ญ. ดร. เจนจิรา รัตนพันธุ์</h3>
+                    <p class="prof-res">งานวิจัยชีววิทยาโมเลกุลและการถอดรหัสจีโนมสัตว์ป่าเพื่อการอนุรักษ์</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=400&q=80" alt="Faculty 3" class="slider-img">
+                <div class="slider-overlay">
+                    <span class="slider-badge">Faculty Members</span>
+                    <h3 class="prof-name">รศ.ดร. อนันต์ อัศวเมธา</h3>
+                    <p class="prof-res">ผู้เชี่ยวชาญด้านโปรตีโอมิกส์ลำไส้ใหญ่และการแสดงออกของยีนในปศุสัตว์</p>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1594824813573-246434de83fb?auto=format&fit=crop&w=400&q=80" alt="Faculty 4" class="slider-img">
+                <div class="slider-overlay">
+                    <span class="slider-badge">Faculty Members</span>
+                    <h3 class="prof-name">ดร. ณิชาภัทร์ ทรงคุณากร</h3>
+                    <p class="prof-res">งานวิจัยการแช่แข็งเนื้อเยื่อรังไข่และเทคโนโลยีชีวภาพการเจริญพันธุ์ขั้นสูง</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ปุ่มควบคุม สไตล์มินิมอลลอยบนกล่อง -->
+        <button class="slide-nav prev" onclick="moveSlide(-1)" aria-label="Previous slide">❮</button>
+        <button class="slide-nav next" onclick="moveSlide(1)" aria-label="Next slide">❯</button>
+    </div>
+
+                <!-- กล่องที่ 3: บทนำชีวศาสตร์คืออะไร -->
+                <div class="bento-card">
+                    <h2 id="head-whatis" class="bento-card-title">ชีวศาสตร์ทางสัตวแพทย์ คืออะไร?</h2>
+                    <p id="desc-whatis" class="bento-text">ชีวศาสตร์ทางสัตวแพทย์ คือหลักสูตรวิทยาศาสตร์ชีวภาพที่อุทิศให้กับการศึกษาในสาขาต่างๆ ที่เป็นรากฐานรองรับสัตวแพทยศาสตร์</p>
+                </div>
+
+                <!-- กล่องที่ 4: โครงสร้างหลักสูตร (ตารางข้อมูลเรียบหรู) -->
+                <div class="bento-card bento-span-2">
+                    <h2 id="head-struct" class="bento-card-title">โครงสร้างหลักสูตร</h2>
+                    <table class="program-table">
+                        <thead>
+                            <tr id="table-row-head">
+                                <th>หลักสูตร</th>
+                                <th>ระยะเวลาการศึกษา</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong id="tbl-m-name">วิทยาศาสตรมหาบัณฑิต (วท.ม.)</strong></td>
+                                <td id="tbl-m-time">2 ปี</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong id="tbl-p-name">วิทยาศาสตรดุษฎีบัณฑิต (วท.ด.)</strong><br>
+                                    <span id="tbl-p-sub" class="table-subtext">(สำหรับผู้สมัครที่สำเร็จการศึกษา หรือไม่ได้สำเร็จการศึกษาระดับปริญญาโท)</span>
+                                </td>
+                                <td id="tbl-p-time">3 หรือ 5 ปี</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p id="text-table-note" class="table-note">* ทั้งสองหลักสูตรมี 2 แผนการศึกษาให้เลือก: ทำวิทยานิพนธ์เพียงอย่างเดียว หรือ ทำวิทยานิพนธ์ร่วมกับการศึกษารายวิชา</p>
+                </div>
+
+                <!-- กล่องที่ 5: ทำไมต้องเรียนที่นี่ (ความยาวเนื้อหาเยอะ ได้พื้นที่แสดงผลเต็มที่) -->
+                <div class="bento-card bento-span-2">
+                    <h2 id="head-why" class="bento-card-title">ทำไมต้องศึกษา ชีวศาสตร์ทางสัตวแพทย์?</h2>
+                    <p id="desc-why-1" class="bento-text highlighted-text">หลักสูตรชีวศาสตร์ทางสัตวแพทย์ มอบโอกาสอันยอดเยี่ยมสำหรับการพัฒนาวิชาชีพทั้งในด้านสัตวแพทย์และด้านชีวการแพทย์</p>
+                    <p id="desc-why-2" class="bento-text">หลักสูตรนี้ได้รับการออกแบบมาเพื่อเน้นแนวทางแบบสหวิทยาการในการวิจัยด้านสัตวแพทย์และชีววิทยาศาสตร์ นิสิตของเราจะได้เชี่ยวชาญในด้านกายวิภาคศาสตร์มหพยาธิวิทยา, กายวิภาคศาสตร์จุลทรรศน์, โครงสร้างระดับรังสีและกายวิภาคศาสตร์ประยุกต์, เซลล์วิทยา, ชีวเคมี, ชีววิทยาโมเลกุล และเทคโนโลยีชีวภาพ เพื่อปรับปรุงการจัดการ สุขภาพ และสุขภาวะของสัตว์ นิสิตจะได้รับประสบการณ์จากรายวิชาที่ปรับให้เหมาะสมกับผู้เรียน ซึ่งสอนโดยคณาจารย์ผู้ทรงคุณวุฒิและมีประสบการณ์ นอกจากนี้ยังจะได้พัฒนาทักษะการทำงานเป็นทีม ทักษะการนำเสนอทั้งแบบการเขียนและการพูด และได้รับประสบการณ์การวิจัยในสิ่งอำนวยความสะดวกที่โดดเด่นของเรา</p>
+                    <p id="desc-why-3" class="bento-text" style="margin-top: 12px;">ผู้สำเร็จการศึกษาจากหลักสูตรนี้จะมีความพร้อมเป็นอย่างยิ่งในการเริ่มต้นงานวิจัยของตนเอง ทั้งในด้านสัตวแพทยศาสตร์ประยุกต์และสัตวแพทยศาสตร์คลินิก</p>
+                </div>
+
+                <!-- กล่องที่ 6: สายอาชีพหลังสำเร็จการศึกษา -->
+                <div class="bento-card">
+                    <h2 id="head-career" class="bento-card-title">สายอาชีพหลังสำเร็จการศึกษา</h2>
+                    <ul id="list-career" class="bento-list">
+                        <!-- แสดงผลผ่าน JS -->
+                    </ul>
+                </div>
+
+                <!-- กล่องภาพที่ 7: ภาพประกอบฝั่งงานวิจัยชีวภาพระดับโมเลกุล -->
+                <div class="bento-card bento-image-card">
+                    <img src="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?auto=format&fit=crop&w=600&q=80" alt="Bio Genetics" class="bento-bg-img">
+                    <div class="image-card-overlay">
+                        <span class="img-badge Platform">Molecular Field</span>
+                    </div>
+                </div>
+
+                <!-- กล่องที่ 8: หัวข้อวิจัยหลัก -->
+                <div class="bento-card">
+                    <h2 id="head-key-res" class="bento-card-title">หัวข้อวิจัยหลัก</h2>
+                    <ol id="list-key-res" class="bento-ordered-list">
+                        <!-- แสดงผลผ่าน JS -->
+                    </ol>
+                </div>
+
+                <!-- กล่องที่ 9: ไฮไลท์งานวิจัยปัจจุบัน -->
+                <div class="bento-card">
+                    <h2 id="head-curr-res" class="bento-card-title">ไฮไลท์งานวิจัยในปัจจุบัน</h2>
+                    <ol id="list-curr-res" class="bento-ordered-list">
+                        <!-- แสดงผลผ่าน JS -->
+                    </ol>
+                </div>
+
+                <!-- กล่องที่ 10: ข้อมูลการรับสมัครเรียนและเอกสาร -->
+                <div class="bento-card bento-span-3 bento-admission">
+                    <h2 id="head-admin-info" class="admission-title">ข้อมูลการรับสมัคร</h2>
+                    <div class="admission-split">
+                        <div class="admission-col">
+                            <h3 id="sub-eligibility" class="admission-sub-title">คุณสมบัติของผู้สมัคร</h3>
+                            <ul id="list-eligibility" class="bento-list">
+                                <!-- แสดงผลผ่าน JS -->
+                            </ul>
+                        </div>
+                        <div class="admission-col">
+                            <h3 id="sub-documents" class="admission-sub-title">เอกสารที่ต้องใช้ในการสมัคร</h3>
+                            <p id="text-admin-note" class="table-note" style="margin-top:0; margin-bottom:12px;">* กรอกแบบฟอร์มใบสมัครออนไลน์ได้ที่เว็บไซต์บัณฑิตวิทยาลัย จุฬาลงกรณ์มหาวิทยาลัย</p>
+                            <ul id="list-documents" class="bento-list">
+                                <!-- แสดงผลผ่าน JS -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- สิ้นสุด Bento Grid -->
+
+            <!-- ส่วนแสดงรูปภาพประกอบแกลเลอรี -->
+            <div class="gallery-section">
+                <img src="assets\images\gallery\1.png" alt="Gallery Image 1" />
+                <img src="assets\images\gallery\2.png" alt="Gallery Image 2" />
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ข้อมูลการติดต่อท้ายหน้าเว็บ (Premium Minimalist Footer) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 id="foot-head-contact">ติดต่อสอบถามข้อมูลเพิ่มเติม</h3>
+                    <p id="foot-val-contact-name" class="contact-name"><strong>รศ.น.สพ. ก้องเกียรติ ศรีสุวัฒนาสกุล</strong></p>
+                    <p><span id="foot-lbl-email" class="label-muted">อีเมล:</span> <a href="mailto:kongkiat.s@chula.ac.th">kongkiat.s@chula.ac.th</a></p>
+                </div>
+                <div class="footer-col">
+                    <h3 id="foot-head-address">ที่อยู่</h3>
+                    <p id="foot-val-address">ภาควิชากายวิภาคศาสตร์ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย ถนนอังรีดูนังต์ แขวงปทุมวัน เขตปทุมวัน กรุงเทพฯ 10330 ประเทศไทย</p>
+                    <p><strong id="foot-lbl-tel">โทร:</strong> <span>+66 (0) 2218-9697</span></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Department of Anatomy, Faculty of Veterinary Science, Chulalongkorn University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- เรียกใช้ระบบจัดการสลับภาษาส่วนกลางภายนอก (assets/js/lang-engine.js) -->
+    <script src="assets/js/lang-engine.js"></script>
+</body>
+</html>
