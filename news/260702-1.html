@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เชิญเข้าร่วมฟังบรรยายพิเศษด้านชีววิทยาเซลล์ต้นกำเนิด - Veterinary Biosciences</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- อ้างอิง Path CSS ไปที่โฟลเดอร์หลัก -->
+    <link rel="stylesheet" href="../assets/css/custom.css">
+
+    <style>
+        /* CSS เฉพาะสำหรับจัดระเบียบหน้าอ่านข่าว (News Detail) */
+        .news-reader-container {
+            max-width: 900px; /* บีบความกว้างหน้าให้อ่านง่ายขึ้น (Reading Width) */
+            margin: 0 auto;
+        }
+        .news-detail-card {
+            padding: 0; /* เอา padding ออกเพื่อให้รูปภาพชิดขอบกล่อง Bento */
+        }
+        .news-cover-img {
+            width: 100%;
+            height: auto;
+            max-height: 450px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .news-content-body {
+            padding: 40px;
+        }
+        .news-date {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .news-paragraph {
+            font-size: 16px;
+            line-height: 1.9;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            text-align: justify;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary-pink);
+            font-weight: 600;
+            text-decoration: none;
+            margin-bottom: 24px;
+            transition: var(--transition-smooth);
+        }
+        .back-link:hover {
+            transform: translateX(-4px);
+        }
+        @media screen and (max-width: 768px) {
+            .news-content-body { padding: 24px; }
+        }
+    </style>
+</head>
+
+<!-- กำหนด Class ภาษาเริ่มต้น -->
+<body class="lang-th">
+
+    <!-- NAVBAR (โครงสร้างเดิม) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div id="text-top-brand" class="nav-logo">หลักสูตรบัณฑิตศึกษา คณะสัตวแพทยศาสตร์</div>
+            
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-item">หน้าแรก</a></li>
+                <li class="has-bento-dropdown">
+                    <a href="#" class="nav-item">หลักสูตร <span class="arrow-icon">▾</span></a>
+                    <div class="bento-dropdown-matrix">
+                        <div class="bento-drop-grid">
+                            <a href="../programs/master.html" class="drop-sub-card">
+                                <span class="drop-badge">M.Sc.</span>
+                                <h4>วิทยาศาสตรมหาบัณฑิต</h4>
+                                <p>สาขาวิชาชีวศาสตร์ทางสัตวแพทย์ (หลักสูตร 2 ปี)</p>
+                            </a>
+                            <a href="../programs/phd.html" class="drop-sub-card phd-theme">
+                                <span class="drop-badge">Ph.D.</span>
+                                <h4>วิทยาศาสตรดุษฎีบัณฑิต</h4>
+                                <p>สาขาวิชาชีวศาสตร์ทางสัตวแพทย์ (หลักสูตร 3 หรือ 5 ปี)</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="../news.html" class="nav-item active">ข่าวสาร</a></li>
+                <li><a href="../contact.html" class="nav-item">ติดต่อสอบถาม</a></li>
+            </ul>
+
+            <div class="lang-switcher">
+                <button id="btn-th" onclick="changeLang('th')" class="active">TH</button>
+                <span>|</span>
+                <button id="btn-en" onclick="changeLang('en')">EN</button>
+            </div>
+
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </div>
+
+        <div class="mobile-menu-container" id="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="../index.html" class="mobile-nav-item">หน้าแรก</a></li>
+                <li class="mobile-divider">หลักสูตรที่เปิดสอน</li>
+                <li><a href="../programs/master.html" class="mobile-drop-card"><span class="m-badge">M.Sc.</span> วิทยาศาสตรมหาบัณฑิต</a></li>
+                <li><a href="../programs/phd.html" class="mobile-drop-card m-phd-theme"><span class="m-badge">Ph.D.</span> วิทยาศาสตรดุษฎีบัณฑิต</a></li>
+                <li class="mobile-divider">เมนูอื่น ๆ</li>
+                <li><a href="../news.html" class="mobile-nav-item">ข่าวสาร</a></li>
+                <li><a href="../contact.html" class="mobile-nav-item">ติดต่อสอบถาม</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="main-container news-reader-container">
+            
+            <!-- ปุ่มย้อนกลับ -->
+            <div class="lang-th">
+                <a href="../news.html" class="back-link">❮ กลับไปหน้าข่าวสารรวม</a>
+            </div>
+            <div class="lang-en">
+                <a href="../news.html" class="back-link">❮ Back to News</a>
+            </div>
+
+            <!-- กล่อง Bento ขนาดเต็มสำหรับอ่านข่าว -->
+            <article class="bento-card news-detail-card">
+                
+                <!-- ภาพ Cover ข่าว (แสดงร่วมกันทั้ง 2 ภาษา) -->
+                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80" alt="Seminar Cover" class="news-cover-img">
+                
+                <div class="news-content-body">
+                    
+                    <!-- ============================================== -->
+                    <!-- ก้อนเนื้อหา: ภาษาไทย (TH) -->
+                    <!-- ============================================== -->
+                    <div class="lang-th">
+                        <span class="ui-badge" style="background-color: #f1f5f9; color: #475569;">กิจกรรม / สัมมนา</span>
+                        
+                        <h1 class="bento-card-title" style="font-size: 28px; line-height: 1.4; margin-top: 12px; margin-bottom: 12px;">
+                            เชิญเข้าร่วมฟังบรรยายพิเศษด้านชีววิทยาเซลล์ต้นกำเนิด (Stem Cell Biology)
+                        </h1>
+                        
+                        <div class="news-date">
+                            <span>📅 15 มิถุนายน 2569</span>
+                            <span>📍 ห้องสัมมนา อาคารวิจัย คณะสัตวแพทยศาสตร์ จุฬาฯ</span>
+                        </div>
+
+                        <hr class="divider">
+
+                        <p class="news-paragraph">
+                            คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย ขอเชิญนิสิตระดับบัณฑิตศึกษาและผู้สนใจเข้าร่วมฟังการบรรยายพิเศษจากวิทยากรผู้เชี่ยวชาญระดับนานาชาติ ในหัวข้อ <strong>"ความก้าวหน้าของการวิจัยเซลล์ต้นกำเนิดในสัตว์เลี้ยง (Advancements in Stem Cell Research for Companion Animals)"</strong>
+                        </p>
+
+                        <p class="news-paragraph">
+                            การบรรยายในครั้งนี้ได้รับเกียรติจากวิทยากรรับเชิญพิเศษ ซึ่งจะมาเจาะลึกถึงเทคโนโลยีล่าสุดในการแยก เพาะเลี้ยง และประยุกต์ใช้เซลล์ต้นกำเนิดทางคลินิกสัตวแพทย์ เพื่อเป็นแนวทางในการรักษาโรคเสื่อมในสัตว์เลี้ยง รวมถึงอัปเดตงานวิจัยที่กำลังเป็นที่จับตามองในระดับสากล
+                        </p>
+
+                        <h3 style="font-size: 18px; margin-top: 24px; margin-bottom: 12px; color: var(--text-main);">รายละเอียดกิจกรรม</h3>
+                        <ul class="bento-list" style="margin-bottom: 24px;">
+                            <li><strong>วันที่:</strong> 15 มิถุนายน 2569</li>
+                            <li><strong>เวลา:</strong> 13.00 - 15.30 น.</li>
+                            <li><strong>สถานที่:</strong> ห้องประชุม 301 ชั้น 3 อาคารวิจัย คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</li>
+                            <li><strong>การลงทะเบียน:</strong> เข้าร่วมฟรี ไม่มีค่าใช้จ่าย (จำกัดจำนวน 50 ที่นั่ง)</li>
+                        </ul>
+
+                        <p class="news-paragraph">
+                            ผู้ที่สนใจสามารถสแกน QR Code หน้าห้องประชุมเพื่อลงทะเบียนเข้างาน หรือติดต่อสอบถามรายละเอียดเพิ่มเติมได้ที่หน่วยวิชาการบัณฑิตศึกษา
+                        </p>
+                    </div>
+
+
+                    <!-- ============================================== -->
+                    <!-- ก้อนเนื้อหา: ภาษาอังกฤษ (EN) -->
+                    <!-- ============================================== -->
+                    <div class="lang-en">
+                        <span class="ui-badge" style="background-color: #f1f5f9; color: #475569;">Event / Seminar</span>
+                        
+                        <h1 class="bento-card-title" style="font-size: 28px; line-height: 1.4; margin-top: 12px; margin-bottom: 12px;">
+                            Special Lecture on Stem Cell Biology
+                        </h1>
+                        
+                        <div class="news-date">
+                            <span>📅 June 15, 2026</span>
+                            <span>📍 Seminar Room, Research Bldg., CUVET</span>
+                        </div>
+
+                        <hr class="divider">
+
+                        <p class="news-paragraph">
+                            The Faculty of Veterinary Science, Chulalongkorn University, cordially invites graduate students and interested persons to attend a special lecture by an international expert on <strong>"Advancements in Stem Cell Research for Companion Animals."</strong>
+                        </p>
+
+                        <p class="news-paragraph">
+                            This lecture features a distinguished guest speaker who will provide in-depth insights into the latest technologies for isolating, culturing, and clinically applying stem cells in veterinary medicine. The session will cover novel approaches for treating degenerative diseases in pets and provide updates on internationally recognized research in the field.
+                        </p>
+
+                        <h3 style="font-size: 18px; margin-top: 24px; margin-bottom: 12px; color: var(--text-main);">Event Details</h3>
+                        <ul class="bento-list" style="margin-bottom: 24px;">
+                            <li><strong>Date:</strong> June 15, 2026</li>
+                            <li><strong>Time:</strong> 1:00 PM - 3:30 PM</li>
+                            <li><strong>Venue:</strong> Room 301, 3rd Floor, Research Building, Faculty of Veterinary Science, Chulalongkorn University</li>
+                            <li><strong>Registration:</strong> Free admission (Limited to 50 seats)</li>
+                        </ul>
+
+                        <p class="news-paragraph">
+                            Interested individuals can register by scanning the QR code in front of the seminar room. For more information, please contact the Graduate Studies Office.
+                        </p>
+                    </div>
+
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- FOOTER (โครงสร้างเดิม) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 id="foot-head-contact">ติดต่อสอบถามข้อมูลเพิ่มเติม</h3>
+                    <p id="foot-val-contact-name" class="contact-name"><strong>รศ.น.สพ. ก้องเกียรติ ศรีสุวัฒนาสกุล</strong></p>
+                    <p><span id="foot-lbl-email" class="label-muted">อีเมล:</span> <a href="mailto:kongkiat.s@chula.ac.th">kongkiat.s@chula.ac.th</a></p>
+                </div>
+                <div class="footer-col">
+                    <h3 id="foot-head-address">ที่อยู่</h3>
+                    <p id="foot-val-address">ภาควิชากายวิภาคศาสตร์ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย ถนนอังรีดูนังต์ แขวงปทุมวัน เขตปทุมวัน กรุงเทพฯ 10330 ประเทศไทย</p>
+                    <p><strong id="foot-lbl-tel">โทร:</strong> <span>+66 (0) 2218-9697</span></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Department of Anatomy, Faculty of Veterinary Science, Chulalongkorn University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- อ้างอิง Path JS ไปที่โฟลเดอร์หลัก -->
+    <script src="../assets/js/lang-engine.js"></script>
+</body>
+</html>

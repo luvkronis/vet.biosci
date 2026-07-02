@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/custom.css">
     
     <style>
+        /* สไตล์สำหรับจัดระเบียบหน้าข่าวสารรวมโดยเฉพาะ */
         .notice-container {
             display: flex;
             flex-direction: column;
@@ -21,24 +22,42 @@
             padding: 60px 24px !important;
             margin-top: 24px;
         }
-        .notice-icon {
-            font-size: 48px;
-            margin-bottom: 16px;
+        
+        /* สไตล์เสริมสำหรับกล่องข่าวที่มีรูปภาพ */
+        .news-card-item {
+            padding: 0 !important; /* ยกเลิก padding เดิมเพื่อให้รูปชิดขอบกล่อง */
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
-        .notice-title {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--text-main);
-            margin-bottom: 8px;
+        .news-thumbnail {
+            width: 100%;
+            height: 240px; /* ความสูงของรูปภาพประกอบข่าว */
+            object-fit: cover;
+            border-bottom: 1px solid var(--border-color);
         }
-        .notice-desc {
-            font-size: 16px;
-            color: var(--text-muted);
-            max-width: 500px;
+        .news-card-body {
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            flex: 1; /* ดันให้ปุ่มอ่านรายละเอียดไปอยู่ด้านล่างสุดเสมอ */
+        }
+        .news-readmore {
+            display: inline-block;
+            color: var(--primary-pink);
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: var(--transition-smooth);
+        }
+        .news-readmore:hover {
+            color: var(--primary-pink-hover);
+            transform: translateX(4px);
         }
     </style>
 </head>
-<body>
+
+<body class="lang-th">
 
     <nav class="navbar">
         <div class="nav-container">
@@ -103,11 +122,61 @@
                 </div>
             </div>
 
+            <!-- โครงสร้าง Bento Grid ข่าวสารแบบมีรูปภาพ -->
+            <div class="bento-grid">
 
-            <div class="bento-card notice-container">
-                <div class="notice-icon">📢</div>
-                <h1 class="notice-title" id="n-notice-title">ข่าวสารและประชาสัมพันธ์</h1>
-                <p class="notice-desc" id="n-notice-desc">หน้านี้กำลังอยู่ในช่วงของการปรับปรุงและจัดเตรียมข้อมูลข่าวสารและกิจกรรมของหลักสูตร ขออภัยในความไม่สะดวก</p>
+                <!-- ข่าวที่ 2 (ข่าวล่าสุด) -->
+                <div class="bento-card news-card-item">
+                    <!-- ภาพประกอบข่าว -->
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80" alt="Admission News Thumbnail" class="news-thumbnail">
+                    
+                    <div class="news-card-body">
+                        <!-- ก้อนภาษาไทย -->
+                        <div class="lang-th">
+                            <span class="ui-badge">ข่าวประกาศรับสมัคร</span>
+                            <h2 class="bento-card-title">เปิดรับสมัครนิสิตระดับบัณฑิตศึกษา ประจำปีการศึกษา 2569</h2>
+                            <p class="meta-info-stack" style="margin-bottom: 12px; font-size: 14px;">📅 2 กรกฎาคม 2569</p>
+                            <p class="bento-text">คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย เปิดรับสมัครบุคคลเข้าศึกษาต่อในระดับปริญญาโทและปริญญาเอก สาขาชีวศาสตร์ทางสัตวแพทย์ ภาคการศึกษาต้น...</p>
+                            <a href="news/260615-1.html" class="news-readmore">อ่านรายละเอียดเพิ่มเติม ➔</a>
+                        </div>
+            
+                        <!-- ก้อนภาษาอังกฤษ -->
+                        <div class="lang-en">
+                            <span class="ui-badge">Admission News</span>
+                            <h2 class="bento-card-title">Admission for Graduate Programs, Academic Year 2026</h2>
+                            <p class="meta-info-stack" style="margin-bottom: 12px; font-size: 14px;">📅 July 2, 2026</p>
+                            <p class="bento-text">The Faculty of Veterinary Science, Chulalongkorn University, is now accepting applications for Master's and Doctoral degree programs for the first semester...</p>
+                            <a href="news/260615-1.html" class="news-readmore">Read More ➔</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ข่าวที่ 1 (ข่าวเก่าลงมา 1 ระดับ) -->
+                <div class="bento-card news-card-item">
+                    <!-- ภาพประกอบข่าว -->
+                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80" alt="Seminar Thumbnail" class="news-thumbnail">
+
+                    <div class="news-card-body">
+                        <!-- ก้อนภาษาไทย -->
+                        <div class="lang-th">
+                            <span class="ui-badge" style="background-color: #f1f5f9; color: #475569;">กิจกรรม / สัมมนา</span>
+                            <h2 class="bento-card-title">เชิญเข้าร่วมฟังบรรยายพิเศษด้านชีววิทยาเซลล์ต้นกำเนิด</h2>
+                            <p class="meta-info-stack" style="margin-bottom: 12px; font-size: 14px;">📅 15 มิถุนายน 2569</p>
+                            <p class="bento-text">ขอเชิญนิสิตและผู้สนใจเข้าร่วมฟังการบรรยายพิเศษจากวิทยากรผู้เชี่ยวชาญระดับนานาชาติ ในหัวข้อ "ความก้าวหน้าของการวิจัยเซลล์ต้นกำเนิดในสัตว์เลี้ยง"...</p>
+                            <a href="news/260702-1.html" class="news-readmore">อ่านรายละเอียดเพิ่มเติม ➔</a>
+                        </div>
+            
+                        <!-- ก้อนภาษาอังกฤษ -->
+                        <div class="lang-en">
+                            <span class="ui-badge" style="background-color: #f1f5f9; color: #475569;">Event / Seminar</span>
+                            <h2 class="bento-card-title">Special Lecture on Stem Cell Biology</h2>
+                            <p class="meta-info-stack" style="margin-bottom: 12px; font-size: 14px;">📅 June 15, 2026</p>
+                            <p class="bento-text">We cordially invite students and interested persons to attend a special lecture by an international expert on "Advancements in Stem Cell Research for Companion Animals"...</p>
+                            <a href="260702-1.html" class="news-readmore">Read More ➔</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>

@@ -264,13 +264,20 @@ function changeLang(lang) {
     const data = translations[lang];
     if (!data) return;
 
-    // ตรวจสอบระดับโฟลเดอร์ปัจจุบัน เพื่อให้เรียกรูปภาพประจำตัวอาจารย์ได้ถูกต้องไม่ว่าเปิดจากหน้าไหน
+    // =======================================================
+    // 🌟 ระบบสลับภาษาแบบใช้ Class ควบคุม HTML (สำหรับหน้าข่าว)
+    // =======================================================
+    document.body.classList.remove('lang-th', 'lang-en');
+    document.body.classList.add('lang-' + lang);
+
+    // =======================================================
+    // ระบบสลับภาษาเดิม (สำหรับหน้า Index, Master, PhD, Contact)
+    // =======================================================
     let imgPrefix = "";
     if (window.location.pathname.includes("/programs/")) {
-        imgPrefix = "../"; // ถ้าอยู่ในการ์ดย่อย ให้ถอยหลัง 1 ชั้น
+        imgPrefix = "../"; 
     }
 
-    // สลับข้อความในแบนเนอร์หลัก
     const bannerSubText = document.getElementById('banner-sub-text');
     const bannerMainText = document.getElementById('banner-main-text');
     const bannerDescText = document.getElementById('banner-desc-text');
@@ -279,7 +286,6 @@ function changeLang(lang) {
     if (bannerMainText) bannerMainText.innerText = data.bannerMain;
     if (bannerDescText) bannerDescText.innerText = data.bannerDesc;
 
-    // เปลี่ยนคำที่แถบเนวิเกชันบาร์ส่วนบน (Navbar)
     const navItems = document.querySelectorAll('.nav-links .nav-item');
     if (navItems.length >= 4) {
         navItems[0].innerText = data.navHome;
@@ -288,7 +294,6 @@ function changeLang(lang) {
         navItems[3].innerText = data.navContact;
     }
 
-    // สลับคำแปลภายในกล่องตาราง Bento Dropdown ย่อย
     const dropCards = document.querySelectorAll('.bento-drop-grid .drop-sub-card');
     if (dropCards.length >= 2) {
         const mTitle = dropCards[0].querySelector('h4');
@@ -302,10 +307,8 @@ function changeLang(lang) {
         if (pDesc) pDesc.innerText = lang === 'th' ? "สาขาวิชาชีวศาสตร์ทางสัตวแพทย์ (หลักสูตร 3 หรือ 5 ปี)" : "Program in Veterinary Biosciences (3 or 5 Years)";
     }
 
-    // เรียกวาดสไลด์แสดงผลชื่ออาจารย์ชุดภาษาที่เลือกใหม่ (ส่งพาธนำหน้าไปคำนวณด้วย)
     initFacultySlider(lang, imgPrefix);
 
-    // สลับคำแปลของเนวิเกเตอร์โหมดมือถือแบบปลอดภัยสูงด้วยการเช็กสถานะ IF
     const mobileNavHome = document.querySelector('.mobile-nav-links li:nth-child(1) a');
     const mobileNavNews = document.querySelector('.mobile-nav-links li:nth-child(6) a');
     const mobileNavContact = document.querySelector('.mobile-nav-links li:nth-child(7) a');
@@ -314,7 +317,6 @@ function changeLang(lang) {
     if (mobileNavNews) mobileNavNews.innerText = data.navNews;
     if (mobileNavContact) mobileNavContact.innerText = data.navContact;
 
-    // เปลี่ยนคำในส่วนโครงสร้างเนื้อหาหลัก (Main Content)
     const topBrand = document.getElementById('text-top-brand');
     const mainTitle = document.getElementById('text-main-title');
     const subTitle = document.getElementById('text-sub-title');
@@ -394,7 +396,6 @@ function changeLang(lang) {
     renderListArray('list-eligibility', data.eligibilityList);
     renderListArray('list-documents', data.documentsList);
 
-    // รองรับการสลับคำแปลของหน้า Contact ย่อย
     const cTitle = document.getElementById('c-title');
     const cAddress = document.getElementById('c-address');
     const cLblUg = document.getElementById('c-lbl-ug');
@@ -407,7 +408,6 @@ function changeLang(lang) {
     if (cLblGrad) cLblGrad.innerText = data.lblGrad;
     if (cLblFax) cLblFax.innerText = data.lblFax;
 
-    // ระบบสลับภาษาสำหรับหน้าย่อยที่เหลือ (Master, PhD, News)
     const mNoticeTitle = document.getElementById('m-notice-title');
     const mNoticeDesc = document.getElementById('m-notice-desc');
     const pNoticeTitle = document.getElementById('p-notice-title');
@@ -436,6 +436,7 @@ function changeLang(lang) {
     if(footValAddress) footValAddress.innerHTML = data.footValAddress;
     if(footLblTel) footLblTel.innerText = data.footLblTel;
 
+    // การอัปเดตสีปุ่ม Navbar อัตโนมัติ
     const btnTh = document.getElementById('btn-th');
     const btnEn = document.getElementById('btn-en');
     if(btnTh && btnEn) {
@@ -447,6 +448,8 @@ function changeLang(lang) {
             btnTh.classList.remove('active');
         }
     }
+    
+    // บันทึกการตั้งค่าภาษาลงระบบ
     localStorage.setItem('preferredBentoLang', lang);
 }
 
@@ -485,7 +488,7 @@ function initFacultySlider(lang, prefix = "") {
     if (!sliderWrapper) return;
     
     const data = translations[lang];
-    sliderWrapper.innerHTML = ''; // ล้างสไลด์เก่า
+    sliderWrapper.innerHTML = ''; 
 
     data.facultyData.forEach((prof, idx) => {
         const slideDiv = document.createElement('div');
