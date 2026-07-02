@@ -1,5 +1,5 @@
 /* =======================================================
-* JavaScript Client-Side Translation Engine (วิธีระดับกลาง)
+* JavaScript Client-Side Translation Engine
 * File Location: assets/js/lang-engine.js
 * ======================================================= */
 
@@ -10,6 +10,12 @@ const translations = {
         navPrograms: "หลักสูตร",
         navNews: "ข่าวสาร",
         navContact: "ติดต่อสอบถาม",
+        
+        // แบนเนอร์หลัก
+        bannerSub: "หลักสูตรบัณฑิตศึกษา",
+        bannerMain: "ชีวศาสตร์ทางสัตวแพทย์",
+        bannerDesc: "แนวทางสำหรับผู้สนใจเข้าศึกษาต่อระดับปริญญาโทและปริญญาเอก",
+
         topBrand: "หลักสูตรบัณฑิตศึกษา คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย",
         mainTitle: "ชีวศาสตร์ทางสัตวแพทย์ (2022)",
         subTitle: "หลักสูตรบัณฑิตศึกษา สาขาวิชาชีวศาสตร์ทางสัตวแพทย์",
@@ -64,7 +70,7 @@ const translations = {
             "เซลล์ต้นกำเนิดกับการเสื่อมของกระจกตาในสุนัข",
             "โปรตีโอมิกส์ของลำไส้ใหญ่ส่วนต้นในสุกร"
         ],
-        headWhatis: "ข้อมูลการรับสมัคร",
+        headAdminInfo: "ข้อมูลการรับสมัคร",
         subEligibility: "คุณสมบัติของผู้สมัคร",
         eligibilityList: [
             "สำเร็จการศึกษาระดับปริญญาตรีในสาขาสัตวแพทยศาสตร์, วิทยาศาสตร์ชีวภาพ หรือสาขาวิชาที่เกี่ยวข้อง",
@@ -88,28 +94,41 @@ const translations = {
         footValAddress: "ภาควิชากายวิภาคศาสตร์ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย ถนนอังรีดูนังต์ แขวงปทุมวัน เขตปทุมวัน กรุงเทพฯ 10330 ประเทศไทย",
         footLblTel: "โทร:",
         
+        // ข้อมูลของหน้าติดต่อและหน้าปรับปรุงระบบ
+        contactTitle: "คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย",
+        contactAddress: "ถนนอังรีดูนังต์ แขวงปทุมวัน เขตปทุมวัน กรุงเทพมหานคร 10330",
+        lblUg: "(ศึกษาต่อและปริญญาตรี)",
+        lblGrad: "(บัณฑิตศึกษา)",
+        lblFax: "โทรสาร",
+        noticeMasterTitle: "วิทยาศาสตรมหาบัณฑิต (วท.ม.)",
+        noticeMasterDesc: "หน้านี้กำลังอยู่ในช่วงของการปรับปรุงและจัดเตรียมข้อมูลหลักสูตรปริญญาโท 2 ปี ขออภัยในความไม่สะดวก",
+        noticePhdTitle: "วิทยาศาสตรดุษฎีบัณฑิต (วท.ด.)",
+        noticePhdDesc: "หน้านี้กำลังอยู่ในช่วงของการปรับปรุงและจัดเตรียมข้อมูลหลักสูตรปริญญาเอก 3 หรือ 5 ปี ขออภัยในความไม่สะดวก",
+        noticeNewsTitle: "ข่าวสารและประชาสัมพันธ์",
+        noticeNewsDesc: "หน้านี้กำลังอยู่ในช่วงของการปรับปรุงและจัดเตรียมข้อมูลข่าวสารและกิจกรรมของหลักสูตร ขออภัยในความไม่สะดวก",
+        
         // ข้อมูลส่วนสไลด์คณาจารย์ประจำหลักสูตร (TH)
         facultyBadge: "คณาจารย์ประจำหลักสูตร",
         facultyData: [
-            { name: "รองศาสตราจารย์ สัตวแพทย์หญิง ดร. กรรณาภรณ์ สุริยผล", res: "Dr. rer. nat. (Biology)", img: "assets/images/faculty/prof1.jpg" },
-            { name: "รองศาสตราจารย์ นายสัตวแพทย์ ดร. สฤษฏิ์วิชญ์ ปัญญาบริบาลบ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (วิทยาการสืบพันธุ์สัตว์)", img: "assets/images/faculty/prof2.jpg" },
-            { name: "ผู้ช่วยศาสตราจารย์ สัตวแพทย์หญิง ดร. เบญจพร ลิ้มเจริญ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (พยาธิชีววิทยาทางสัตวแพทย์)", img: "assets/images/faculty/prof3.jpg" },
-            { name: "ศาสตราจารย์ นายสัตวแพทย์ ดร. ไพศาล เทียนไทย", res: "Ph.D (Obstetrics and Gynaecology)", img: "assets/images/faculty/prof4.jpg" },
-            { name: "รองศาสตราจารย์ สัตวแพทย์หญิง ศริยา อัศวกาญจน์", res: "M.Sc (Biochemistry)", img: "assets/images/faculty/prof5.jpg" },
-            { name: "รองศาสตราจารย์ สัตวแพทย์หญิง ดร. ศยามณ ศรีสุวัฒนาสกุล", res: "Ph.D (Anatomy and cell biology)", img: "assets/images/faculty/prof6.jpg" },
-            { name: "รองศาสตราจารย์ สัตวแพทย์หญิง ดร. สฤณี กลันทกานนท์ ทองทรง", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof7.jpg" },
-            { name: "รองศาสตราจารย์ นายสัตวแพทย์ ดร. เจนภพ สว่างเมฆ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof8.jpg" },
-            { name: "รองศาสตราจารย์ นายสัตวแพทย์ ดร. สัมพันธ์ ธรรมเจริญ", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof9.jpg" },
-            { name: "รองศาสตราจารย์ นายสัตวแพทย์ ก้องเกียรติ ศรีสุวัฒนาสกุล", res: "วิทยาศาสตรมหาบัณฑิต (ศัลยศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof10.jpg" },
-            { name: "รองศาสตราจารย์ สัตวแพทย์หญิง ดร. แนน ช้อยสุนิรชร", res: "Ph.D. (Veterinary Medical Science)", img: "assets/images/faculty/prof11.jpg" },
-            { name: "รองศาสตราจารย์ นายสัตวแพทย์ ดร. ชุติมน ธนบูรณ์นิพัทธ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof12.jpg" },
-            { name: "ผู้ช่วยศาสตราจารย์ นายสัตวแพทย์ ดร. ประพฤติดี ปิยะวิริยะกุล", res: "Ph.D. (Applied Marine Bioscience)", img: "assets/images/faculty/prof13.jpg" },
-            { name: "ผู้ช่วยศาสตราจารย์ นายสัตวแพทย์ ดร. กิตติพงษ์ ทาจําปา", res: "Ph.D. (Physiology & biophysics)", img: "assets/images/faculty/prof14.jpg" },
-            { name: "ผู้ช่วยศาสตราจารย์ สัตวแพทย์หญิง ดร. ศิริรัตน์ รัตนภุชพงศ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof15.jpg" },
-            { name: "อาจารย์ สัตวแพทย์หญิง ดร. เพราพิลาส ภักดีดินแดน", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof16.jpg" },
-            { name: "อาจารย์ สัตวแพทย์หญิง ดร. ศิรินันท์ พิสมัย ทับเที่ยง", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof17.jpg" },
-            { name: "อาจารย์ สัตวแพทย์หญิง ดร. ศิริวรรณ สาครินทร์", res: "วิทยาศาสตรดุษฎีบัณฑิต (อายุรศาสตรสัตวแพทย์)", img: "assets/images/faculty/prof18.jpg" },
-            { name: "อาจารย์ นายสัตวแพทย์ ดร. สพล เสมเสริมบุญ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (สรีรวิทยาการสัตว์)", img: "assets/images/faculty/prof19.jpg" }
+            { name: "รศ.สพ.ญ.ดร. กรรณาภรณ์ สุริยผล", res: "Dr. rer. nat. (Biology)", img: "assets/images/faculty/prof1.jpg" },
+            { name: "รศ.น.สพ.ดร. สฤษฏิ์วิชญ์ ปัญญาบริบาลบ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (วิทยาการสืบพันธุ์สัตว์)", img: "assets/images/faculty/prof2.jpg" },
+            { name: "ผศ.สพ.ญ.ดร. เบญจพร ลิ้มเจริญ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (พยาธิชีววิทยาทางสัตวแพทย์)", img: "assets/images/faculty/prof3.jpg" },
+            { name: "ศ.น.สพ.ดร. ไพศาล เทียนไทย", res: "Ph.D (Obstetrics and Gynaecology)", img: "assets/images/faculty/prof4.jpg" },
+            { name: "รศ.สพ.ญ.ศริยา อัศวกาญจน์", res: "M.Sc (Biochemistry)", img: "assets/images/faculty/prof5.jpg" },
+            { name: "รศ.สพ.ญ.ดร. ศยามณ ศรีสุวัฒนาสกุล", res: "Ph.D (Anatomy and cell biology)", img: "assets/images/faculty/prof6.jpg" },
+            { name: "รศ.สพ.ญ.ดร. สฤณี กลันทกานนท์ ทองทรง", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof7.jpg" },
+            { name: "รศ.น.สพ.ดร. เจนภพ สว่างเมฆ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof8.jpg" },
+            { name: "รศ.น.สพ.ดร. สัมพันธ์ ธรรมเจริญ", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof9.jpg" },
+            { name: "รศ.น.สพ.ก้องเกียรติ ศรีสุวัฒนาสกุล", res: "วิทยาศาสตรมหาบัณฑิต (ศัลยศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof10.jpg" },
+            { name: "รศ.สพ.ญ.ดร. แนน ช้อยสุนิรชร", res: "Ph.D. (Veterinary Medical Science)", img: "assets/images/faculty/prof11.jpg" },
+            { name: "รศ.น.สพ.ดร. ชุติมน ธนบูรณ์นิพัทธ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof12.jpg" },
+            { name: "ผศ.น.สพ.ดร. ประพฤติดี ปิยะวิริยะกุล", res: "Ph.D. (Applied Marine Bioscience)", img: "assets/images/faculty/prof13.jpg" },
+            { name: "ผศ.น.สพ.ดร. กิตติพงษ์ ทาจําปา", res: "Ph.D. (Physiology & biophysics)", img: "assets/images/faculty/prof14.jpg" },
+            { name: "ผศ.สพ.ญ.ดร. ศิริรัตน์ รัตนภุชพงศ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof15.jpg" },
+            { name: "อ.สพ.ญ.ดร. เพราพิลาส ภักดีดินแดน", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof16.jpg" },
+            { name: "อ.สพ.ญ.ดร. ศิรินันท์ พิสมัย ทับเที่ยง", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof17.jpg" },
+            { name: "อ.สพ.ญ.ดร. ศิริวรรณ สาครินทร์", res: "วิทยาศาสตรดุษฎีบัณฑิต (อายุรศาสตรสัตวแพทย์)", img: "assets/images/faculty/prof18.jpg" },
+            { name: "อ.น.สพ.ดร. สพล เสมเสริมบุญ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (สรีรวิทยาการสัตว์)", img: "assets/images/faculty/prof19.jpg" }
         ]
     },
     en: {
@@ -117,6 +136,12 @@ const translations = {
         navPrograms: "Programs",
         navNews: "News",
         navContact: "Contact",
+
+        // แบนเนอร์หลัก (EN)
+        bannerSub: "Graduate Program",
+        bannerMain: "Veterinary Biosciences",
+        bannerDesc: "Guideline for Prospective M.Sc. and Ph.D. Students",
+
         topBrand: "Graduate Program, Faculty of Veterinary Science, Chulalongkorn University",
         mainTitle: "VETERINARY BIOSCIENCES (2022)",
         subTitle: "Graduate Program in Veterinary Biosciences",
@@ -171,7 +196,7 @@ const translations = {
             "Stem cells and canine corneal degeneration",
             "Cecal Proteomics in pigs"
         ],
-        headWhatis: "ADMISSION INFO",
+        headAdminInfo: "ADMISSION INFO",
         subEligibility: "Eligibility of Applicants",
         eligibilityList: [
             "Completed Bachelor's Degrees in Veterinary, Biological Science or related discipline.",
@@ -194,6 +219,19 @@ const translations = {
         footHeadAddress: "Address",
         footValAddress: "Department of Anatomy, Faculty of Veterinary Science, Chulalongkorn University, Henri-Dunant Rd., Pathumwan, Bangkok 10330, Thailand.",
         footLblTel: "Tel:",
+        
+        // ข้อมูลของหน้าติดต่อและหน้าปรับปรุงระบบ (EN)
+        contactTitle: "Faculty of Veterinary Science, Chulalongkorn University",
+        contactAddress: "Henri-Dunant Rd., Pathumwan, Pathumwan, Bangkok 10330",
+        lblUg: "(Admissions & Undergraduate)",
+        lblGrad: "(Graduate Studies)",
+        lblFax: "Fax",
+        noticeMasterTitle: "Master of Science (M.Sc.)",
+        noticeMasterDesc: "This page is currently under construction and preparing information for the 2-year Master's program. We apologize for any inconvenience.",
+        noticePhdTitle: "Doctor of Philosophy (Ph.D.)",
+        noticePhdDesc: "This page is currently under construction and preparing information for the 3 or 5-year Ph.D. program. We apologize for any inconvenience.",
+        noticeNewsTitle: "News and Announcements",
+        noticeNewsDesc: "This page is currently under construction and preparing news and events of the program. We apologize for any inconvenience.",
         
         // ข้อมูลส่วนสไลด์คณาจารย์ประจำหลักสูตร (EN)
         facultyBadge: "Faculty Members",
@@ -231,6 +269,15 @@ function changeLang(lang) {
     if (window.location.pathname.includes("/programs/")) {
         imgPrefix = "../"; // ถ้าอยู่ในการ์ดย่อย ให้ถอยหลัง 1 ชั้น
     }
+
+    // สลับข้อความในแบนเนอร์หลัก
+    const bannerSubText = document.getElementById('banner-sub-text');
+    const bannerMainText = document.getElementById('banner-main-text');
+    const bannerDescText = document.getElementById('banner-desc-text');
+    
+    if (bannerSubText) bannerSubText.innerText = data.bannerSub;
+    if (bannerMainText) bannerMainText.innerText = data.bannerMain;
+    if (bannerDescText) bannerDescText.innerText = data.bannerDesc;
 
     // เปลี่ยนคำที่แถบเนวิเกชันบาร์ส่วนบน (Navbar)
     const navItems = document.querySelectorAll('.nav-links .nav-item');
@@ -354,13 +401,13 @@ function changeLang(lang) {
     const cLblGrad = document.getElementById('c-lbl-grad');
     const cLblFax = document.getElementById('c-lbl-fax');
 
-    if (cTitle) cTitle.innerText = lang === 'th' ? "คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย" : "Faculty of Veterinary Science, Chulalongkorn University";
-    if (cAddress) cAddress.innerText = lang === 'th' ? "ถนนอังรีดูนังต์ แขวงปทุมวัน เขตปทุมวัน กรุงเทพมหานคร 10330" : "Henri-Dunant Rd., Pathumwan, Pathumwan, Bangkok 10330";
-    if (cLblUg) cLblUg.innerText = lang === 'th' ? "(ศึกษาต่อและปริญญาตรี)" : "(Admissions & Undergraduate)";
-    if (cLblGrad) cLblGrad.innerText = lang === 'th' ? "(บัณฑิตศึกษา)" : "(Graduate Studies)";
-    if (cLblFax) cLblFax.innerText = lang === 'th' ? "โทรสาร" : "Fax";
+    if (cTitle) cTitle.innerText = data.contactTitle;
+    if (cAddress) cAddress.innerText = data.contactAddress;
+    if (cLblUg) cLblUg.innerText = data.lblUg;
+    if (cLblGrad) cLblGrad.innerText = data.lblGrad;
+    if (cLblFax) cLblFax.innerText = data.lblFax;
 
-    // ระบบสลับภาษาสำหรับหน้าย่อยที่เหลือ (Master, PhD, News - สำหรับอนาคต)
+    // ระบบสลับภาษาสำหรับหน้าย่อยที่เหลือ (Master, PhD, News)
     const mNoticeTitle = document.getElementById('m-notice-title');
     const mNoticeDesc = document.getElementById('m-notice-desc');
     const pNoticeTitle = document.getElementById('p-notice-title');
@@ -368,12 +415,12 @@ function changeLang(lang) {
     const nNoticeTitle = document.getElementById('n-notice-title');
     const nNoticeDesc = document.getElementById('n-notice-desc');
 
-    if (mNoticeTitle) mNoticeTitle.innerText = lang === 'th' ? "วิทยาศาสตรมหาบัณฑิต (วท.ม.)" : "Master of Science (M.Sc.)";
-    if (mNoticeDesc) mNoticeDesc.innerText = lang === 'th' ? "หน้านี้กำลังอยู่ในช่วงของการปรับปรุงและจัดเตรียมข้อมูลหลักสูตรปริญญาโท 2 ปี ขออภัยในความไม่สะดวก" : "This page is currently under construction and preparing information for the 2-year Master's program. We apologize for any inconvenience.";
-    if (pNoticeTitle) pNoticeTitle.innerText = lang === 'th' ? "วิทยาศาสตรดุษฎีบัณฑิต (วท.ด.)" : "Doctor of Philosophy (Ph.D.)";
-    if (pNoticeDesc) pNoticeDesc.innerText = lang === 'th' ? "หน้านี้กำลังอยู่ในช่วงของการปรับปรุงและจัดเตรียมข้อมูลหลักสูตรปริญญาเอก 3 หรือ 5 ปี ขออภัยในความไม่สะดวก" : "This page is currently under construction and preparing information for the 3 or 5-year Ph.D. program. We apologize for any inconvenience.";
-    if (nNoticeTitle) nNoticeTitle.innerText = lang === 'th' ? "ข่าวสารและประชาสัมพันธ์" : "News and Public Relations";
-    if (nNoticeDesc) nNoticeDesc.innerText = lang === 'th' ? "หน้านี้กำลังอยู่ในช่วงของการปรับปรุงและจัดเตรียมข้อมูลข่าวสารและกิจกรรมของหลักสูตร ขออภัยในความไม่สะดวก" : "This page is currently under construction and preparing news and events of the program. We apologize for any inconvenience.";
+    if (mNoticeTitle) mNoticeTitle.innerText = data.noticeMasterTitle;
+    if (mNoticeDesc) mNoticeDesc.innerText = data.noticeMasterDesc;
+    if (pNoticeTitle) pNoticeTitle.innerText = data.noticePhdTitle;
+    if (pNoticeDesc) pNoticeDesc.innerText = data.noticePhdDesc;
+    if (nNoticeTitle) nNoticeTitle.innerText = data.noticeNewsTitle;
+    if (nNoticeDesc) nNoticeDesc.innerText = data.noticeNewsDesc;
 
     const footHeadContact = document.getElementById('foot-head-contact');
     const footValContactName = document.getElementById('foot-val-contact-name');
@@ -444,8 +491,6 @@ function initFacultySlider(lang, prefix = "") {
         const slideDiv = document.createElement('div');
         slideDiv.className = `slide ${idx === currentSlideIndex ? 'active' : ''}`;
         
-        // ล็อกภาพประจำบุคคลให้ตรงกับความจริง 100% พร้อมฟังก์ชันเผื่อภาพหลุดชั่วคราว
-        // เปลี่ยนมาใช้สัญลักษณ์ / ตามมาตรฐานสากล แทนสไตล์ Windows \ เพื่อให้เปิดบน GitHub Pages ได้
         slideDiv.innerHTML = `
             <img src="${prefix}${prof.img}" alt="${prof.name}" class="slider-img" onerror="this.src='https://placehold.co/400x500/f4f6f9/475569?text=Faculty+Image'">
             <div class="slider-overlay">
@@ -483,7 +528,7 @@ function startSlideAutoPlay() {
     if (slideTimer) clearInterval(slideTimer);
     slideTimer = setInterval(() => {
         showSlide(currentSlideIndex + 1);
-    }, 5000); //
+    }, 5000);
 }
 
 function resetSlideAutoPlay() {
