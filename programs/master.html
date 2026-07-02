@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิทยาศาสตรมหาบัณฑิต | Master of Science - Veterinary Biosciences</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    
+    <style>
+        .notice-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 24px !important;
+            margin-top: 24px;
+        }
+        .notice-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        .notice-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+        .notice-desc {
+            font-size: 16px;
+            color: var(--text-muted);
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div id="text-top-brand" class="nav-logo">หลักสูตรบัณฑิตศึกษา คณะสัตวแพทยศาสตร์</div>
+            
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-item">หน้าแรก</a></li>
+                <li class="has-bento-dropdown">
+                    <a href="#" class="nav-item active">หลักสูตร <span class="arrow-icon">▾</span></a>
+                    <div class="bento-dropdown-matrix">
+                        <div class="bento-drop-grid">
+                            <a href="#" class="drop-sub-card">
+                                <span class="drop-badge">M.Sc.</span>
+                                <h4>วิทยาศาสตรมหาบัณฑิต</h4>
+                                <p>สาขาวิชาชีวศาสตร์ทางสัตวแพทย์ (หลักสูตร 2 ปี)</p>
+                            </a>
+                            <a href="phd.html" class="drop-sub-card phd-theme">
+                                <span class="drop-badge">Ph.D.</span>
+                                <h4>วิทยาศาสตรดุษฎีบัณฑิต</h4>
+                                <p>สาขาวิชาชีวศาสตร์ทางสัตวแพทย์ (หลักสูตร 3 หรือ 5 ปี)</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="../news.html" class="nav-item">ข่าวสาร</a></li>
+                <li><a href="../contact.html" class="nav-item">ติดต่อสอบถาม</a></li>
+            </ul>
+
+            <div class="lang-switcher">
+                <button id="btn-th" onclick="changeLang('th')" class="active">TH</button>
+                <span>|</span>
+                <button id="btn-en" onclick="changeLang('en')">EN</button>
+            </div>
+
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </div>
+
+        <div class="mobile-menu-container" id="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="../index.html" class="mobile-nav-item">หน้าแรก</a></li>
+                <li class="mobile-divider">หลักสูตรที่เปิดสอน</li>
+                <li><a href="#" class="mobile-drop-card"><span class="m-badge">M.Sc.</span> วิทยาศาสตรมหาบัณฑิต</a></li>
+                <li><a href="phd.html" class="mobile-drop-card m-phd-theme"><span class="m-badge">Ph.D.</span> วิทยาศาสตรดุษฎีบัณฑิต</a></li>
+                <li class="mobile-divider">เมนูอื่น ๆ</li>
+                <li><a href="../news.html" class="mobile-nav-item">ข่าวสาร</a></li>
+                <li><a href="../contact.html" class="mobile-nav-item">ติดต่อสอบถาม</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="main-container">
+            <div class="banner-wrapper">
+                <img class="header-banner-img" src="../assets/images/banners/head-banner.png" alt="Header Image" />
+            </div>
+
+            <div class="bento-card notice-container">
+                <div class="notice-icon">🔬</div>
+                <h1 class="notice-title" id="m-notice-title">วิทยาศาสตรมหาบัณฑิต (วท.ม.)</h1>
+                <p class="notice-desc" id="m-notice-desc">หน้านี้กำลังอยู่ในช่วงของการปรับปรุงและจัดเตรียมข้อมูลหลักสูตรปริญญาโท 2 ปี ขออภัยในความไม่สะดวก</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 id="foot-head-contact">ติดต่อสอบถามข้อมูลเพิ่มเติม</h3>
+                    <p id="foot-val-contact-name" class="contact-name"><strong>รศ.น.สพ. ก้องเกียรติ ศรีสุวัฒนาสกุล</strong></p>
+                    <p><span id="foot-lbl-email" class="label-muted">อีเมล:</span> <a href="mailto:kongkiat.s@chula.ac.th">kongkiat.s@chula.ac.th</a></p>
+                </div>
+                <div class="footer-col">
+                    <h3 id="foot-head-address">ที่อยู่</h3>
+                    <p id="foot-val-address">ภาควิชากายวิภาคศาสตร์ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย ถนนอังรีดูนังต์ แขวงปทุมวัน เขตปทุมวัน กรุงเทพฯ 10330 ประเทศไทย</p>
+                    <p><strong id="foot-lbl-tel">โทร:</strong> <span>+66 (0) 2218-9697</span></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Department of Anatomy, Faculty of Veterinary Science, Chulalongkorn University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/lang-engine.js"></script>
+</body>
+</html>

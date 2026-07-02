@@ -1,0 +1,858 @@
+/* =======================================================
+*  Theme: Premium, Trustworthy, and Modern Minimalist
+*  Enhancement: Mesh Gradient, Visual Cards, Dynamic Accents
+* ======================================================= */
+
+/* 1. CSS VARIABLES */
+:root {
+  /* Colors */
+  --primary-pink: #DF4B77;       
+  --primary-pink-hover: #C6365F; 
+  --bg-main: #FFFFFF;
+  --bg-secondary: #F4F6F9;       
+  --text-main: #0F172A;         
+  --text-muted: #475569;        
+  --border-color: #E2E8F0;
+  --glass-bg: rgba(255, 255, 255, 0.82);
+  
+  /* Fonts & Line-height */
+  --font-stack: 'Inter', 'Noto Sans Thai', 'Sarabun', sans-serif;
+  --line-height-premium: 1.8;
+  
+  /* Animation & Borders */
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --card-radius: 16px;
+}
+
+/* 2. BASE & SCROLLBAR */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-stack);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: var(--line-height-premium);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ปรับแต่ง Scrollbar ให้เรียวเล็ก หรูหราตามข้อกำหนด */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-pink);
+}
+
+/* =======================================================
+*  3. NAVBAR (Floating Glassmorphism & Bento Dropdown)
+* ======================================================= */
+.navbar {
+  position: sticky;
+  top: 16px;                     
+  z-index: 1000;
+  max-width: 1140px;             
+  margin: 0 auto;
+  background-color: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.7);
+  border-radius: 30px;           
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
+  transition: var(--transition-smooth);
+}
+
+.nav-container {
+  padding: 10px 24px;            
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-logo {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--text-main);
+  letter-spacing: 0.3px;
+}
+
+/* รายการลิงก์เมนูหลัก */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 8px;                     
+  align-items: center;
+}
+
+.nav-item {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 8px 16px;
+  border-radius: 20px;          
+  transition: var(--transition-smooth);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-item:hover, .nav-item.active {
+  color: var(--text-main);
+  background-color: rgba(15, 23, 42, 0.04); 
+}
+
+.nav-item.active {
+  font-weight: 600;
+}
+
+.arrow-icon {
+  font-size: 10px;
+  transition: var(--transition-smooth);
+}
+
+/* โครงสร้างลูกเล่นเมื่อนำเมาส์ไปชี้เมนูหลักสูตร (has-bento-dropdown) */
+.has-bento-dropdown {
+  position: relative;
+}
+
+/* แผงดรอปดาวน์หลักสไตล์เมตริกซ์ซ่อนไว้ในตอนแรก */
+.bento-dropdown-matrix {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  padding-top: 12px;
+  width: 540px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: var(--transition-smooth);
+}
+
+/* คำสั่งสเปกเมื่อผู้ใช้ทำการ Hover เมนู */
+.has-bento-dropdown:hover .bento-dropdown-matrix {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.has-bento-dropdown:hover .arrow-icon {
+  transform: rotate(180deg);   
+  color: var(--primary-pink);
+}
+
+/* กล่องผัง Grid ภายในดรอปดาวน์ (Bento Layout Droplist) */
+.bento-drop-grid {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 12px;
+  box-shadow: 0 30px 50px rgba(15, 23, 42, 0.08);
+}
+
+/* การ์ดย่อยลิงก์หลักสูตรภายในเมนูเบนโตะ */
+.drop-sub-card {
+  text-decoration: none;
+  background-color: var(--bg-secondary);
+  padding: 20px;
+  border-radius: 12px;
+  border-top: 3px solid var(--primary-brand, #476a6f);
+  transition: var(--transition-smooth);
+  display: block;
+}
+
+.drop-sub-card.phd-theme {
+  border-top-color: var(--primary-pink);
+}
+
+.drop-sub-card:hover {
+  background-color: var(--bg-main);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.03);
+}
+
+.drop-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  background-color: #e2e8f0;
+  color: var(--text-main);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.phd-theme .drop-badge {
+  background-color: #fff0f3;
+  color: var(--primary-pink);
+}
+
+.drop-sub-card h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-main) !important;
+  margin-bottom: 4px;
+}
+
+.drop-sub-card p {
+  font-size: 12px !important;
+  color: var(--text-muted) !important;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ปุ่มกด Hamburger สไตล์มินิมอล */
+.mobile-nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22px;
+  height: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+.hamburger-bar {
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-main);
+  border-radius: 2px;
+  transition: var(--transition-smooth);
+}
+
+/* แผงครอบคลุมเมนูในโหมดมือถือ ซ่อนไว้ด้านบนจอในตอนแรก */
+.mobile-menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-color);
+  border-top: none;
+  border-radius: 0 0 20px 20px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  z-index: 1001;
+}
+
+/* คลาสเปิดใช้งานเมนูที่ JavaScript จะเรียกใช้ */
+.mobile-menu-container.open {
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* สไตล์สเปกตัวหนังสือและกล่องหลักสูตรบนมือถือ */
+.mobile-nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mobile-nav-item {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-main);
+  display: block;
+  padding: 8px 4px;
+}
+
+.mobile-divider {
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.mobile-drop-card {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--bg-secondary);
+  padding: 14px;
+  border-radius: 12px;
+  color: var(--text-main);
+  font-size: 14px;
+  font-weight: 600;
+  border-left: 3px solid var(--primary-brand, #476a6f);
+}
+
+.mobile-drop-card.m-phd-theme {
+  border-left-color: var(--primary-pink);
+}
+
+.m-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  background-color: var(--white-color);
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+/* 🛠️ แก้ไขจุด Error แอนิเมชันปุ่ม Hamburger ที่พิมพ์ขาดหายไป */
+.mobile-nav-toggle.open .hamburger-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.mobile-nav-toggle.open .hamburger-bar:nth-child(2) {
+  opacity: 0;
+}
+.mobile-nav-toggle.open .hamburger-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Responsive adjustment สำหรับเนวิเกชันบาร์ */
+@media screen and (max-width: 768px) {
+  .navbar {
+    top: 0;
+    border-radius: 0;
+    max-width: 100%;
+    border-left: none;
+    border-right: none;
+  }
+  .nav-links {
+    display: none; 
+  }
+  .mobile-nav-toggle {
+    display: flex;
+  }
+  .mobile-menu-container {
+    display: block;
+  }
+}
+
+/* =======================================================
+*  4. MAIN LAYOUT
+* ======================================================= */
+.main-content {
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(223, 75, 119, 0.03) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(15, 23, 42, 0.02) 0px, transparent 50%),
+    linear-gradient(var(--bg-secondary), var(--bg-secondary));
+  padding: 40px 0 80px 0;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.banner-wrapper {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.header-banner-img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--card-radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+/* =======================================================
+*  5. BENTO GRID ARCHITECTURE
+* ======================================================= */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.bento-card {
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: var(--card-radius);
+  padding: 32px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01);
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.bento-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 40px -5px rgba(15, 23, 42, 0.05), 0 10px 15px -5px rgba(0, 0, 0, 0.01);
+  background-color: var(--bg-main);
+  border-color: rgba(223, 75, 119, 0.25);
+}
+
+.bento-hero {
+  grid-column: span 2;
+  background: linear-gradient(145deg, #ffffff 0%, #fff9fb 100%);
+  border-top: 4px solid var(--primary-pink);
+}
+
+.ui-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-pink);
+  background-color: #fff0f3;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.bento-hero h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  background: linear-gradient(90deg, var(--text-main) 30%, var(--primary-pink) 100%);
+  background-clip: text;          
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+}
+
+.sub-program-title {
+  font-size: 16px;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.bento-image-card {
+  padding: 0;
+}
+.bento-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+.bento-image-card:hover .bento-bg-img {
+  transform: scale(1.06);
+}
+.image-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  background: linear-gradient(transparent, rgba(15, 23, 42, 0.75));
+}
+.img-badge {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--bg-main);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.bento-span-2 { grid-column: span 2; }
+.bento-span-3 { grid-column: span 3; }
+
+.bento-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.bento-card-title::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 16px;
+  background-color: var(--primary-pink);
+  border-radius: 4px;
+}
+
+.bento-text {
+  font-size: 16px; 
+  color: var(--text-muted);
+  text-align: left;
+  word-break: normal;
+  overflow-wrap: break-word;
+  line-height: 1.8; 
+  margin-bottom: 12px;
+}
+
+/* 🛠️ แก้ไขจุดซ้ำซ้อน: คลีนขนาดตัวหนังสือหน้าข้อมูลซ้อนให้อยู่จุดเดียว */
+.meta-info-stack p {
+  font-size: 15px; 
+  margin-bottom: 10px;
+  color: var(--text-muted);
+}
+.meta-info-stack strong { color: var(--text-main); }
+
+/* =======================================================
+*  🛠️ FIX: ล้างสไตล์เก่าที่ซ้อนทับกัน (Ordered List Reset)
+* ======================================================= */
+
+.bento-ordered-list {
+  counter-reset: bento-counter;
+  list-style: none !important; /* บังคับล้างจุด/เลขเดิมของระบบ */
+  padding-left: 0 !important;   /* ล้างระยะเยื้องเดิมป้องกันขอบหลุด */
+  margin: 0;
+}
+
+.bento-ordered-list li {
+  counter-increment: bento-counter;
+  font-size: 15px; 
+  line-height: 1.7;
+  margin-bottom: 14px;
+  
+  /* ใช้ Flexbox เพื่อดันข้อความให้อยู่หลังตัวเลขอย่างเป็นระเบียบ */
+  display: flex !important;
+  align-items: flex-start !important; 
+  gap: 12px !important;               /* เว้นช่องไฟระหว่างกล่องเลขกับข้อความ */
+  text-align: left !important;
+  position: relative;
+}
+
+/* ปรับปรุงตัวเลขลำดับ (01, 02) เคลียร์ปัญหาการลอยทับข้อความ */
+.bento-ordered-list li::before {
+  content: counter(bento-counter, decimal-leading-zero);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--primary-pink);
+  background-color: #fff0f3;
+  padding: 3px 6px;
+  border-radius: 4px;
+  
+  /* 🌟 จุดสำคัญวิกฤต: ล้างระบบเดิมที่เป็นอันตรายออกทั้งหมด */
+  position: static !important;        /* ปลดล็อกห้ามลอยเด็ดขาด (ล้าง absolute เก่า) */
+  display: inline-block !important;
+  flex-shrink: 0 !important;          /* ล็อกกล่องไม่ให้เบี้ยวหรือโดนข้อความบีบ */
+  
+  min-width: 26px;  
+  text-align: center;
+  margin-top: 2px;  
+}
+
+.highlighted-text {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-main);
+  background-color: #fffcfd;
+  border-left: 3px solid var(--primary-pink);
+  padding: 14px 18px;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 20px;
+  text-align: left; 
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 20px 0;
+}
+
+/* =======================================================
+*  6. TABLES, LISTS, & ADMISSION
+* ======================================================= */
+.program-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin-top: 12px;
+}
+.program-table th {
+  padding: 12px;
+  background-color: rgba(15, 23, 42, 0.02);
+  color: var(--text-main);
+  font-weight: 600;
+  border-bottom: 2px solid var(--border-color);
+}
+.program-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.table-subtext { font-size: 12px; color: #64748b; }
+.table-note { font-size: 12px; color: #64748b; font-style: italic; margin-top: 16px; }
+
+.bento-list, .bento-ordered-list {
+  padding-left: 8px;
+  list-style: none;
+}
+.bento-list li {
+  color: var(--text-muted);
+  position: relative;
+  padding-left: 20px;
+}
+.bento-list li::before {
+  content: '•';
+  color: var(--primary-pink);
+  font-size: 18px;
+  position: absolute;
+  left: 4px;
+  top: -2px;
+}
+
+.bento-ordered-list {
+  counter-reset: bento-counter;
+}
+.bento-ordered-list li {
+  counter-increment: bento-counter;
+  color: var(--text-muted);
+  position: relative;
+  padding-left: 24px;
+}
+.bento-ordered-list li::before {
+  content: counter(bento-counter, decimal-leading-zero);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--primary-pink);
+  background-color: #fff0f3;
+  padding: 2px 6px;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+.bento-admission {
+  background: linear-gradient(180deg, #ffffff 0%, #fcfcfd 100%);
+}
+.admission-title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.admission-split { display: flex; gap: 48px; }
+.admission-col { flex: 1; }
+.admission-sub-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 8px;
+}
+
+.gallery-section {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 32px;
+}
+.gallery-section img {
+  max-width: calc(50% - 12px);
+  height: auto;
+  border-radius: var(--card-radius);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.01);
+}
+
+/* =======================================================
+*  7. PREMIUM FOOTER
+* ======================================================= */
+.footer {
+  background-color: #0b0f19;
+  color: #94a3b8;
+  padding: 64px 0 24px 0;
+  font-size: 14px;
+}
+.footer-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 40px;
+}
+.footer-col { flex: 1; }
+.footer-col h3 {
+  color: var(--bg-main);
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+.contact-name { color: var(--bg-main); margin-bottom: 4px; }
+.label-muted { color: #475569; }
+.footer-col a {
+  color: var(--primary-pink);
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+.footer-col a:hover { color: #ff769f; }
+.footer-bottom { padding-top: 24px; text-align: center; font-size: 12px; color: #475569; }
+
+/* 8. RESPONSIVE DESIGN */
+@media screen and (max-width: 1024px) {
+  .bento-grid { grid-template-columns: repeat(2, 1fr); }
+  .bento-hero, .bento-span-2, .bento-span-3 { grid-column: span 2; }
+}
+@media screen and (max-width: 768px) {
+  .bento-grid { grid-template-columns: 1fr; }
+  .bento-hero, .bento-span-2, .bento-span-3 { grid-column: span 1; }
+  .admission-split, .footer-grid, .gallery-section { flex-direction: column; gap: 24px; }
+  .gallery-section img { max-width: 100%; }
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    top: 0;
+    border-radius: 0;
+    max-width: 100%;
+    border-left: none;
+    border-right: none;
+  }
+  .nav-links {
+    display: none; 
+  }
+  /* มั่นใจว่าเปิดปุ่มท็อกเกิลและกล่องเมนูให้ทำงานในจอมือถือ */
+  .mobile-nav-toggle {
+    display: flex;
+  }
+  .mobile-menu-container {
+    display: block;
+  }
+}
+
+/* =======================================================
+*  🛠️ BENTO SLIDER ENHANCEMENT
+* ======================================================= */
+.bento-slider-card {
+  padding: 0 !important;
+  position: relative;
+  height: 100%;
+  min-height: 380px; /* คุมความสูงให้สมดุลกับกล่อง Hero ด้านข้าง */
+}
+
+.slider-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.6s;
+  z-index: 1;
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+.slider-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 28px 24px;
+  background: linear-gradient(transparent, rgba(15, 23, 42, 0.95)); /* คอนทราสต์เข้มเพื่อให้อ่านชื่ออาจารย์ง่าย */
+  color: var(--bg-main);
+  z-index: 3;
+}
+
+.slider-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-pink);
+  background-color: rgba(255, 240, 243, 0.9);
+  padding: 2px 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.prof-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.prof-res {
+  font-size: 12px;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+/* ปุ่มกดเปลี่ยนสไลด์ ซ้าย-ขวา แบบกระจกโปร่งแสง */
+.slide-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--text-main);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 12px;
+  transition: var(--transition-smooth);
+  opacity: 0; /* ซ่อนไว้ก่อน จะโชว์เมื่อคนเอาเมาส์มา Hover ตัวกล่องเบนโตะ */
+}
+
+.bento-slider-card:hover .slide-nav {
+  opacity: 1;
+}
+
+.slide-nav:hover {
+  background: var(--bg-main);
+  color: var(--primary-pink);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.slide-nav.prev { left: 16px; }
+.slide-nav.next { right: 16px; }
+
+@media screen and (max-width: 768px) {
+  .bento-slider-card {
+    min-height: 320px;
+  }
+  .slide-nav {
+    opacity: 1; /* บนมือถือให้โชว์ปุ่มถาวรเพราะไม่มีระบบ hover */
+  }
+}
