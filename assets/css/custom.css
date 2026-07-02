@@ -1,6 +1,6 @@
 /* =======================================================
-*  Theme: Premium, Trustworthy, and Modern Minimalist
-*  Enhancement: Mesh Gradient, Visual Cards, Dynamic Accents
+* Theme: Premium, Trustworthy, and Modern Minimalist
+* Enhancement: Mesh Gradient, Visual Cards, Dynamic Accents
 * ======================================================= */
 
 /* 1. CSS VARIABLES */
@@ -39,7 +39,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ปรับแต่ง Scrollbar ให้เรียวเล็ก หรูหราตามข้อกำหนด */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -55,7 +54,7 @@ body {
 }
 
 /* =======================================================
-*  3. NAVBAR (Floating Glassmorphism & Bento Dropdown)
+* 3. NAVBAR (Floating Glassmorphism & Bento Dropdown)
 * ======================================================= */
 .navbar {
   position: sticky;
@@ -87,7 +86,6 @@ body {
   letter-spacing: 0.3px;
 }
 
-/* รายการลิงก์เมนูหลัก */
 .nav-links {
   display: flex;
   list-style: none;
@@ -122,12 +120,10 @@ body {
   transition: var(--transition-smooth);
 }
 
-/* โครงสร้างลูกเล่นเมื่อนำเมาส์ไปชี้เมนูหลักสูตร (has-bento-dropdown) */
 .has-bento-dropdown {
   position: relative;
 }
 
-/* แผงดรอปดาวน์หลักสไตล์เมตริกซ์ซ่อนไว้ในตอนแรก */
 .bento-dropdown-matrix {
   position: absolute;
   top: 100%;
@@ -141,7 +137,6 @@ body {
   transition: var(--transition-smooth);
 }
 
-/* คำสั่งสเปกเมื่อผู้ใช้ทำการ Hover เมนู */
 .has-bento-dropdown:hover .bento-dropdown-matrix {
   opacity: 1;
   visibility: visible;
@@ -154,7 +149,6 @@ body {
   color: var(--primary-pink);
 }
 
-/* กล่องผัง Grid ภายในดรอปดาวน์ (Bento Layout Droplist) */
 .bento-drop-grid {
   background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
@@ -167,7 +161,6 @@ body {
   box-shadow: 0 30px 50px rgba(15, 23, 42, 0.08);
 }
 
-/* การ์ดย่อยลิงก์หลักสูตรภายในเมนูเบนโตะ */
 .drop-sub-card {
   text-decoration: none;
   background-color: var(--bg-secondary);
@@ -218,7 +211,6 @@ body {
   line-height: 1.4;
 }
 
-/* ปุ่มกด Hamburger สไตล์มินิมอล */
 .mobile-nav-toggle {
   display: none;
   flex-direction: column;
@@ -239,7 +231,6 @@ body {
   transition: var(--transition-smooth);
 }
 
-/* แผงครอบคลุมเมนูในโหมดมือถือ ซ่อนไว้ด้านบนจอในตอนแรก */
 .mobile-menu-container {
   display: none;
   position: absolute;
@@ -261,13 +252,11 @@ body {
   z-index: 1001;
 }
 
-/* คลาสเปิดใช้งานเมนูที่ JavaScript จะเรียกใช้ */
 .mobile-menu-container.open {
   max-height: 500px;
   opacity: 1;
 }
 
-/* สไตล์สเปกตัวหนังสือและกล่องหลักสูตรบนมือถือ */
 .mobile-nav-links {
   list-style: none;
   display: flex;
@@ -319,7 +308,6 @@ body {
   border: 1px solid var(--border-color);
 }
 
-/* 🛠️ แก้ไขจุด Error แอนิเมชันปุ่ม Hamburger ที่พิมพ์ขาดหายไป */
 .mobile-nav-toggle.open .hamburger-bar:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
@@ -330,28 +318,8 @@ body {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Responsive adjustment สำหรับเนวิเกชันบาร์ */
-@media screen and (max-width: 768px) {
-  .navbar {
-    top: 0;
-    border-radius: 0;
-    max-width: 100%;
-    border-left: none;
-    border-right: none;
-  }
-  .nav-links {
-    display: none; 
-  }
-  .mobile-nav-toggle {
-    display: flex;
-  }
-  .mobile-menu-container {
-    display: block;
-  }
-}
-
 /* =======================================================
-*  4. MAIN LAYOUT
+* 4. MAIN LAYOUT
 * ======================================================= */
 .main-content {
   background-image: 
@@ -380,7 +348,7 @@ body {
 }
 
 /* =======================================================
-*  5. BENTO GRID ARCHITECTURE
+* 5. BENTO GRID ARCHITECTURE
 * ======================================================= */
 .bento-grid {
   display: grid;
@@ -442,18 +410,14 @@ body {
   margin-top: 4px;
 }
 
-.bento-image-card {
-  padding: 0;
-}
+.bento-image-card { padding: 0; }
 .bento-bg-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: var(--transition-smooth);
 }
-.bento-image-card:hover .bento-bg-img {
-  transform: scale(1.06);
-}
+.bento-image-card:hover .bento-bg-img { transform: scale(1.06); }
 .image-card-overlay {
   position: absolute;
   bottom: 0;
@@ -503,7 +467,6 @@ body {
   margin-bottom: 12px;
 }
 
-/* 🛠️ แก้ไขจุดซ้ำซ้อน: คลีนขนาดตัวหนังสือหน้าข้อมูลซ้อนให้อยู่จุดเดียว */
 .meta-info-stack p {
   font-size: 15px; 
   margin-bottom: 10px;
@@ -512,13 +475,12 @@ body {
 .meta-info-stack strong { color: var(--text-main); }
 
 /* =======================================================
-*  🛠️ FIX: ล้างสไตล์เก่าที่ซ้อนทับกัน (Ordered List Reset)
+* 🛠️ FIX: ล้างสไตล์เก่าที่ซ้อนทับกัน (Ordered List Reset)
 * ======================================================= */
-
 .bento-ordered-list {
   counter-reset: bento-counter;
-  list-style: none !important; /* บังคับล้างจุด/เลขเดิมของระบบ */
-  padding-left: 0 !important;   /* ล้างระยะเยื้องเดิมป้องกันขอบหลุด */
+  list-style: none !important; 
+  padding-left: 0 !important;   
   margin: 0;
 }
 
@@ -527,16 +489,13 @@ body {
   font-size: 15px; 
   line-height: 1.7;
   margin-bottom: 14px;
-  
-  /* ใช้ Flexbox เพื่อดันข้อความให้อยู่หลังตัวเลขอย่างเป็นระเบียบ */
   display: flex !important;
   align-items: flex-start !important; 
-  gap: 12px !important;               /* เว้นช่องไฟระหว่างกล่องเลขกับข้อความ */
+  gap: 12px !important;               
   text-align: left !important;
   position: relative;
 }
 
-/* ปรับปรุงตัวเลขลำดับ (01, 02) เคลียร์ปัญหาการลอยทับข้อความ */
 .bento-ordered-list li::before {
   content: counter(bento-counter, decimal-leading-zero);
   font-size: 11px;
@@ -545,12 +504,9 @@ body {
   background-color: #fff0f3;
   padding: 3px 6px;
   border-radius: 4px;
-  
-  /* 🌟 จุดสำคัญวิกฤต: ล้างระบบเดิมที่เป็นอันตรายออกทั้งหมด */
-  position: static !important;        /* ปลดล็อกห้ามลอยเด็ดขาด (ล้าง absolute เก่า) */
+  position: static !important;        
   display: inline-block !important;
-  flex-shrink: 0 !important;          /* ล็อกกล่องไม่ให้เบี้ยวหรือโดนข้อความบีบ */
-  
+  flex-shrink: 0 !important;          
   min-width: 26px;  
   text-align: center;
   margin-top: 2px;  
@@ -576,7 +532,7 @@ body {
 }
 
 /* =======================================================
-*  6. TABLES, LISTS, & ADMISSION
+* 6. TABLES, LISTS, & ADMISSION
 * ======================================================= */
 .program-table {
   width: 100%;
@@ -599,7 +555,7 @@ body {
 .table-subtext { font-size: 12px; color: #64748b; }
 .table-note { font-size: 12px; color: #64748b; font-style: italic; margin-top: 16px; }
 
-.bento-list, .bento-ordered-list {
+.bento-list {
   padding-left: 8px;
   list-style: none;
 }
@@ -615,28 +571,6 @@ body {
   position: absolute;
   left: 4px;
   top: -2px;
-}
-
-.bento-ordered-list {
-  counter-reset: bento-counter;
-}
-.bento-ordered-list li {
-  counter-increment: bento-counter;
-  color: var(--text-muted);
-  position: relative;
-  padding-left: 24px;
-}
-.bento-ordered-list li::before {
-  content: counter(bento-counter, decimal-leading-zero);
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--primary-pink);
-  background-color: #fff0f3;
-  padding: 2px 6px;
-  border-radius: 4px;
-  position: absolute;
-  left: 0;
-  top: 3px;
 }
 
 .bento-admission {
@@ -671,7 +605,7 @@ body {
 }
 
 /* =======================================================
-*  7. PREMIUM FOOTER
+* 7. PREMIUM FOOTER
 * ======================================================= */
 .footer {
   background-color: #0b0f19;
@@ -713,8 +647,6 @@ body {
   .bento-hero, .bento-span-2, .bento-span-3 { grid-column: span 1; }
   .admission-split, .footer-grid, .gallery-section { flex-direction: column; gap: 24px; }
   .gallery-section img { max-width: 100%; }
-}
-@media screen and (max-width: 768px) {
   .navbar {
     top: 0;
     border-radius: 0;
@@ -722,26 +654,19 @@ body {
     border-left: none;
     border-right: none;
   }
-  .nav-links {
-    display: none; 
-  }
-  /* มั่นใจว่าเปิดปุ่มท็อกเกิลและกล่องเมนูให้ทำงานในจอมือถือ */
-  .mobile-nav-toggle {
-    display: flex;
-  }
-  .mobile-menu-container {
-    display: block;
-  }
+  .nav-links { display: none; }
+  .mobile-nav-toggle { display: flex; }
+  .mobile-menu-container { display: block; }
 }
 
 /* =======================================================
-*  🛠️ BENTO SLIDER ENHANCEMENT
+* 🛠️ BENTO SLIDER ENHANCEMENT
 * ======================================================= */
 .bento-slider-card {
   padding: 0 !important;
   position: relative;
   height: 100%;
-  min-height: 380px; /* คุมความสูงให้สมดุลกับกล่อง Hero ด้านข้าง */
+  min-height: 380px; 
 }
 
 .slider-wrapper {
@@ -781,7 +706,7 @@ body {
   left: 0;
   right: 0;
   padding: 28px 24px;
-  background: linear-gradient(transparent, rgba(15, 23, 42, 0.95)); /* คอนทราสต์เข้มเพื่อให้อ่านชื่ออาจารย์ง่าย */
+  background: linear-gradient(transparent, rgba(15, 23, 42, 0.95)); 
   color: var(--bg-main);
   z-index: 3;
 }
@@ -812,7 +737,6 @@ body {
   line-height: 1.5;
 }
 
-/* ปุ่มกดเปลี่ยนสไลด์ ซ้าย-ขวา แบบกระจกโปร่งแสง */
 .slide-nav {
   position: absolute;
   top: 50%;
@@ -832,12 +756,10 @@ body {
   z-index: 10;
   font-size: 12px;
   transition: var(--transition-smooth);
-  opacity: 0; /* ซ่อนไว้ก่อน จะโชว์เมื่อคนเอาเมาส์มา Hover ตัวกล่องเบนโตะ */
+  opacity: 0; 
 }
 
-.bento-slider-card:hover .slide-nav {
-  opacity: 1;
-}
+.bento-slider-card:hover .slide-nav { opacity: 1; }
 
 .slide-nav:hover {
   background: var(--bg-main);
@@ -849,10 +771,6 @@ body {
 .slide-nav.next { right: 16px; }
 
 @media screen and (max-width: 768px) {
-  .bento-slider-card {
-    min-height: 320px;
-  }
-  .slide-nav {
-    opacity: 1; /* บนมือถือให้โชว์ปุ่มถาวรเพราะไม่มีระบบ hover */
-  }
+  .bento-slider-card { min-height: 320px; }
+  .slide-nav { opacity: 1; }
 }
