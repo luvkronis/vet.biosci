@@ -88,40 +88,28 @@ const translations = {
         footValAddress: "ภาควิชากายวิภาคศาสตร์ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย ถนนอังรีดูนังต์ แขวงปทุมวัน เขตปทุมวัน กรุงเทพฯ 10330 ประเทศไทย",
         footLblTel: "โทร:",
         
-        // ข้อมูลของหน้าติดต่อและหน้าปรับปรุงระบบย่อยภาษาไทย
-        contactTitle: "คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย",
-        contactAddress: "ถนนอังรีดูนังต์ แขวงปทุมวัน เขตปทุมวัน กรุงเทพมหานคร 10330",
-        lblUg: "(ศึกษาต่อและปริญญาตรี)",
-        lblGrad: "(บัณฑิตศึกษา)",
-        lblFax: "โทรสาร",
-        noticeMasterTitle: "วิทยาศาสตรมหาบัณฑิต (วท.ม.)",
-        noticeMasterDesc: "หน้านี้กำลังอยู่ในช่วงของการปรับปรุงและจัดเตรียมข้อมูลหลักสูตรปริญญาโท 2 ปี ขออภัยในความไม่สะดวก",
-        noticePhdTitle: "วิทยาศาสตรดุษฎีบัณฑิต (วท.ด.)",
-        noticePhdDesc: "หน้านี้กำลังอยู่ในช่วงของการปรับปรุงและจัดเตรียมข้อมูลหลักสูตรปริญญาเอก 3 หรือ 5 ปี ขออภัยในความไม่สะดวก",
-        noticeNewsTitle: "ข่าวสารและประชาสัมพันธ์",
-        noticeNewsDesc: "หน้านี้กำลังอยู่ในช่วงของการปรับปรุงและจัดเตรียมข้อมูลข่าวสารและกิจกรรมของหลักสูตร ขออภัยในความไม่สะดวก",
-        
+        // ฐานข้อมูลสำหรับสไลด์อ.(เวอร์ชันภาษาไทย)
         facultyBadge: "คณาจารย์ประจำหลักสูตร",
         facultyData: [
-            { name: "รองศาสตราจารย์ สัตวแพทย์หญิง ดร. กรรณาภรณ์ สุริยผล", res: "Dr. rer. nat. (Biology)", img: "assets/images/faculty/prof1.jpg" },
-            { name: "รองศาสตราจารย์ นายสัตวแพทย์ ดร. สฤษฏิ์วิชญ์ ปัญญาบริบาลบ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (วิทยาการสืบพันธุ์สัตว์)", img: "assets/images/faculty/prof2.jpg" },
-            { name: "ผู้ช่วยศาสตราจารย์ สัตวแพทย์หญิง ดร. เบญจพร ลิ้มเจริญ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (พยาธิชีววิทยาทางสัตวแพทย์)", img: "assets/images/faculty/prof3.jpg" },
-            { name: "ศาสตราจารย์ นายสัตวแพทย์ ดร. ไพศาล เทียนไทย", res: "Ph.D (Obstetrics and Gynaecology)", img: "assets/images/faculty/prof4.jpg" },
-            { name: "รองศาสตราจารย์ สัตวแพทย์หญิง ศริยา อัศวกาญจน์", res: "M.Sc (Biochemistry)", img: "assets/images/faculty/prof5.jpg" },
-            { name: "รองศาสตราจารย์ สัตวแพทย์หญิง ดร. ศยามณ ศรีสุวัฒนาสกุล", res: "Ph.D (Anatomy and cell biology)", img: "assets/images/faculty/prof6.jpg" },
-            { name: "รองศาสตราจารย์ สัตวแพทย์หญิง ดร. สฤณี กลันทกานนท์ ทองทรง", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof7.jpg" },
-            { name: "รองศาสตราจารย์ นายสัตวแพทย์ ดร. เจนภพ สว่างเมฆ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof8.jpg" },
-            { name: "รองศาสตราจารย์ นายสัตวแพทย์ ดร. สัมพันธ์ ธรรมเจริญ", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof9.jpg" },
-            { name: "รองศาสตราจารย์ นายสัตวแพทย์ ก้องเกียรติ ศรีสุวัฒนาสกุล", res: "วิทยาศาสตรมหาบัณฑิต (ศัลยศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof10.jpg" },
-            { name: "รองศาสตราจารย์ สัตวแพทย์หญิง ดร. แนน ช้อยสุนิรชร", res: "Ph.D. (Veterinary Medical Science)", img: "assets/images/faculty/prof11.jpg" },
-            { name: "รองศาสตราจารย์ สัตวแพทย์หญิง ดร. ชุติมน ธนบูรณ์นิพัทธ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof12.jpg" },
-            { name: "ผู้ช่วยศาสตราจารย์ นายสัตวแพทย์ ดร. ประพฤติดี ปิยะวิริยะกุล", res: "Ph.D. (Applied Marine Bioscience)", img: "assets/images/faculty/prof13.jpg" },
-            { name: "ผู้ช่วยศาสตราจารย์ นายสัตวแพทย์ ดร. กิตติพงษ์ ทาจําปา", res: "Ph.D. (Physiology & biophysics)", img: "assets/images/faculty/prof14.jpg" },
-            { name: "ผู้ช่วยศาสตราจารย์ สัตวแพทย์หญิง ดร. ศิริรัตน์ รัตนภุชพงศ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof15.jpg" },
-            { name: "อาจารย์ สัตวแพทย์หญิง ดร. เพราพิลาส ภักดีดินแดน", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof16.jpg" },
-            { name: "อาจารย์ สัตวแพทย์หญิง ดร. ศิรินันท์ พิสมัย ทับเที่ยง", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof17.jpg" },
-            { name: "อาจารย์ สัตวแพทย์หญิง ดร. ศิริวรรณ สาครินทร์", res: "วิทยาศาสตรดุษฎีบัณฑิต (อายุรศาสตรสัตวแพทย์)", img: "assets/images/faculty/prof18.jpg" },
-            { name: "อาจารย์ นายสัตวแพทย์ ดร. สพล เสมเสริมบุญ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (สรีรวิทยาการสัตว์)", img: "assets/images/faculty/prof19.jpg" }
+            { name: "รศ.สพ.ญ.ดร. กรรณภรณ์ สุริยผล", res: "Dr. rer. nat. (Biology)", img: "assets/images/faculty/prof1.jpg" },
+            { name: "รศ.นสพ.ดร. สฤษฎิ์วิชญ์ ปัญญาบริบาลบ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (วิทยาการสืบพันธุ์สัตว์)", img: "assets/images/faculty/prof2.jpg" },
+            { name: "ผศ.สพ.ญ.ดร. เบญจพร ลิ้มเจริญ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (พยาธิชีววิทยาทางสัตวแพทย์)", img: "assets/images/faculty/prof3.jpg" },
+            { name: "ศ.นสพ.ดร. ไพศาล เทียนไทย", res: "Ph.D (Obstetrics and Gynaecology)", img: "assets/images/faculty/prof4.jpg" },
+            { name: "รศ.สพ.ญ. ศริยา อัศวกาญจน์", res: "M.Sc (Biochemistry)", img: "assets/images/faculty/prof5.jpg" },
+            { name: "รศ.สพ.ญ.ดร. ศยามณ ศรีสุวัฒนาสกุล", res: "Ph.D (Anatomy and cell biology)", img: "assets/images/faculty/prof6.jpg" },
+            { name: "รศ.สพ.ญ.ดร. สาริณี กลันทานนท์ ทรงทรง", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof7.jpg" },
+            { name: "ศ.นสพ.ดร. เจนภพ สว่างเมฆ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof8.jpg" },
+            { name: "รศ.นสพ.ดร. สัมพันธ์ ธรรมเจริญ", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof9.jpg" },
+            { name: "รศ.นสพ. ก้องเกียรติ ศรีสุวัฒนาสกุล", res: "วิทยาศาสตร์มหาบัณฑิต (ศัลยศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof10.jpg" },
+            { name: "รศ.สพ.ญ.ดร. แนน ช้อยสุนิรชร", res: "Ph.D. (Veterinary Medical Science)", img: "assets/images/faculty/prof11.jpg" },
+            { name: "รศ.สพ.ญ.ดร. ชุติมน ธนบรูณ์นิพัทธ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof12.jpg" },
+            { name: "ผศ.นสพ.ดร. ประพฤติดี ปิยะวิริยะกุล", res: "Ph.D. (Applied Marine Bioscience)", img: "assets/images/faculty/prof13.jpg" },
+            { name: "รศ.นสพ.ดร. กิตติพงษ์ ทาจำปา", res: "Ph.D. (Physiology & biophysics)", img: "assets/images/faculty/prof14.jpg" },
+            { name: "ผศ.สพ.ญ.ดร. ศิริรัตน์ รัตนภุชพงศ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof15.jpg" },
+            { name: "ผศ.สพ.ญ.ดร. เพราพิลาส ภักดีธนแดน", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof16.jpg" },
+            { name: "ผศ.สพ.ญ.ดร. ศิรินันท์ ทับเที่ยง", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof17.jpg" },
+            { name: "ผศ.สพ.ญ.ดร. ศิริวรรณ สาครินทร์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (อายุรศาสตร์สัตวแพทย์)", img: "assets/images/faculty/prof18.jpg" },
+            { name: "ผศ.นสพ.ดร. สพล เสริมเสริมบุญ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (สรีรวิทยาการสัตว์)", img: "assets/images/faculty/prof19.jpg" }
         ]
     },
     en: {
@@ -207,40 +195,28 @@ const translations = {
         footValAddress: "Department of Anatomy, Faculty of Veterinary Science, Chulalongkorn University, Henri-Dunant Rd., Pathumwan, Bangkok 10330, Thailand.",
         footLblTel: "Tel:",
         
-        // ข้อมูลของหน้าติดต่อและหน้าปรับปรุงระบบย่อยภาษาอังกฤษ
-        contactTitle: "Faculty of Veterinary Science, Chulalongkorn University",
-        contactAddress: "Henri-Dunant Rd., Pathumwan, Pathumwan, Bangkok 10330, Thailand",
-        lblUg: "(Admissions & Undergraduate)",
-        lblGrad: "(Graduate Studies)",
-        lblFax: "Fax",
-        noticeMasterTitle: "Master of Science (M.Sc.)",
-        noticeMasterDesc: "This page is currently under construction and preparing information for the 2-year Master's program. We apologize for any inconvenience.",
-        noticePhdTitle: "Doctor of Philosophy (Ph.D.)",
-        noticePhdDesc: "This page is currently under construction and preparing information for the 3 or 5-year Ph.D. program. We apologize for any inconvenience.",
-        noticeNewsTitle: "News and Announcements",
-        noticeNewsDesc: "This page is currently under construction and preparing news and events of the program. We apologize for any inconvenience.",
-        
+        // ฐานข้อมูลสำหรับสไลด์อ.(เวอร์ชันภาษาอังกฤษ)
         facultyBadge: "Faculty Members",
         facultyData: [
-            { name: "Assoc. Prof. Kannaporn Suriyaphol, D.V.M., Dr. rer. nat.", res: "Dr. rer. nat. (Biology)", img: "assets/images/faculty/prof1.jpg" },
+            { name: "Assoc. Prof. Kannaporn Suriyaphol, D.V.M., Ph.D.", res: "Dr. rer. nat. (Biology)", img: "assets/images/faculty/prof1.jpg" },
             { name: "Assoc. Prof. Saritvich Panyaboriban, D.V.M., Ph.D.", res: "Doctor of Philosophy (Animal Theriogenology)", img: "assets/images/faculty/prof2.jpg" },
             { name: "Asst. Prof. Benjapon Limcharoen, D.V.M., Ph.D.", res: "Doctor of Philosophy (Veterinary Pathobiology)", img: "assets/images/faculty/prof3.jpg" },
             { name: "Prof. Paisan Tienthai, D.V.M., Ph.D.", res: "Ph.D. (Obstetrics and Gynaecology)", img: "assets/images/faculty/prof4.jpg" },
             { name: "Assoc. Prof. Sariya Asavakarn, D.V.M., M.Sc.", res: "M.Sc. (Biochemistry)", img: "assets/images/faculty/prof5.jpg" },
             { name: "Assoc. Prof. Sayamon Srisuwatanasagul, D.V.M., Ph.D.", res: "Ph.D. (Anatomy and cell biology)", img: "assets/images/faculty/prof6.jpg" },
             { name: "Assoc. Prof. Sarinee Kalandakanond Thongsong, D.V.M., Ph.D.", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof7.jpg" },
-            { name: "Assoc. Prof. Janpop Sawangmake, D.V.M., Ph.D.", res: "Doctor of Philosophy (Veterinary Biosciences)", img: "assets/images/faculty/prof8.jpg" },
+            { name: "Prof. Janpop Sawangmake, D.V.M., Ph.D.", res: "Doctor of Philosophy (Veterinary Biosciences)", img: "assets/images/faculty/prof8.jpg" },
             { name: "Assoc. Prof. Sumphan Thammacharoen, D.V.M., Ph.D.", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof9.jpg" },
             { name: "Assoc. Prof. Kongkiat Srisuwatanasagul, D.V.M., M.V.Sc.", res: "Master of Veterinary Science (Veterinary Surgery)", img: "assets/images/faculty/prof10.jpg" },
             { name: "Assoc. Prof. Nan Choisunirachon, D.V.M., Ph.D.", res: "Ph.D. (Veterinary Medical Science)", img: "assets/images/faculty/prof11.jpg" },
             { name: "Assoc. Prof. Chutimon Thanaboonnipat, D.V.M., Ph.D.", res: "Doctor of Philosophy (Veterinary Biosciences)", img: "assets/images/faculty/prof12.jpg" },
-            { name: "Asst. Prof. Prapructdee Piyaviriyakul, D.V.M., Ph.D.", res: "Ph.D. (Applied Marine Bioscience)", img: "assets/images/faculty/prof13.jpg" },
-            { name: "Asst. Prof. Kittipong Tachampa, D.V.M., Ph.D.", res: "Ph.D. (Physiology & biophysics)", img: "assets/images/faculty/prof14.jpg" },
+            { name: "Asst. Prof. Praprudtee Piyaviriyakul, D.V.M., Ph.D.", res: "Ph.D. (Applied Marine Bioscience)", img: "assets/images/faculty/prof13.jpg" },
+            { name: "Assoc. Prof. Kittipong Tachampa, D.V.M., Ph.D.", res: "Ph.D. (Physiology & Biophysics)", img: "assets/images/faculty/prof14.jpg" },
             { name: "Asst. Prof. Sirirat Rattanaphuchapong, D.V.M., Ph.D.", res: "Doctor of Philosophy (Veterinary Biosciences)", img: "assets/images/faculty/prof15.jpg" },
-            { name: "Lect. Prapilas Bhakdeetondan, D.V.M., Ph.D.", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof16.jpg" },
-            { name: "Lect. Sirinun Pissamai Tubtiang, D.V.M., Ph.D.", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof17.jpg" },
-            { name: "Lect. Siriwan Sakarin, D.V.M., Ph.D.", res: "Doctor of Philosophy (Veterinary Medicine)", img: "assets/images/faculty/prof18.jpg" },
-            { name: "Lect. Sapol Semisermboon, D.V.M., Ph.D.", res: "Doctor of Philosophy (Animal Physiology)", img: "assets/images/faculty/prof19.jpg" }
+            { name: "Asst. Prof. Prapilas Bhakdeetondan, D.V.M., Ph.D.", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof16.jpg" },
+            { name: "Asst. Prof. Sirinun Tubtiang, D.V.M., Ph.D.", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof17.jpg" },
+            { name: "Asst. Prof. Siriwan Sakarin, D.V.M., Ph.D.", res: "Doctor of Philosophy (Veterinary Medicine)", img: "assets/images/faculty/prof18.jpg" },
+            { name: "Asst. Prof. Sapol Semisermboon, D.V.M., Ph.D.", res: "Doctor of Philosophy (Animal Physiology)", img: "assets/images/faculty/prof19.jpg" }
         ]
     }
 };
@@ -249,12 +225,6 @@ const translations = {
 function changeLang(lang) {
     const data = translations[lang];
     if (!data) return;
-
-    // ตรวจสอบระดับโฟลเดอร์ปัจจุบัน เพื่อให้เรียกรูปภาพประจำตัวอาจารย์ได้ถูกต้องไม่ว่าเปิดจากหน้าไหน
-    let imgPrefix = "";
-    if (window.location.pathname.includes("/programs/")) {
-        imgPrefix = "../"; 
-    }
 
     // เปลี่ยนคำที่แถบเนวิเกชันบาร์ส่วนบน (Navbar)
     const navItems = document.querySelectorAll('.nav-links .nav-item');
@@ -279,8 +249,8 @@ function changeLang(lang) {
         if (pDesc) pDesc.innerText = lang === 'th' ? "สาขาวิชาชีวศาสตร์ทางสัตวแพทย์ (หลักสูตร 3 หรือ 5 ปี)" : "Program in Veterinary Biosciences (3 or 5 Years)";
     }
 
-    // เรียกใช้งานระบบวาดคณาจารย์ทั้ง 19 ท่านแบบ Dynamic
-    initFacultySlider(lang, imgPrefix);
+    // เรียกวาดสไลด์แสดงผลชื่ออาจารย์ชุดภาษาที่เลือกใหม่
+    initFacultySlider(lang);
 
     // สลับคำแปลของเนวิเกเตอร์โหมดมือถือแบบปลอดภัยสูงด้วยการเช็กสถานะ IF
     const mobileNavHome = document.querySelector('.mobile-nav-links li:nth-child(1) a');
@@ -291,7 +261,7 @@ function changeLang(lang) {
     if (mobileNavNews) mobileNavNews.innerText = data.navNews;
     if (mobileNavContact) mobileNavContact.innerText = data.navContact;
 
-    // เปลี่ยนคำในส่วนโครงสร้างเนื้อหาหลัก (Main Content) หน้าแรก
+    // เปลี่ยนคำในส่วนโครงสร้างเนื้อหาหลัก (Main Content)
     const topBrand = document.getElementById('text-top-brand');
     const mainTitle = document.getElementById('text-main-title');
     const subTitle = document.getElementById('text-sub-title');
@@ -371,35 +341,6 @@ function changeLang(lang) {
     renderListArray('list-eligibility', data.eligibilityList);
     renderListArray('list-documents', data.documentsList);
 
-    // 🌟 ระบบสลับแปลภาษาของหน้าติดต่อสอบถาม (Contact)
-    const cTitle = document.getElementById('c-title');
-    const cAddress = document.getElementById('c-address');
-    const cLblUg = document.getElementById('c-lbl-ug');
-    const cLblGrad = document.getElementById('c-lbl-grad');
-    const cLblFax = document.getElementById('c-lbl-fax');
-
-    if (cTitle) cTitle.innerText = data.contactTitle;
-    if (cAddress) cAddress.innerText = data.contactAddress;
-    if (cLblUg) cLblUg.innerText = data.lblUg;
-    if (cLblGrad) cLblGrad.innerText = data.lblGrad;
-    if (cLblFax) cLblFax.innerText = data.lblFax;
-
-    // 🌟 ระบบสลับแปลภาษาสำหรับแผงแจ้งเตือนหน้าปรับปรุงระบบย่อย (Master, PhD, News)
-    const mNoticeTitle = document.getElementById('m-notice-title');
-    const mNoticeDesc = document.getElementById('m-notice-desc');
-    const pNoticeTitle = document.getElementById('p-notice-title');
-    const pNoticeDesc = document.getElementById('p-notice-desc');
-    const nNoticeTitle = document.getElementById('n-notice-title');
-    const nNoticeDesc = document.getElementById('n-notice-desc');
-
-    if (mNoticeTitle) mNoticeTitle.innerText = data.noticeMasterTitle;
-    if (mNoticeDesc) mNoticeDesc.innerText = data.noticeMasterDesc;
-    if (pNoticeTitle) pNoticeTitle.innerText = data.noticePhdTitle;
-    if (pNoticeDesc) pNoticeDesc.innerText = data.noticePhdDesc;
-    if (nNoticeTitle) nNoticeTitle.innerText = data.noticeNewsTitle;
-    if (nNoticeDesc) nNoticeDesc.innerText = data.noticeNewsDesc;
-
-    // ส่วนท้ายเว็บไซต์ (Footer ส่วนกลาง)
     const footHeadContact = document.getElementById('foot-head-contact');
     const footValContactName = document.getElementById('foot-val-contact-name');
     const footLblEmail = document.getElementById('foot-lbl-email');
@@ -414,7 +355,6 @@ function changeLang(lang) {
     if(footValAddress) footValAddress.innerHTML = data.footValAddress;
     if(footLblTel) footLblTel.innerText = data.footLblTel;
 
-    // สลับคลาสการเปิดไฮไลต์ที่ปุ่มควบคุมสลับภาษา
     const btnTh = document.getElementById('btn-th');
     const btnEn = document.getElementById('btn-en');
     if(btnTh && btnEn) {
@@ -459,7 +399,7 @@ document.addEventListener("DOMContentLoaded", () => {
 let currentSlideIndex = 0;
 let slideTimer = null;
 
-function initFacultySlider(lang, prefix = "") {
+function initFacultySlider(lang) {
     const sliderWrapper = document.getElementById('faculty-slider');
     if (!sliderWrapper) return;
     
@@ -470,8 +410,9 @@ function initFacultySlider(lang, prefix = "") {
         const slideDiv = document.createElement('div');
         slideDiv.className = `slide ${idx === currentSlideIndex ? 'active' : ''}`;
         
+        // ล็อกภาพประจำบุคคลให้ตรงกับความจริง 100% พร้อมฟังก์ชันเผื่อภาพหลุดชั่วคราว
         slideDiv.innerHTML = `
-            <img src="${prefix}${prof.img}" alt="${prof.name}" class="slider-img" onerror="this.src='https://placehold.co/400x500/f4f6f9/475569?text=Faculty+Image'">
+            <img src="${prof.img}" alt="${prof.name}" class="slider-img" onerror="this.src='https://placehold.co/400x500/f4f6f9/475569?text=Faculty+Image'">
             <div class="slider-overlay">
                 <span class="slider-badge">${data.facultyBadge}</span>
                 <h3 class="prof-name">${prof.name}</h3>
@@ -504,10 +445,9 @@ function moveSlide(step) {
 }
 
 function startSlideAutoPlay() {
-    if (slideTimer) clearInterval(slideTimer);
     slideTimer = setInterval(() => {
         showSlide(currentSlideIndex + 1);
-    }, 5000); 
+    }, 5000); // ⏱️ ทุกๆ 5 วินาทีภาพจะสไลด์เปลี่ยนอัตโนมัติ
 }
 
 function resetSlideAutoPlay() {
@@ -533,7 +473,7 @@ function resetProgressBarAnimate() {
     progressBar.style.backgroundColor = 'var(--primary-pink)';
     progressBar.style.width = '0%';
     progressBar.style.zIndex = '5';
-    progressBar.style.transition = 'width 5s linear'; 
+    progressBar.style.transition = 'width 5s linear'; // เอฟเฟกต์เส้นวิ่งคงที่ราบรื่น 5 วินาที
 
     sliderCard.appendChild(progressBar);
 
