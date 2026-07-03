@@ -8,7 +8,7 @@ const translations = {
     th: {
         navHome: "หน้าแรก",
         navPrograms: "หลักสูตร",
-        navNews: "ข่าวสาร",
+        navFaculty: "คณาจารย์",
         navContact: "ติดต่อสอบถาม",
         
         // แบนเนอร์หลัก
@@ -39,66 +39,27 @@ const translations = {
         tblPTime: "3 หรือ 5 ปี",
         tableNote: "* ทั้งสองหลักสูตรมี 2 แผนการศึกษาให้เลือก: ทำวิทยานิพนธ์เพียงอย่างเดียว หรือ ทำวิทยานิพนธ์ร่วมกับการศึกษารายวิชา",
         headCareer: "สายอาชีพหลังสำเร็จการศึกษา",
-        careerList: [
-            "อาจารย์มหาวิทยาลัย",
-            "นักวิจัยด้านสัตวแพทย์และวิทยาศาสตร์สิ่งมีชีวิต",
-            "นักวิทยาศาสตร์",
-            "สัตวแพทย์"
-        ],
+        careerList: ["อาจารย์มหาวิทยาลัย", "นักวิจัยด้านสัตวแพทย์และวิทยาศาสตร์สิ่งมีชีวิต", "นักวิทยาศาสตร์", "สัตวแพทย์"],
         headKeyRes: "หัวข้อวิจัยหลัก",
-        keyResList: [
-            "กายวิภาคศาสตร์มหพยาธิวิทยา, จุลทรรศน์ และโครงสร้างระดับรังสี",
-            "กายวิภาคศาสตร์การพัฒนาการ",
-            "กายวิภาคศาสตร์สัตวแพทย์ประยุกต์",
-            "ชีวเคมี",
-            "ชีววิทยาของเซลล์และพันธุศาสตร์โมเลกุล",
-            "การวินิจฉัยระดับโมเลกุล",
-            "วิศวกรรมชีวภาพ",
-            "จีโนมิกส์และโปรตีโอมิกส์",
-            "การสร้างภาพระดับเซลล์และภาพทางคลินิก",
-            "การวิจัยเซลล์ต้นกำเนิด (สเต็มเซลล์)",
-            "โรคมะเร็ง"
-        ],
+        keyResList: ["กายวิภาคศาสตร์มหพยาธิวิทยา, จุลทรรศน์ และโครงสร้างระดับรังสี", "กายวิภาคศาสตร์การพัฒนาการ", "กายวิภาคศาสตร์สัตวแพทย์ประยุกต์", "ชีวเคมี", "ชีววิทยาของเซลล์และพันธุศาสตร์โมเลกุล", "การวินิจฉัยระดับโมเลกุล", "วิศวกรรมชีวภาพ", "จีโนมิกส์และโปรตีโอมิกส์", "การสร้างภาพระดับเซลล์และภาพทางคลินิก", "การวิจัยเซลล์ต้นกำเนิด (สเต็มเซลล์)", "โรคมะเร็ง"],
         headCurrRes: "ไฮไลท์งานวิจัยในปัจจุบัน",
-        currResList: [
-            "การหาลำดับจีโนมอ้างอิงและความผันแปรทางพันธุกรรมของละมั่ง",
-            "การแช่แข็งเนื้อเยื่อรังไข่และการเพาะเลี้ยงเซลล์รังไข่ขั้นปฐมภูมิในแมว",
-            "การแสดงออกของยีนและโปรตีโอมิกส์ของสารสกัดจากน้ำคร่ำสุนัข",
-            "เซลล์ต้นกำเนิดจากฟันและการสร้างกระดูก",
-            "การแสดงออกของโปรตีนตัวรับในระบบสืบพันธุ์เพศเมียของแพะ",
-            "แนวทางจีโนมิกส์เพื่อการอนุรักษ์พญาแร้งและนกอินทรีทุ่งหญ้าสเตปป์",
-            "เซลล์ต้นกำเนิดกับการเสื่อมของกระจกตาในสุนัข",
-            "โปรตีโอมิกส์ของลำไส้ใหญ่ส่วนต้นในสุกร"
-        ],
+        currResList: ["การหาลำดับจีโนมอ้างอิงและความผันแปรทางพันธุกรรมของละมั่ง", "การแช่แข็งเนื้อเยื่อรังไข่และการเพาะเลี้ยงเซลล์รังไข่ขั้นปฐมภูมิในแมว", "การแสดงออกของยีนและโปรตีโอมิกส์ของสารสกัดจากน้ำคร่ำสุนัข", "เซลล์ต้นกำเนิดจากฟันและการสร้างกระดูก", "การแสดงออกของโปรตีนตัวรับในระบบสืบพันธุ์เพศเมียของแพะ", "แนวทางจีโนมิกส์เพื่อการอนุรักษ์พญาแร้งและนกอินทรีทุ่งหญ้าสเตปป์", "เซลล์ต้นกำเนิดกับการเสื่อมของกระจกตาในสุนัข", "โปรตีโอมิกส์ของลำไส้ใหญ่ส่วนต้นในสุกร"],
         headAdminInfo: "ข้อมูลการรับสมัคร",
         subEligibility: "คุณสมบัติของผู้สมัคร",
-        eligibilityList: [
-            "สำเร็จการศึกษาระดับปริญญาตรีในสาขาสัตวแพทยศาสตร์, วิทยาศาสตร์ชีวภาพ หรือสาขาวิชาที่เกี่ยวข้อง",
-            "มีคะแนนความรู้ความสามารถภาษาอังกฤษขั้นต่ำตามเกณฑ์กำหนดของจุฬาลงกรณ์มหาวิทยาลัย",
-            "ผ่านการพิจารณาจากคณะกรรมการบริหารหลักสูตรว่ามีคุณสมบัติเหมาะสมในการเข้าศึกษา",
-            "คุณสมบัติอื่นๆ เป็นไปตามที่จุฬาลงกรณ์มหาวิทยาลัยกำหนด"
-        ],
+        eligibilityList: ["สำเร็จการศึกษาระดับปริญญาตรีในสาขาสัตวแพทยศาสตร์, วิทยาศาสตร์ชีวภาพ หรือสาขาวิชาที่เกี่ยวข้อง", "มีคะแนนความรู้ความสามารถภาษาอังกฤษขั้นต่ำตามเกณฑ์กำหนดของจุฬาลงกรณ์มหาวิทยาลัย", "ผ่านการพิจารณาจากคณะกรรมการบริหารหลักสูตรว่ามีคุณสมบัติเหมาะสมในการเข้าศึกษา", "คุณสมบัติอื่นๆ เป็นไปตามที่จุฬาลงกรณ์มหาวิทยาลัยกำหนด"],
         subDocuments: "เอกสารที่ต้องใช้ในการสมัคร",
         adminNote: "* กรอกแบบฟอร์มใบสมัครออนไลน์ได้ที่เว็บไซต์บัณฑิตวิทยาลัย จุฬาลงกรณ์มหาวิทยาลัย (Graduate Admission)",
-        documentsList: [
-            "ใบสมัครที่กรอกข้อมูลครบถ้วนสมบูรณ์พร้อมติดรูปถ่ายขนาด 1 นิ้ว",
-            "ใบแสดงผลการศึกษาอย่างเป็นทางการ (Transcript)",
-            "สำเนาบัตรประจำตัวประชาชน หรือสำเนาหนังสือเดินทาง (Passport)",
-            "ผลคะแนนทดสอบความสามารถภาษาอังกฤษ: CU-TEP, TOEFL หรือ IELTS",
-            "หนังสือแนะนำ (Letters of Recommendation) จำนวน 2 ฉบับ จากอาจารย์ผู้สอนหรือผู้บังคับบัญชา"
-        ],
+        documentsList: ["ใบสมัครที่กรอกข้อมูลครบถ้วนสมบูรณ์พร้อมติดรูปถ่ายขนาด 1 นิ้ว", "ใบแสดงผลการศึกษาอย่างเป็นทางการ (Transcript)", "สำเนาบัตรประจำตัวประชาชน หรือสำเนาหนังสือเดินทาง (Passport)", "ผลคะแนนทดสอบความสามารถภาษาอังกฤษ: CU-TEP, TOEFL หรือ IELTS", "หนังสือแนะนำ (Letters of Recommendation) จำนวน 2 ฉบับ จากอาจารย์ผู้สอนหรือผู้บังคับบัญชา"],
         footHeadContact: "ติดต่อสอบถามข้อมูลเพิ่มเติม",
         footValContactName: "รศ.น.สพ. ก้องเกียรติ ศรีสุวัฒนาสกุล",
         footLblEmail: "อีเมล:",
         footHeadAddress: "ที่อยู่",
         footValAddress: "ภาควิชากายวิภาคศาสตร์ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย ถนนอังรีดูนังต์ แขวงปทุมวัน เขตปทุมวัน กรุงเทพฯ 10330 ประเทศไทย",
         footLblTel: "โทร:",
-        
-        // ข้อมูลของหน้าติดต่อและหน้าปรับปรุงระบบ
         contactTitle: "คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย",
         contactAddress: "ถนนอังรีดูนังต์ แขวงปทุมวัน เขตปทุมวัน กรุงเทพมหานคร 10330",
         lblUg: "(ศึกษาต่อและปริญญาตรี)",
-        lblGrad: "(บัณฑิตศึกษา)",
+        lblGrad: "(บัทธิปศึกษา)",
         lblFax: "โทรสาร",
         noticeMasterTitle: "วิทยาศาสตรมหาบัณฑิต (วท.ม.)",
         noticeMasterDesc: "หน้านี้กำลังอยู่ในช่วงของการปรับปรุงและจัดเตรียมข้อมูลหลักสูตรปริญญาโท 2 ปี ขออภัยในความไม่สะดวก",
@@ -106,8 +67,6 @@ const translations = {
         noticePhdDesc: "หน้านี้กำลังอยู่ในช่วงของการปรับปรุงและจัดเตรียมข้อมูลหลักสูตรปริญญาเอก 3 หรือ 5 ปี ขออภัยในความไม่สะดวก",
         noticeNewsTitle: "ข่าวสารและประชาสัมพันธ์",
         noticeNewsDesc: "หน้านี้กำลังอยู่ในช่วงของการปรับปรุงและจัดเตรียมข้อมูลข่าวสารและกิจกรรมของหลักสูตร ขออภัยในความไม่สะดวก",
-        
-        // ข้อมูลส่วนสไลด์คณาจารย์ประจำหลักสูตร (TH)
         facultyBadge: "คณาจารย์ประจำหลักสูตร",
         facultyData: [
             { name: "รศ.สพ.ญ.ดร. กรรณาภรณ์ สุริยผล", res: "Dr. rer. nat. (Biology)", img: "assets/images/faculty/prof1.jpg" },
@@ -134,14 +93,12 @@ const translations = {
     en: {
         navHome: "Home",
         navPrograms: "Programs",
-        navNews: "News",
+        navFaculty: "Faculty",
         navContact: "Contact",
-
-        // แบนเนอร์หลัก (EN)
+        
         bannerSub: "Graduate Program",
         bannerMain: "Veterinary Biosciences",
         bannerDesc: "Guideline for Prospective M.Sc. and Ph.D. Students",
-
         topBrand: "Graduate Program, Faculty of Veterinary Science, Chulalongkorn University",
         mainTitle: "VETERINARY BIOSCIENCES (2022)",
         subTitle: "Graduate Program in Veterinary Biosciences",
@@ -165,62 +122,23 @@ const translations = {
         tblPTime: "3 or 5 Years",
         tableNote: "* Both programs offer 2 options: Thesis only OR Thesis and course work.",
         headCareer: "CAREER AFTER GRADUATION",
-        careerList: [
-            "Professor",
-            "Researcher in Veterinary & Life Sciences",
-            "Scientist",
-            "Veterinarian"
-        ],
+        careerList: ["Professor", "Researcher in Veterinary & Life Sciences", "Scientist", "Veterinarian"],
         headKeyRes: "KEY RESEARCH AREAS",
-        keyResList: [
-            "Gross, microscopic and ultrastructural anatomy",
-            "Developmental Anatomy",
-            "Applied Veterinary Anatomy",
-            "Biochemistry",
-            "Cell Biology and Molecular genetics",
-            "Molecular diagnosis",
-            "Bio-Engineering",
-            "Genomics and Proteomics",
-            "Cellular and Clinical Imaging",
-            "Stem cell research",
-            "Cancers"
-        ],
+        keyResList: ["Gross, microscopic and ultrastructural anatomy", "Developmental Anatomy", "Applied Veterinary Anatomy", "Biochemistry", "Cell Biology and Molecular genetics", "Molecular diagnosis", "Bio-Engineering", "Genomics and Proteomics", "Cellular and Clinical Imaging", "Stem cell research", "Cancers"],
         headCurrRes: "THE CURRENT RESEARCH HIGHLIGHTS",
-        currResList: [
-            "Reference genome and genetic variations of Eld's deer",
-            "Feline ovarian tissue cryopreservation and primary culture of feline ovarian cells",
-            "Gene expression and proteomics of canine amniotic extracts",
-            "Dental and osteogenic stem cells",
-            "Expression of protein receptors in goat female reproductive tract",
-            "Genomics Approach for conservation of Asian king vulture and steppe eagle",
-            "Stem cells and canine corneal degeneration",
-            "Cecal Proteomics in pigs"
-        ],
+        currResList: ["Reference genome and genetic variations of Eld's deer", "Feline ovarian tissue cryopreservation and primary culture of feline ovarian cells", "Gene expression and proteomics of canine amniotic extracts", "Dental and osteogenic stem cells", "Expression of protein receptors in goat female reproductive tract", "Genomics Approach for conservation of Asian king vulture and steppe eagle", "Stem cells and canine corneal degeneration", "Cecal Proteomics in pigs"],
         headAdminInfo: "ADMISSION INFO",
         subEligibility: "Eligibility of Applicants",
-        eligibilityList: [
-            "Completed Bachelor's Degrees in Veterinary, Biological Science or related discipline.",
-            "Minimum English proficiency score according to Chulalongkorn University's requirement.",
-            "Consideration of the Program Committee as eligible for admission.",
-            "Others as required from Chulalongkorn University."
-        ],
+        eligibilityList: ["Completed Bachelor's Degrees in Veterinary, Biological Science or related discipline.", "Minimum English proficiency score according to Chulalongkorn University's requirement.", "Consideration of the Program Committee as eligible for admission.", "Others as required from Chulalongkorn University."],
         subDocuments: "Required Documents",
         adminNote: "* Fill in the online application form at Chulalongkorn's Graduate Admission website",
-        documentsList: [
-            "A printed copy of the completed application form with a 1-inch photograph attached",
-            "An official transcript of academic records",
-            "A photocopy of identification card/passport",
-            "English proficiency test score: CU-TEP, TOEFL, or IELTS",
-            "Two letters of recommendation from instructors and supervisors"
-        ],
+        documentsList: ["A printed copy of the completed application form with a 1-inch photograph attached", "An official transcript of academic records", "A photocopy of identification card/passport", "English proficiency test score: CU-TEP, TOEFL, or IELTS", "Two letters of recommendation from instructors and supervisors"],
         footHeadContact: "Contact Person for Enquiries",
         footValContactName: "Assoc. Prof. Kongkiat Srisuwatanasagul",
         footLblEmail: "E-mail:",
         footHeadAddress: "Address",
         footValAddress: "Department of Anatomy, Faculty of Veterinary Science, Chulalongkorn University, Henri-Dunant Rd., Pathumwan, Bangkok 10330, Thailand.",
         footLblTel: "Tel:",
-        
-        // ข้อมูลของหน้าติดต่อและหน้าปรับปรุงระบบ (EN)
         contactTitle: "Faculty of Veterinary Science, Chulalongkorn University",
         contactAddress: "Henri-Dunant Rd., Pathumwan, Pathumwan, Bangkok 10330",
         lblUg: "(Admissions & Undergraduate)",
@@ -232,8 +150,6 @@ const translations = {
         noticePhdDesc: "This page is currently under construction and preparing information for the 3 or 5-year Ph.D. program. We apologize for any inconvenience.",
         noticeNewsTitle: "News and Announcements",
         noticeNewsDesc: "This page is currently under construction and preparing news and events of the program. We apologize for any inconvenience.",
-        
-        // ข้อมูลส่วนสไลด์คณาจารย์ประจำหลักสูตร (EN)
         facultyBadge: "Faculty Members",
         facultyData: [
             { name: "Assoc. Prof. Gunnaporn Suriyaphon, D.V.M., Dr. rer. nat.", res: "Dr. rer. nat. (Biology)", img: "assets/images/faculty/prof1.jpg" },
@@ -264,19 +180,12 @@ function changeLang(lang) {
     const data = translations[lang];
     if (!data) return;
 
-    // =======================================================
-    // 🌟 ระบบสลับภาษาแบบใช้ Class ควบคุม HTML (สำหรับหน้าข่าว)
-    // =======================================================
+    // ระบบสลับภาษาแบบใช้ Class ควบคุม HTML (สำหรับหน้า Faculty)
     document.body.classList.remove('lang-th', 'lang-en');
     document.body.classList.add('lang-' + lang);
 
-    // =======================================================
-    // ระบบสลับภาษาเดิม (สำหรับหน้า Index, Master, PhD, Contact)
-    // =======================================================
     let imgPrefix = "";
-    if (window.location.pathname.includes("/programs/")) {
-        imgPrefix = "../"; 
-    }
+    if (window.location.pathname.includes("/programs/")) { imgPrefix = "../"; }
 
     const bannerSubText = document.getElementById('banner-sub-text');
     const bannerMainText = document.getElementById('banner-main-text');
@@ -290,7 +199,7 @@ function changeLang(lang) {
     if (navItems.length >= 4) {
         navItems[0].innerText = data.navHome;
         navItems[1].innerHTML = `${data.navPrograms} <span class="arrow-icon">▾</span>`;
-        navItems[2].innerText = data.navNews;
+        navItems[2].innerText = data.navFaculty;
         navItems[3].innerText = data.navContact;
     }
 
@@ -310,17 +219,16 @@ function changeLang(lang) {
     initFacultySlider(lang, imgPrefix);
 
     const mobileNavHome = document.querySelector('.mobile-nav-links li:nth-child(1) a');
-    const mobileNavNews = document.querySelector('.mobile-nav-links li:nth-child(6) a');
+    const mobileNavFaculty = document.querySelector('.mobile-nav-links li:nth-child(6) a');
     const mobileNavContact = document.querySelector('.mobile-nav-links li:nth-child(7) a');
 
     if (mobileNavHome) mobileNavHome.innerText = data.navHome;
-    if (mobileNavNews) mobileNavNews.innerText = data.navNews;
+    if (mobileNavFaculty) mobileNavFaculty.innerText = data.navFaculty;
     if (mobileNavContact) mobileNavContact.innerText = data.navContact;
 
     const topBrand = document.getElementById('text-top-brand');
     const mainTitle = document.getElementById('text-main-title');
     const subTitle = document.getElementById('text-sub-title');
-    
     if(topBrand) topBrand.innerText = data.topBrand;
     if(mainTitle) mainTitle.innerText = data.mainTitle;
     if(subTitle) subTitle.innerText = data.subTitle;
@@ -329,7 +237,6 @@ function changeLang(lang) {
     const valDegOffered = document.getElementById('val-deg-offered');
     const lblResponsible = document.getElementById('lbl-responsible');
     const valResponsible = document.getElementById('val-responsible');
-    
     if(lblDegOffered) lblDegOffered.innerText = data.lblDegOffered;
     if(valDegOffered) valDegOffered.innerText = data.valDegOffered;
     if(lblResponsible) lblResponsible.innerText = data.lblResponsible;
@@ -341,7 +248,6 @@ function changeLang(lang) {
     const descWhy1 = document.getElementById('desc-why-1');
     const descWhy2 = document.getElementById('desc-why-2');
     const descWhy3 = document.getElementById('desc-why-3');
-    
     if(headWhatis) headWhatis.innerText = data.headWhatis;
     if(descWhatis) descWhatis.innerText = data.descWhatis;
     if(headWhy) headWhy.innerText = data.headWhy;
@@ -357,7 +263,6 @@ function changeLang(lang) {
     const tblPTime = document.getElementById('tbl-p-time');
     const textTableNote = document.getElementById('text-table-note');
     const headCareer = document.getElementById('head-career');
-    
     if(headStruct) headStruct.innerText = data.headStruct;
     if(tblMName) tblMName.innerText = data.tblMName;
     if(tblMTime) tblMTime.innerText = data.tblMTime;
@@ -374,20 +279,18 @@ function changeLang(lang) {
     }
 
     renderListArray('list-career', data.careerList);
-    
+    renderListArray('list-key-res', data.keyResList);
+    renderListArray('list-curr-res', data.currResList);
+
     const headKeyRes = document.getElementById('head-key-res');
     if(headKeyRes) headKeyRes.innerText = data.headKeyRes;
-    renderListArray('list-key-res', data.keyResList);
-    
     const headCurrRes = document.getElementById('head-curr-res');
     if(headCurrRes) headCurrRes.innerText = data.headCurrRes;
-    renderListArray('list-curr-res', data.currResList);
 
     const headAdminInfo = document.getElementById('head-admin-info');
     const subEligibility = document.getElementById('sub-eligibility');
     const subDocuments = document.getElementById('sub-documents');
     const textAdminNote = document.getElementById('text-admin-note');
-    
     if(headAdminInfo) headAdminInfo.innerText = data.headAdminInfo;
     if(subEligibility) subEligibility.innerText = data.subEligibility;
     if(subDocuments) subDocuments.innerText = data.subDocuments;
@@ -401,26 +304,11 @@ function changeLang(lang) {
     const cLblUg = document.getElementById('c-lbl-ug');
     const cLblGrad = document.getElementById('c-lbl-grad');
     const cLblFax = document.getElementById('c-lbl-fax');
-
     if (cTitle) cTitle.innerText = data.contactTitle;
     if (cAddress) cAddress.innerText = data.contactAddress;
     if (cLblUg) cLblUg.innerText = data.lblUg;
     if (cLblGrad) cLblGrad.innerText = data.lblGrad;
     if (cLblFax) cLblFax.innerText = data.lblFax;
-
-    const mNoticeTitle = document.getElementById('m-notice-title');
-    const mNoticeDesc = document.getElementById('m-notice-desc');
-    const pNoticeTitle = document.getElementById('p-notice-title');
-    const pNoticeDesc = document.getElementById('p-notice-desc');
-    const nNoticeTitle = document.getElementById('n-notice-title');
-    const nNoticeDesc = document.getElementById('n-notice-desc');
-
-    if (mNoticeTitle) mNoticeTitle.innerText = data.noticeMasterTitle;
-    if (mNoticeDesc) mNoticeDesc.innerText = data.noticeMasterDesc;
-    if (pNoticeTitle) pNoticeTitle.innerText = data.noticePhdTitle;
-    if (pNoticeDesc) pNoticeDesc.innerText = data.noticePhdDesc;
-    if (nNoticeTitle) nNoticeTitle.innerText = data.noticeNewsTitle;
-    if (nNoticeDesc) nNoticeDesc.innerText = data.noticeNewsDesc;
 
     const footHeadContact = document.getElementById('foot-head-contact');
     const footValContactName = document.getElementById('foot-val-contact-name');
@@ -428,7 +316,6 @@ function changeLang(lang) {
     const footHeadAddress = document.getElementById('foot-head-address');
     const footValAddress = document.getElementById('foot-val-address');
     const footLblTel = document.getElementById('foot-lbl-tel');
-    
     if(footHeadContact) footHeadContact.innerText = data.footHeadContact;
     if(footValContactName) footValContactName.innerHTML = `<strong>${data.footValContactName}</strong>`;
     if(footLblEmail) footLblEmail.innerText = data.footLblEmail;
@@ -436,7 +323,6 @@ function changeLang(lang) {
     if(footValAddress) footValAddress.innerHTML = data.footValAddress;
     if(footLblTel) footLblTel.innerText = data.footLblTel;
 
-    // การอัปเดตสีปุ่ม Navbar อัตโนมัติ
     const btnTh = document.getElementById('btn-th');
     const btnEn = document.getElementById('btn-en');
     if(btnTh && btnEn) {
@@ -448,8 +334,6 @@ function changeLang(lang) {
             btnTh.classList.remove('active');
         }
     }
-    
-    // บันทึกการตั้งค่าภาษาลงระบบ
     localStorage.setItem('preferredBentoLang', lang);
 }
 
@@ -464,11 +348,9 @@ function renderListArray(elementId, itemsArray) {
     });
 }
 
-// กลไกควบคุมการกดเปิด-ปิดเมนูในโหมดมือถือ (Toggle Mobile Menu)
 document.addEventListener("DOMContentLoaded", () => {
     const mobileToggle = document.getElementById("mobile-toggle");
     const mobileMenu = document.getElementById("mobile-menu");
-
     if (mobileToggle && mobileMenu) {
         mobileToggle.addEventListener("click", () => {
             mobileToggle.classList.toggle("open");

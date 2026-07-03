@@ -1,0 +1,2107 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คณาจารย์ | Faculty - Veterinary Biosciences</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <style>
+        .faculty-name-sub {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        .faculty-role {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 4px;
+        }
+        .faculty-role-sub {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+
+<body class="lang-th">
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand-group">
+                <img src="assets/images/logos/cuvet.jpg" alt="Logo" class="nav-main-logo" onerror="this.src='https://placehold.co/100x40/f4f6f9/475569?text=LOGO'">
+                <div id="text-top-brand" class="nav-logo-text">หลักสูตรบัณฑิตศึกษา คณะสัตวแพทยศาสตร์</div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-item">หน้าแรก</a></li>
+                <li class="has-bento-dropdown">
+                    <a href="#" class="nav-item">หลักสูตร <span class="arrow-icon">▾</span></a>
+                    <div class="bento-dropdown-matrix">
+                        <div class="bento-drop-grid">
+                            <a href="programs/master.html" class="drop-sub-card">
+                                <span class="drop-badge">M.Sc.</span>
+                                <h4>วิทยาศาสตรมหาบัณฑิต</h4>
+                                <p>สาขาวิชาชีวศาสตร์ทางสัตวแพทย์ (หลักสูตร 2 ปี)</p>
+                            </a>
+                            <a href="programs/phd.html" class="drop-sub-card phd-theme">
+                                <span class="drop-badge">Ph.D.</span>
+                                <h4>วิทยาศาสตรดุษฎีบัณฑิต</h4>
+                                <p>สาขาวิชาชีวศาสตร์ทางสัตวแพทย์ (หลักสูตร 3 หรือ 5 ปี)</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#" class="nav-item active">คณาจารย์</a></li>
+                <li><a href="contact.html" class="nav-item">ติดต่อสอบถาม</a></li>
+            </ul>
+
+            <div class="lang-switcher">
+                <button id="btn-th" onclick="changeLang('th')" class="active">TH</button>
+                <span>|</span>
+                <button id="btn-en" onclick="changeLang('en')">EN</button>
+            </div>
+
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </div>
+
+        <div class="mobile-menu-container" id="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html" class="mobile-nav-item">หน้าแรก</a></li>
+                <li class="mobile-divider">หลักสูตรที่เปิดสอน</li>
+                <li><a href="programs/master.html" class="mobile-drop-card"><span class="m-badge">M.Sc.</span> วิทยาศาสตรมหาบัณฑิต</a></li>
+                <li><a href="programs/phd.html" class="mobile-drop-card m-phd-theme"><span class="m-badge">Ph.D.</span> วิทยาศาสตรดุษฎีบัณฑิต</a></li>
+                <li class="mobile-divider">เมนูอื่น ๆ</li>
+                <li><a href="#" class="mobile-nav-item">คณาจารย์</a></li>
+                <li><a href="contact.html" class="mobile-nav-item">ติดต่อสอบถาม</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="main-container">
+            <div class="banner-wrapper premium-gradient-banner">
+                <div class="banner-content">
+                    <span class="banner-sub">FACULTY MEMBERS</span>
+                    <h2 class="banner-main lang-th">คณาจารย์ประจำหลักสูตร</h2>
+                    <h2 class="banner-main lang-en">Faculty Members</h2>
+                    <p class="banner-text-desc lang-th">รายนามคณาจารย์ผู้เชี่ยวชาญ หลักสูตรชีวศาสตร์ทางสัตวแพทย์</p>
+                    <p class="banner-text-desc lang-en">List of specialized faculty members in the Veterinary Biosciences program.</p>
+                </div>
+            </div>
+
+            <div class="faculty-list-container">
+
+                <!-- อาจารย์ท่านที่ 1 -->
+                <div class="bento-card">
+                    <div class="faculty-profile-grid">
+                        <div class="faculty-left">
+                            <div class="lang-th">
+                                <h2 class="faculty-name-th">รศ.สพ.ญ.ดร. กรรณาภรณ์ สุริยผล</h2>
+                                <p class="faculty-name-sub">Assoc. Prof. Gunnaporn Suriyaphon, D.V.M., Dr. rer. nat.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h2 class="faculty-name-en">Assoc. Prof. Gunnaporn Suriyaphon, D.V.M., Dr. rer. nat.</h2>
+                                <p class="faculty-name-sub">รศ.สพ.ญ.ดร. กรรณาภรณ์ สุริยผล</p>
+                            </div>
+                            <img src="assets/images/faculty/prof1.jpg" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                        </div>
+                        <div class="faculty-right">
+                            <div class="lang-th">
+                                <div class="faculty-role">อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์</div>
+                                <div class="faculty-role-sub">ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+                            </div>
+                            <div class="lang-en">
+                                <div class="faculty-role">Faculty Member, Veterinary Biosciences</div>
+                                <div class="faculty-role-sub">Expert, Faculty of Veterinary Science, Chulalongkorn University</div>
+                            </div>
+                            <table class="faculty-table lang-th">
+                                <tr>
+                                    <td>อีเมล</td>
+                                    <td>gunnaporn.s@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>โทรศัพท์</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>สังกัดหลักสูตร</td>
+                                    <td>
+                                        M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>
+                                        Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ความเชี่ยวชาญ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Biology</li>
+                                            <li>Molecular Biology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>งานวิจัยที่สนใจ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Epidemiology</li>
+                                            <li>Food Safety</li>
+                                            <li>Molecular Biology of Diseases</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="faculty-table lang-en">
+                                <tr>
+                                    <td>Email</td>
+                                    <td>gunnaporn.s@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone & Fax</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduate Program Affiliation</td>
+                                    <td>
+                                        M.Sc. in Veterinary Biosciences<br>
+                                        Ph.D. in Veterinary Biosciences
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expertise</td>
+                                    <td>
+                                        <ol>
+                                            <li>Biology</li>
+                                            <li>Molecular Biology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Research Area</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Epidemiology</li>
+                                            <li>Food Safety</li>
+                                            <li>Molecular Biology of Diseases</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="faculty-actions">
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Researcher Chula</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> Google Scholar</a>
+                    </div>
+                </div>
+
+                <!-- อาจารย์ท่านที่ 2 -->
+                <div class="bento-card">
+                    <div class="faculty-profile-grid">
+                        <div class="faculty-left">
+                            <div class="lang-th">
+                                <h2 class="faculty-name-th">รศ.น.สพ.ดร. สฤษฏิ์วิชญ์ ปัญญาบริบาลบ์</h2>
+                                <p class="faculty-name-sub">Assoc. Prof. Saritvich Panyaboriban, D.V.M., Ph.D.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h2 class="faculty-name-en">Assoc. Prof. Saritvich Panyaboriban, D.V.M., Ph.D.</h2>
+                                <p class="faculty-name-sub">รศ.น.สพ.ดร. สฤษฏิ์วิชญ์ ปัญญาบริบาลบ์</p>
+                            </div>
+                            <img src="assets/images/faculty/prof2.jpg" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                        </div>
+                        <div class="faculty-right">
+                            <div class="lang-th">
+                                <div class="faculty-role">อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์</div>
+                                <div class="faculty-role-sub">ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+                            </div>
+                            <div class="lang-en">
+                                <div class="faculty-role">Faculty Member, Veterinary Biosciences</div>
+                                <div class="faculty-role-sub">Expert, Faculty of Veterinary Science, Chulalongkorn University</div>
+                            </div>
+                            <table class="faculty-table lang-th">
+                                <tr>
+                                    <td>อีเมล</td>
+                                    <td>saritvich.p@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>โทรศัพท์</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>สังกัดหลักสูตร</td>
+                                    <td>
+                                        M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>
+                                        Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ความเชี่ยวชาญ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Animal Theriogenology</li>
+                                            <li>Reproductive Biology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>งานวิจัยที่สนใจ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Reproductive Biotechnology</li>
+                                            <li>Artificial Insemination</li>
+                                            <li>Large Animal Reproduction</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="faculty-table lang-en">
+                                <tr>
+                                    <td>Email</td>
+                                    <td>saritvich.p@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone & Fax</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduate Program Affiliation</td>
+                                    <td>
+                                        M.Sc. in Veterinary Biosciences<br>
+                                        Ph.D. in Veterinary Biosciences
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expertise</td>
+                                    <td>
+                                        <ol>
+                                            <li>Animal Theriogenology</li>
+                                            <li>Reproductive Biology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Research Area</td>
+                                    <td>
+                                        <ol>
+                                            <li>Reproductive Biotechnology</li>
+                                            <li>Artificial Insemination</li>
+                                            <li>Large Animal Reproduction</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="faculty-actions">
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Researcher Chula</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> Google Scholar</a>
+                    </div>
+                </div>
+
+                <!-- อาจารย์ท่านที่ 3 -->
+                <div class="bento-card">
+                    <div class="faculty-profile-grid">
+                        <div class="faculty-left">
+                            <div class="lang-th">
+                                <h2 class="faculty-name-th">ผศ.สพ.ญ.ดร. เบญจพร ลิ้มเจริญ</h2>
+                                <p class="faculty-name-sub">Asst. Prof. Benjapon Limcharoen, D.V.M., Ph.D.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h2 class="faculty-name-en">Asst. Prof. Benjapon Limcharoen, D.V.M., Ph.D.</h2>
+                                <p class="faculty-name-sub">ผศ.สพ.ญ.ดร. เบญจพร ลิ้มเจริญ</p>
+                            </div>
+                            <img src="assets/images/faculty/prof3.jpg" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                        </div>
+                        <div class="faculty-right">
+                            <div class="lang-th">
+                                <div class="faculty-role">อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์</div>
+                                <div class="faculty-role-sub">ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+                            </div>
+                            <div class="lang-en">
+                                <div class="faculty-role">Faculty Member, Veterinary Biosciences</div>
+                                <div class="faculty-role-sub">Expert, Faculty of Veterinary Science, Chulalongkorn University</div>
+                            </div>
+                            <table class="faculty-table lang-th">
+                                <tr>
+                                    <td>อีเมล</td>
+                                    <td>Benchaphorn.l@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>โทรศัพท์</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>สังกัดหลักสูตร</td>
+                                    <td>
+                                        M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>
+                                        Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ความเชี่ยวชาญ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Pathobiology</li>
+                                            <li>Cell Biology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>งานวิจัยที่สนใจ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Pathogenesis of Animal Diseases</li>
+                                            <li>Cellular Pathology</li>
+                                            <li>Zoonotic Diseases</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="faculty-table lang-en">
+                                <tr>
+                                    <td>Email</td>
+                                    <td>Benchaphorn.l@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone & Fax</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduate Program Affiliation</td>
+                                    <td>
+                                        M.Sc. in Veterinary Biosciences<br>
+                                        Ph.D. in Veterinary Biosciences
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expertise</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Pathobiology</li>
+                                            <li>Cell Biology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Research Area</td>
+                                    <td>
+                                        <ol>
+                                            <li>Pathogenesis of Animal Diseases</li>
+                                            <li>Cellular Pathology</li>
+                                            <li>Zoonotic Diseases</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="faculty-actions">
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Researcher Chula</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> Google Scholar</a>
+                    </div>
+                </div>
+
+                <!-- อาจารย์ท่านที่ 4 -->
+                <div class="bento-card">
+                    <div class="faculty-profile-grid">
+                        <div class="faculty-left">
+                            <div class="lang-th">
+                                <h2 class="faculty-name-th">ศ.น.สพ.ดร. ไพศาล เทียนไทย</h2>
+                                <p class="faculty-name-sub">Prof. Paisan Tienthai, D.V.M., M.Sc., Ph.D.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h2 class="faculty-name-en">Prof. Paisan Tienthai, D.V.M., M.Sc., Ph.D.</h2>
+                                <p class="faculty-name-sub">ศ.น.สพ.ดร. ไพศาล เทียนไทย</p>
+                            </div>
+                            <img src="assets/images/faculty/prof4.jpg" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                        </div>
+                        <div class="faculty-right">
+                            <div class="lang-th">
+                                <div class="faculty-role">อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์</div>
+                                <div class="faculty-role-sub">ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+                            </div>
+                            <div class="lang-en">
+                                <div class="faculty-role">Faculty Member, Veterinary Biosciences</div>
+                                <div class="faculty-role-sub">Expert, Faculty of Veterinary Science, Chulalongkorn University</div>
+                            </div>
+                            <table class="faculty-table lang-th">
+                                <tr>
+                                    <td>อีเมล</td>
+                                    <td>Paisan.T@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>โทรศัพท์</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>สังกัดหลักสูตร</td>
+                                    <td>
+                                        M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>
+                                        Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ความเชี่ยวชาญ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Anatomy</li>
+                                            <li>Obstetrics and Gynaecology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>งานวิจัยที่สนใจ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Animal Anatomy</li>
+                                            <li>Reproductive System Anatomy</li>
+                                            <li>Developmental Biology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="faculty-table lang-en">
+                                <tr>
+                                    <td>Email</td>
+                                    <td>Paisan.T@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone & Fax</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduate Program Affiliation</td>
+                                    <td>
+                                        M.Sc. in Veterinary Biosciences<br>
+                                        Ph.D. in Veterinary Biosciences
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expertise</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Anatomy</li>
+                                            <li>Obstetrics and Gynaecology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Research Area</td>
+                                    <td>
+                                        <ol>
+                                            <li>Animal Anatomy</li>
+                                            <li>Reproductive System Anatomy</li>
+                                            <li>Developmental Biology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="faculty-actions">
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Researcher Chula</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> Google Scholar</a>
+                    </div>
+                </div>
+
+                <!-- อาจารย์ท่านที่ 5 -->
+                <div class="bento-card">
+                    <div class="faculty-profile-grid">
+                        <div class="faculty-left">
+                            <div class="lang-th">
+                                <h2 class="faculty-name-th">รศ.สพ.ญ. ศริยา อัศวกาญจน์</h2>
+                                <p class="faculty-name-sub">Assoc. Prof. Sariya Asavakarn, D.V.M., M.Sc.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h2 class="faculty-name-en">Assoc. Prof. Sariya Asavakarn, D.V.M., M.Sc.</h2>
+                                <p class="faculty-name-sub">รศ.สพ.ญ. ศริยา อัศวกาญจน์</p>
+                            </div>
+                            <img src="assets/images/faculty/prof5.jpg" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                        </div>
+                        <div class="faculty-right">
+                            <div class="lang-th">
+                                <div class="faculty-role">อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์</div>
+                                <div class="faculty-role-sub">ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+                            </div>
+                            <div class="lang-en">
+                                <div class="faculty-role">Faculty Member, Veterinary Biosciences</div>
+                                <div class="faculty-role-sub">Expert, Faculty of Veterinary Science, Chulalongkorn University</div>
+                            </div>
+                            <table class="faculty-table lang-th">
+                                <tr>
+                                    <td>อีเมล</td>
+                                    <td>Sariya.a@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>โทรศัพท์</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>สังกัดหลักสูตร</td>
+                                    <td>
+                                        M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>
+                                        Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ความเชี่ยวชาญ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Biochemistry</li>
+                                            
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>งานวิจัยที่สนใจ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Animal Biochemistry</li>
+                                            <li>Metabolic Diseases</li>
+                                            <li>Clinical Chemistry</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="faculty-table lang-en">
+                                <tr>
+                                    <td>Email</td>
+                                    <td>Sariya.a@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone & Fax</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduate Program Affiliation</td>
+                                    <td>
+                                        M.Sc. in Veterinary Biosciences<br>
+                                        Ph.D. in Veterinary Biosciences
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expertise</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Biochemistry</li>
+                                            
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Research Area</td>
+                                    <td>
+                                        <ol>
+                                            <li>Animal Biochemistry</li>
+                                            <li>Metabolic Diseases</li>
+                                            <li>Clinical Chemistry</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="faculty-actions">
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Researcher Chula</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> Google Scholar</a>
+                    </div>
+                </div>
+
+                <!-- อาจารย์ท่านที่ 6 -->
+                <div class="bento-card">
+                    <div class="faculty-profile-grid">
+                        <div class="faculty-left">
+                            <div class="lang-th">
+                                <h2 class="faculty-name-th">รศ.สพ.ญ.ดร. ศยามณ ศรีสุวัฒนาสกุล</h2>
+                                <p class="faculty-name-sub">Assoc. Prof. Sayamon Srisuwatanasagul, D.V.M., Ph.D.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h2 class="faculty-name-en">Assoc. Prof. Sayamon Srisuwatanasagul, D.V.M., Ph.D.</h2>
+                                <p class="faculty-name-sub">รศ.สพ.ญ.ดร. ศยามณ ศรีสุวัฒนาสกุล</p>
+                            </div>
+                            <img src="assets/images/faculty/prof6.jpg" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                        </div>
+                        <div class="faculty-right">
+                            <div class="lang-th">
+                                <div class="faculty-role">อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์</div>
+                                <div class="faculty-role-sub">ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+                            </div>
+                            <div class="lang-en">
+                                <div class="faculty-role">Faculty Member, Veterinary Biosciences</div>
+                                <div class="faculty-role-sub">Expert, Faculty of Veterinary Science, Chulalongkorn University</div>
+                            </div>
+                            <table class="faculty-table lang-th">
+                                <tr>
+                                    <td>อีเมล</td>
+                                    <td>sayamon.s@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>โทรศัพท์</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>สังกัดหลักสูตร</td>
+                                    <td>
+                                        M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>
+                                        Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ความเชี่ยวชาญ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Anatomy and Cell Biology</li>
+                                            
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>งานวิจัยที่สนใจ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Cellular Architecture</li>
+                                            <li>Microscopic Anatomy</li>
+                                            <li>Regenerative Biology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="faculty-table lang-en">
+                                <tr>
+                                    <td>Email</td>
+                                    <td>sayamon.s@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone & Fax</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduate Program Affiliation</td>
+                                    <td>
+                                        M.Sc. in Veterinary Biosciences<br>
+                                        Ph.D. in Veterinary Biosciences
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expertise</td>
+                                    <td>
+                                        <ol>
+                                            <li>Anatomy and Cell Biology</li>
+                                            
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Research Area</td>
+                                    <td>
+                                        <ol>
+                                            <li>Cellular Architecture</li>
+                                            <li>Microscopic Anatomy</li>
+                                            <li>Regenerative Biology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="faculty-actions">
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Researcher Chula</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> Google Scholar</a>
+                    </div>
+                </div>
+
+                <!-- อาจารย์ท่านที่ 7 -->
+                <div class="bento-card">
+                    <div class="faculty-profile-grid">
+                        <div class="faculty-left">
+                            <div class="lang-th">
+                                <h2 class="faculty-name-th">รศ.สพ.ญ.ดร. สฤณี กลันทกานนท์ ทองทรง</h2>
+                                <p class="faculty-name-sub">Assoc. Prof. Sarinee Kalandakanond Thongsong, D.V.M., Ph.D.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h2 class="faculty-name-en">Assoc. Prof. Sarinee Kalandakanond Thongsong, D.V.M., Ph.D.</h2>
+                                <p class="faculty-name-sub">รศ.สพ.ญ.ดร. สฤณี กลันทกานนท์ ทองทรง</p>
+                            </div>
+                            <img src="assets/images/faculty/prof7.jpg" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                        </div>
+                        <div class="faculty-right">
+                            <div class="lang-th">
+                                <div class="faculty-role">อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์</div>
+                                <div class="faculty-role-sub">ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+                            </div>
+                            <div class="lang-en">
+                                <div class="faculty-role">Faculty Member, Veterinary Biosciences</div>
+                                <div class="faculty-role-sub">Expert, Faculty of Veterinary Science, Chulalongkorn University</div>
+                            </div>
+                            <table class="faculty-table lang-th">
+                                <tr>
+                                    <td>อีเมล</td>
+                                    <td>Sarinee.k@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>โทรศัพท์</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>สังกัดหลักสูตร</td>
+                                    <td>
+                                        M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>
+                                        Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ความเชี่ยวชาญ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Physiology</li>
+                                            
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>งานวิจัยที่สนใจ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Animal Physiology</li>
+                                            <li>Stress Physiology</li>
+                                            <li>Neuroendocrinology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="faculty-table lang-en">
+                                <tr>
+                                    <td>Email</td>
+                                    <td>Sarinee.k@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone & Fax</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduate Program Affiliation</td>
+                                    <td>
+                                        M.Sc. in Veterinary Biosciences<br>
+                                        Ph.D. in Veterinary Biosciences
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expertise</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Physiology</li>
+                                            
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Research Area</td>
+                                    <td>
+                                        <ol>
+                                            <li>Animal Physiology</li>
+                                            <li>Stress Physiology</li>
+                                            <li>Neuroendocrinology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="faculty-actions">
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Researcher Chula</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> Google Scholar</a>
+                    </div>
+                </div>
+
+                <!-- อาจารย์ท่านที่ 8 -->
+                <div class="bento-card">
+                    <div class="faculty-profile-grid">
+                        <div class="faculty-left">
+                            <div class="lang-th">
+                                <h2 class="faculty-name-th">รศ.น.สพ.ดร. เจนภพ สว่างเมฆ</h2>
+                                <p class="faculty-name-sub">Assoc. Prof. Janpop Sawangmake, D.V.M., Ph.D.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h2 class="faculty-name-en">Assoc. Prof. Janpop Sawangmake, D.V.M., Ph.D.</h2>
+                                <p class="faculty-name-sub">รศ.น.สพ.ดร. เจนภพ สว่างเมฆ</p>
+                            </div>
+                            <img src="assets/images/faculty/prof8.jpg" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                        </div>
+                        <div class="faculty-right">
+                            <div class="lang-th">
+                                <div class="faculty-role">อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์</div>
+                                <div class="faculty-role-sub">ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+                            </div>
+                            <div class="lang-en">
+                                <div class="faculty-role">Faculty Member, Veterinary Biosciences</div>
+                                <div class="faculty-role-sub">Expert, Faculty of Veterinary Science, Chulalongkorn University</div>
+                            </div>
+                            <table class="faculty-table lang-th">
+                                <tr>
+                                    <td>อีเมล</td>
+                                    <td>Janpop.s@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>โทรศัพท์</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>สังกัดหลักสูตร</td>
+                                    <td>
+                                        M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>
+                                        Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ความเชี่ยวชาญ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Biosciences</li>
+                                            
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>งานวิจัยที่สนใจ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Stem Cell Biology</li>
+                                            <li>Tissue Engineering</li>
+                                            <li>Regenerative Veterinary Medicine</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="faculty-table lang-en">
+                                <tr>
+                                    <td>Email</td>
+                                    <td>Janpop.s@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone & Fax</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduate Program Affiliation</td>
+                                    <td>
+                                        M.Sc. in Veterinary Biosciences<br>
+                                        Ph.D. in Veterinary Biosciences
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expertise</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Biosciences</li>
+                                            
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Research Area</td>
+                                    <td>
+                                        <ol>
+                                            <li>Stem Cell Biology</li>
+                                            <li>Tissue Engineering</li>
+                                            <li>Regenerative Veterinary Medicine</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="faculty-actions">
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Researcher Chula</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> Google Scholar</a>
+                    </div>
+                </div>
+
+                <!-- อาจารย์ท่านที่ 9 -->
+                <div class="bento-card">
+                    <div class="faculty-profile-grid">
+                        <div class="faculty-left">
+                            <div class="lang-th">
+                                <h2 class="faculty-name-th">รศ.น.สพ.ดร. สัมพันธ์ ธรรมเจริญ</h2>
+                                <p class="faculty-name-sub">Assoc. Prof. Sumphan Thammacharoen, D.V.M., Ph.D.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h2 class="faculty-name-en">Assoc. Prof. Sumphan Thammacharoen, D.V.M., Ph.D.</h2>
+                                <p class="faculty-name-sub">รศ.น.สพ.ดร. สัมพันธ์ ธรรมเจริญ</p>
+                            </div>
+                            <img src="assets/images/faculty/prof9.jpg" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                        </div>
+                        <div class="faculty-right">
+                            <div class="lang-th">
+                                <div class="faculty-role">อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์</div>
+                                <div class="faculty-role-sub">ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+                            </div>
+                            <div class="lang-en">
+                                <div class="faculty-role">Faculty Member, Veterinary Biosciences</div>
+                                <div class="faculty-role-sub">Expert, Faculty of Veterinary Science, Chulalongkorn University</div>
+                            </div>
+                            <table class="faculty-table lang-th">
+                                <tr>
+                                    <td>อีเมล</td>
+                                    <td>Sumphan.t@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>โทรศัพท์</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>สังกัดหลักสูตร</td>
+                                    <td>
+                                        M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>
+                                        Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ความเชี่ยวชาญ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Physiology</li>
+                                            <li>Neuroscience</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>งานวิจัยที่สนใจ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Neurophysiology</li>
+                                            <li>Appetite Regulation</li>
+                                            <li>Metabolic Control in Animals</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="faculty-table lang-en">
+                                <tr>
+                                    <td>Email</td>
+                                    <td>Sumphan.t@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone & Fax</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduate Program Affiliation</td>
+                                    <td>
+                                        M.Sc. in Veterinary Biosciences<br>
+                                        Ph.D. in Veterinary Biosciences
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expertise</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Physiology</li>
+                                            <li>Neuroscience</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Research Area</td>
+                                    <td>
+                                        <ol>
+                                            <li>Neurophysiology</li>
+                                            <li>Appetite Regulation</li>
+                                            <li>Metabolic Control in Animals</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="faculty-actions">
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Researcher Chula</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> Google Scholar</a>
+                    </div>
+                </div>
+
+                <!-- อาจารย์ท่านที่ 10 -->
+                <div class="bento-card">
+                    <div class="faculty-profile-grid">
+                        <div class="faculty-left">
+                            <div class="lang-th">
+                                <h2 class="faculty-name-th">รศ.น.สพ. ก้องเกียรติ ศรีสุวัฒนาสกุล</h2>
+                                <p class="faculty-name-sub">Assoc. Prof. Kongkiat Srisuwatanasagul, D.V.M., M.V.Sc.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h2 class="faculty-name-en">Assoc. Prof. Kongkiat Srisuwatanasagul, D.V.M., M.V.Sc.</h2>
+                                <p class="faculty-name-sub">รศ.น.สพ. ก้องเกียรติ ศรีสุวัฒนาสกุล</p>
+                            </div>
+                            <img src="assets/images/faculty/prof10.jpg" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                        </div>
+                        <div class="faculty-right">
+                            <div class="lang-th">
+                                <div class="faculty-role">อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์</div>
+                                <div class="faculty-role-sub">ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+                            </div>
+                            <div class="lang-en">
+                                <div class="faculty-role">Faculty Member, Veterinary Biosciences</div>
+                                <div class="faculty-role-sub">Expert, Faculty of Veterinary Science, Chulalongkorn University</div>
+                            </div>
+                            <table class="faculty-table lang-th">
+                                <tr>
+                                    <td>อีเมล</td>
+                                    <td>kongkiat.s@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>โทรศัพท์</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>สังกัดหลักสูตร</td>
+                                    <td>
+                                        M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>
+                                        Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ความเชี่ยวชาญ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Surgery</li>
+                                            <li>Anatomy</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>งานวิจัยที่สนใจ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Surgical Anatomy</li>
+                                            <li>Soft Tissue Surgery</li>
+                                            <li>Diagnostic Imaging</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="faculty-table lang-en">
+                                <tr>
+                                    <td>Email</td>
+                                    <td>kongkiat.s@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone & Fax</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduate Program Affiliation</td>
+                                    <td>
+                                        M.Sc. in Veterinary Biosciences<br>
+                                        Ph.D. in Veterinary Biosciences
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expertise</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Surgery</li>
+                                            <li>Anatomy</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Research Area</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Surgical Anatomy</li>
+                                            <li>Soft Tissue Surgery</li>
+                                            <li>Diagnostic Imaging</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="faculty-actions">
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Researcher Chula</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> Google Scholar</a>
+                    </div>
+                </div>
+
+                <!-- อาจารย์ท่านที่ 11 -->
+                <div class="bento-card">
+                    <div class="faculty-profile-grid">
+                        <div class="faculty-left">
+                            <div class="lang-th">
+                                <h2 class="faculty-name-th">รศ.สพ.ญ.ดร. แนน ช้อยสุนิรชร</h2>
+                                <p class="faculty-name-sub">Assoc. Prof. Nan Choisunirachon, D.V.M., Ph.D.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h2 class="faculty-name-en">Assoc. Prof. Nan Choisunirachon, D.V.M., Ph.D.</h2>
+                                <p class="faculty-name-sub">รศ.สพ.ญ.ดร. แนน ช้อยสุนิรชร</p>
+                            </div>
+                            <img src="assets/images/faculty/prof11.jpg" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                        </div>
+                        <div class="faculty-right">
+                            <div class="lang-th">
+                                <div class="faculty-role">อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์</div>
+                                <div class="faculty-role-sub">ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+                            </div>
+                            <div class="lang-en">
+                                <div class="faculty-role">Faculty Member, Veterinary Biosciences</div>
+                                <div class="faculty-role-sub">Expert, Faculty of Veterinary Science, Chulalongkorn University</div>
+                            </div>
+                            <table class="faculty-table lang-th">
+                                <tr>
+                                    <td>อีเมล</td>
+                                    <td>Nan.c@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>โทรศัพท์</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>สังกัดหลักสูตร</td>
+                                    <td>
+                                        M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>
+                                        Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ความเชี่ยวชาญ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Medical Science</li>
+                                            <li>Diagnostic Imaging</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>งานวิจัยที่สนใจ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Radiology</li>
+                                            <li>Ultrasound</li>
+                                            <li>Computed Tomography in Animals</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="faculty-table lang-en">
+                                <tr>
+                                    <td>Email</td>
+                                    <td>Nan.c@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone & Fax</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduate Program Affiliation</td>
+                                    <td>
+                                        M.Sc. in Veterinary Biosciences<br>
+                                        Ph.D. in Veterinary Biosciences
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expertise</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Medical Science</li>
+                                            <li>Diagnostic Imaging</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Research Area</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Radiology</li>
+                                            <li>Ultrasound</li>
+                                            <li>Computed Tomography in Animals</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="faculty-actions">
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Researcher Chula</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> Google Scholar</a>
+                    </div>
+                </div>
+
+                <!-- อาจารย์ท่านที่ 12 -->
+                <div class="bento-card">
+                    <div class="faculty-profile-grid">
+                        <div class="faculty-left">
+                            <div class="lang-th">
+                                <h2 class="faculty-name-th">รศ.น.สพ.ดร. ชุติมน ธนบูรณ์นิพัทธ์</h2>
+                                <p class="faculty-name-sub">Assoc. Prof. Chutimon Thanaboonnipat, D.V.M., Ph.D.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h2 class="faculty-name-en">Assoc. Prof. Chutimon Thanaboonnipat, D.V.M., Ph.D.</h2>
+                                <p class="faculty-name-sub">รศ.น.สพ.ดร. ชุติมน ธนบูรณ์นิพัทธ์</p>
+                            </div>
+                            <img src="assets/images/faculty/prof12.jpg" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                        </div>
+                        <div class="faculty-right">
+                            <div class="lang-th">
+                                <div class="faculty-role">อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์</div>
+                                <div class="faculty-role-sub">ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+                            </div>
+                            <div class="lang-en">
+                                <div class="faculty-role">Faculty Member, Veterinary Biosciences</div>
+                                <div class="faculty-role-sub">Expert, Faculty of Veterinary Science, Chulalongkorn University</div>
+                            </div>
+                            <table class="faculty-table lang-th">
+                                <tr>
+                                    <td>อีเมล</td>
+                                    <td>Chutimon.t@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>โทรศัพท์</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>สังกัดหลักสูตร</td>
+                                    <td>
+                                        M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>
+                                        Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ความเชี่ยวชาญ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Biosciences</li>
+                                            <li>Surgery</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>งานวิจัยที่สนใจ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Orthopedic Surgery</li>
+                                            <li>Biomechanics</li>
+                                            <li>Bone Healing in Animals</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="faculty-table lang-en">
+                                <tr>
+                                    <td>Email</td>
+                                    <td>Chutimon.t@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone & Fax</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduate Program Affiliation</td>
+                                    <td>
+                                        M.Sc. in Veterinary Biosciences<br>
+                                        Ph.D. in Veterinary Biosciences
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expertise</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Biosciences</li>
+                                            <li>Surgery</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Research Area</td>
+                                    <td>
+                                        <ol>
+                                            <li>Orthopedic Surgery</li>
+                                            <li>Biomechanics</li>
+                                            <li>Bone Healing in Animals</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="faculty-actions">
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Researcher Chula</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> Google Scholar</a>
+                    </div>
+                </div>
+
+                <!-- อาจารย์ท่านที่ 13 -->
+                <div class="bento-card">
+                    <div class="faculty-profile-grid">
+                        <div class="faculty-left">
+                            <div class="lang-th">
+                                <h2 class="faculty-name-th">ผศ.น.สพ.ดร. ประพฤติดี ปิยะวิริยะกุล</h2>
+                                <p class="faculty-name-sub">Asst. Prof. Prapruddee Piyaviriyakul, D.V.M., Ph.D.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h2 class="faculty-name-en">Asst. Prof. Prapruddee Piyaviriyakul, D.V.M., Ph.D.</h2>
+                                <p class="faculty-name-sub">ผศ.น.สพ.ดร. ประพฤติดี ปิยะวิริยะกุล</p>
+                            </div>
+                            <img src="assets/images/faculty/prof13.jpg" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                        </div>
+                        <div class="faculty-right">
+                            <div class="lang-th">
+                                <div class="faculty-role">อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์</div>
+                                <div class="faculty-role-sub">ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+                            </div>
+                            <div class="lang-en">
+                                <div class="faculty-role">Faculty Member, Veterinary Biosciences</div>
+                                <div class="faculty-role-sub">Expert, Faculty of Veterinary Science, Chulalongkorn University</div>
+                            </div>
+                            <table class="faculty-table lang-th">
+                                <tr>
+                                    <td>อีเมล</td>
+                                    <td>Prapruddee.p@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>โทรศัพท์</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>สังกัดหลักสูตร</td>
+                                    <td>
+                                        M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>
+                                        Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ความเชี่ยวชาญ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Applied Marine Bioscience</li>
+                                            <li>Biochemistry</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>งานวิจัยที่สนใจ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Marine Biochemistry</li>
+                                            <li>Aquatic Animal Health</li>
+                                            <li>Ecotoxicology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="faculty-table lang-en">
+                                <tr>
+                                    <td>Email</td>
+                                    <td>Prapruddee.p@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone & Fax</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduate Program Affiliation</td>
+                                    <td>
+                                        M.Sc. in Veterinary Biosciences<br>
+                                        Ph.D. in Veterinary Biosciences
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expertise</td>
+                                    <td>
+                                        <ol>
+                                            <li>Applied Marine Bioscience</li>
+                                            <li>Biochemistry</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Research Area</td>
+                                    <td>
+                                        <ol>
+                                            <li>Marine Biochemistry</li>
+                                            <li>Aquatic Animal Health</li>
+                                            <li>Ecotoxicology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="faculty-actions">
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Researcher Chula</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> Google Scholar</a>
+                    </div>
+                </div>
+
+                <!-- อาจารย์ท่านที่ 14 -->
+                <div class="bento-card">
+                    <div class="faculty-profile-grid">
+                        <div class="faculty-left">
+                            <div class="lang-th">
+                                <h2 class="faculty-name-th">ผศ.น.สพ.ดร. กิตติพงษ์ ทาจําปา</h2>
+                                <p class="faculty-name-sub">Asst. Prof. Kittipong Tachampa, D.V.M., Ph.D.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h2 class="faculty-name-en">Asst. Prof. Kittipong Tachampa, D.V.M., Ph.D.</h2>
+                                <p class="faculty-name-sub">ผศ.น.สพ.ดร. กิตติพงษ์ ทาจําปา</p>
+                            </div>
+                            <img src="assets/images/faculty/prof14.jpg" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                        </div>
+                        <div class="faculty-right">
+                            <div class="lang-th">
+                                <div class="faculty-role">อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์</div>
+                                <div class="faculty-role-sub">ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+                            </div>
+                            <div class="lang-en">
+                                <div class="faculty-role">Faculty Member, Veterinary Biosciences</div>
+                                <div class="faculty-role-sub">Expert, Faculty of Veterinary Science, Chulalongkorn University</div>
+                            </div>
+                            <table class="faculty-table lang-th">
+                                <tr>
+                                    <td>อีเมล</td>
+                                    <td>Kittipong.t@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>โทรศัพท์</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>สังกัดหลักสูตร</td>
+                                    <td>
+                                        M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>
+                                        Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ความเชี่ยวชาญ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Physiology & Biophysics</li>
+                                            
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>งานวิจัยที่สนใจ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Animal Biophysics</li>
+                                            <li>Cardiovascular Physiology</li>
+                                            <li>Electrophysiology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="faculty-table lang-en">
+                                <tr>
+                                    <td>Email</td>
+                                    <td>Kittipong.t@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone & Fax</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduate Program Affiliation</td>
+                                    <td>
+                                        M.Sc. in Veterinary Biosciences<br>
+                                        Ph.D. in Veterinary Biosciences
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expertise</td>
+                                    <td>
+                                        <ol>
+                                            <li>Physiology & Biophysics</li>
+                                            
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Research Area</td>
+                                    <td>
+                                        <ol>
+                                            <li>Animal Biophysics</li>
+                                            <li>Cardiovascular Physiology</li>
+                                            <li>Electrophysiology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="faculty-actions">
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Researcher Chula</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> Google Scholar</a>
+                    </div>
+                </div>
+
+                <!-- อาจารย์ท่านที่ 15 -->
+                <div class="bento-card">
+                    <div class="faculty-profile-grid">
+                        <div class="faculty-left">
+                            <div class="lang-th">
+                                <h2 class="faculty-name-th">ผศ.สพ.ญ.ดร. ศิริรัตน์ รัตนภุชพงศ์</h2>
+                                <p class="faculty-name-sub">Asst. Prof. Sirirat Rattanaphuchapong, D.V.M., Ph.D.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h2 class="faculty-name-en">Asst. Prof. Sirirat Rattanaphuchapong, D.V.M., Ph.D.</h2>
+                                <p class="faculty-name-sub">ผศ.สพ.ญ.ดร. ศิริรัตน์ รัตนภุชพงศ์</p>
+                            </div>
+                            <img src="assets/images/faculty/prof15.jpg" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                        </div>
+                        <div class="faculty-right">
+                            <div class="lang-th">
+                                <div class="faculty-role">อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์</div>
+                                <div class="faculty-role-sub">ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+                            </div>
+                            <div class="lang-en">
+                                <div class="faculty-role">Faculty Member, Veterinary Biosciences</div>
+                                <div class="faculty-role-sub">Expert, Faculty of Veterinary Science, Chulalongkorn University</div>
+                            </div>
+                            <table class="faculty-table lang-th">
+                                <tr>
+                                    <td>อีเมล</td>
+                                    <td>Sirirat.r@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>โทรศัพท์</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>สังกัดหลักสูตร</td>
+                                    <td>
+                                        M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>
+                                        Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ความเชี่ยวชาญ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Biosciences</li>
+                                            
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>งานวิจัยที่สนใจ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Molecular Bioscience</li>
+                                            <li>Animal Genetics</li>
+                                            <li>Disease Biomarkers</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="faculty-table lang-en">
+                                <tr>
+                                    <td>Email</td>
+                                    <td>Sirirat.r@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone & Fax</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduate Program Affiliation</td>
+                                    <td>
+                                        M.Sc. in Veterinary Biosciences<br>
+                                        Ph.D. in Veterinary Biosciences
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expertise</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Biosciences</li>
+                                            
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Research Area</td>
+                                    <td>
+                                        <ol>
+                                            <li>Molecular Bioscience</li>
+                                            <li>Animal Genetics</li>
+                                            <li>Disease Biomarkers</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="faculty-actions">
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Researcher Chula</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> Google Scholar</a>
+                    </div>
+                </div>
+
+                <!-- อาจารย์ท่านที่ 16 -->
+                <div class="bento-card">
+                    <div class="faculty-profile-grid">
+                        <div class="faculty-left">
+                            <div class="lang-th">
+                                <h2 class="faculty-name-th">อ.สพ.ญ.ดร. เพราพิลาส ภักดีดินแดน</h2>
+                                <p class="faculty-name-sub">Lect. Praopilas Phakdeedindan, D.V.M., Ph.D.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h2 class="faculty-name-en">Lect. Praopilas Phakdeedindan, D.V.M., Ph.D.</h2>
+                                <p class="faculty-name-sub">อ.สพ.ญ.ดร. เพราพิลาส ภักดีดินแดน</p>
+                            </div>
+                            <img src="assets/images/faculty/prof16.jpg" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                        </div>
+                        <div class="faculty-right">
+                            <div class="lang-th">
+                                <div class="faculty-role">อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์</div>
+                                <div class="faculty-role-sub">ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+                            </div>
+                            <div class="lang-en">
+                                <div class="faculty-role">Faculty Member, Veterinary Biosciences</div>
+                                <div class="faculty-role-sub">Expert, Faculty of Veterinary Science, Chulalongkorn University</div>
+                            </div>
+                            <table class="faculty-table lang-th">
+                                <tr>
+                                    <td>อีเมล</td>
+                                    <td>Praopilas.p@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>โทรศัพท์</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>สังกัดหลักสูตร</td>
+                                    <td>
+                                        M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>
+                                        Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ความเชี่ยวชาญ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Bioscience</li>
+                                            
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>งานวิจัยที่สนใจ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Animal Biotechnology</li>
+                                            <li>Bioinformatics</li>
+                                            <li>Molecular Diagnostics</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="faculty-table lang-en">
+                                <tr>
+                                    <td>Email</td>
+                                    <td>Praopilas.p@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone & Fax</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduate Program Affiliation</td>
+                                    <td>
+                                        M.Sc. in Veterinary Biosciences<br>
+                                        Ph.D. in Veterinary Biosciences
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expertise</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Bioscience</li>
+                                            
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Research Area</td>
+                                    <td>
+                                        <ol>
+                                            <li>Animal Biotechnology</li>
+                                            <li>Bioinformatics</li>
+                                            <li>Molecular Diagnostics</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="faculty-actions">
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Researcher Chula</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> Google Scholar</a>
+                    </div>
+                </div>
+
+                <!-- อาจารย์ท่านที่ 17 -->
+                <div class="bento-card">
+                    <div class="faculty-profile-grid">
+                        <div class="faculty-left">
+                            <div class="lang-th">
+                                <h2 class="faculty-name-th">อ.สพ.ญ.ดร. ศิรินันท์ พิสมัย ทับเที่ยง</h2>
+                                <p class="faculty-name-sub">Lect. Sirinun Pissamai Tubtiang, D.V.M., Ph.D.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h2 class="faculty-name-en">Lect. Sirinun Pissamai Tubtiang, D.V.M., Ph.D.</h2>
+                                <p class="faculty-name-sub">อ.สพ.ญ.ดร. ศิรินันท์ พิสมัย ทับเที่ยง</p>
+                            </div>
+                            <img src="assets/images/faculty/prof17.jpg" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                        </div>
+                        <div class="faculty-right">
+                            <div class="lang-th">
+                                <div class="faculty-role">อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์</div>
+                                <div class="faculty-role-sub">ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+                            </div>
+                            <div class="lang-en">
+                                <div class="faculty-role">Faculty Member, Veterinary Biosciences</div>
+                                <div class="faculty-role-sub">Expert, Faculty of Veterinary Science, Chulalongkorn University</div>
+                            </div>
+                            <table class="faculty-table lang-th">
+                                <tr>
+                                    <td>อีเมล</td>
+                                    <td>Sirinun.p@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>โทรศัพท์</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>สังกัดหลักสูตร</td>
+                                    <td>
+                                        M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>
+                                        Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ความเชี่ยวชาญ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Bioscience</li>
+                                            <li>Anatomy</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>งานวิจัยที่สนใจ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Anatomy</li>
+                                            <li>Histology</li>
+                                            <li>Morphological Studies in Animals</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="faculty-table lang-en">
+                                <tr>
+                                    <td>Email</td>
+                                    <td>Sirinun.p@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone & Fax</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduate Program Affiliation</td>
+                                    <td>
+                                        M.Sc. in Veterinary Biosciences<br>
+                                        Ph.D. in Veterinary Biosciences
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expertise</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Bioscience</li>
+                                            <li>Anatomy</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Research Area</td>
+                                    <td>
+                                        <ol>
+                                            <li>Anatomy</li>
+                                            <li>Histology</li>
+                                            <li>Morphological Studies in Animals</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="faculty-actions">
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Researcher Chula</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> Google Scholar</a>
+                    </div>
+                </div>
+
+                <!-- อาจารย์ท่านที่ 18 -->
+                <div class="bento-card">
+                    <div class="faculty-profile-grid">
+                        <div class="faculty-left">
+                            <div class="lang-th">
+                                <h2 class="faculty-name-th">อ.สพ.ญ.ดร. ศิริวรรณ สาครินทร์</h2>
+                                <p class="faculty-name-sub">Lect. Siriwan Sakarin, D.V.M., Ph.D.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h2 class="faculty-name-en">Lect. Siriwan Sakarin, D.V.M., Ph.D.</h2>
+                                <p class="faculty-name-sub">อ.สพ.ญ.ดร. ศิริวรรณ สาครินทร์</p>
+                            </div>
+                            <img src="assets/images/faculty/prof18.jpg" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                        </div>
+                        <div class="faculty-right">
+                            <div class="lang-th">
+                                <div class="faculty-role">อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์</div>
+                                <div class="faculty-role-sub">ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+                            </div>
+                            <div class="lang-en">
+                                <div class="faculty-role">Faculty Member, Veterinary Biosciences</div>
+                                <div class="faculty-role-sub">Expert, Faculty of Veterinary Science, Chulalongkorn University</div>
+                            </div>
+                            <table class="faculty-table lang-th">
+                                <tr>
+                                    <td>อีเมล</td>
+                                    <td>Siriwan.s@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>โทรศัพท์</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>สังกัดหลักสูตร</td>
+                                    <td>
+                                        M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>
+                                        Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ความเชี่ยวชาญ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Medicine</li>
+                                            
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>งานวิจัยที่สนใจ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Internal Medicine</li>
+                                            <li>Clinical Bioscience</li>
+                                            <li>Endocrinology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="faculty-table lang-en">
+                                <tr>
+                                    <td>Email</td>
+                                    <td>Siriwan.s@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone & Fax</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduate Program Affiliation</td>
+                                    <td>
+                                        M.Sc. in Veterinary Biosciences<br>
+                                        Ph.D. in Veterinary Biosciences
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expertise</td>
+                                    <td>
+                                        <ol>
+                                            <li>Veterinary Medicine</li>
+                                            
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Research Area</td>
+                                    <td>
+                                        <ol>
+                                            <li>Internal Medicine</li>
+                                            <li>Clinical Bioscience</li>
+                                            <li>Endocrinology</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="faculty-actions">
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Researcher Chula</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> Google Scholar</a>
+                    </div>
+                </div>
+
+                <!-- อาจารย์ท่านที่ 19 -->
+                <div class="bento-card">
+                    <div class="faculty-profile-grid">
+                        <div class="faculty-left">
+                            <div class="lang-th">
+                                <h2 class="faculty-name-th">อ.น.สพ.ดร. สพล เสมเสริมบุญ</h2>
+                                <p class="faculty-name-sub">Lect. Sapol Semisermboon, D.V.M., Ph.D.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h2 class="faculty-name-en">Lect. Sapol Semisermboon, D.V.M., Ph.D.</h2>
+                                <p class="faculty-name-sub">อ.น.สพ.ดร. สพล เสมเสริมบุญ</p>
+                            </div>
+                            <img src="assets/images/faculty/prof19.jpg" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                        </div>
+                        <div class="faculty-right">
+                            <div class="lang-th">
+                                <div class="faculty-role">อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์</div>
+                                <div class="faculty-role-sub">ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</div>
+                            </div>
+                            <div class="lang-en">
+                                <div class="faculty-role">Faculty Member, Veterinary Biosciences</div>
+                                <div class="faculty-role-sub">Expert, Faculty of Veterinary Science, Chulalongkorn University</div>
+                            </div>
+                            <table class="faculty-table lang-th">
+                                <tr>
+                                    <td>อีเมล</td>
+                                    <td>Sapol.s@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>โทรศัพท์</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>สังกัดหลักสูตร</td>
+                                    <td>
+                                        M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>
+                                        Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ความเชี่ยวชาญ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Animal Physiology</li>
+                                            
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>งานวิจัยที่สนใจ</td>
+                                    <td>
+                                        <ol>
+                                            <li>Endocrine Physiology</li>
+                                            <li>Metabolic Regulation</li>
+                                            <li>Stress Responses</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="faculty-table lang-en">
+                                <tr>
+                                    <td>Email</td>
+                                    <td>Sapol.s@chula.ac.th</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone & Fax</td>
+                                    <td>+66 (0) 2218-9658</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduate Program Affiliation</td>
+                                    <td>
+                                        M.Sc. in Veterinary Biosciences<br>
+                                        Ph.D. in Veterinary Biosciences
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expertise</td>
+                                    <td>
+                                        <ol>
+                                            <li>Animal Physiology</li>
+                                            
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Research Area</td>
+                                    <td>
+                                        <ol>
+                                            <li>Endocrine Physiology</li>
+                                            <li>Metabolic Regulation</li>
+                                            <li>Stress Responses</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="faculty-actions">
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Researcher Chula</a>
+                        <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> Google Scholar</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 id="foot-head-contact">ติดต่อสอบถามข้อมูลเพิ่มเติม</h3>
+                    <p id="foot-val-contact-name" class="contact-name"><strong>รศ.น.สพ. ก้องเกียรติ ศรีสุวัฒนาสกุล</strong></p>
+                    <p><span id="foot-lbl-email" class="label-muted">อีเมล:</span> <a href="mailto:kongkiat.s@chula.ac.th">kongkiat.s@chula.ac.th</a></p>
+                </div>
+                <div class="footer-col">
+                    <h3 id="foot-head-address">ที่อยู่</h3>
+                    <p id="foot-val-address">ภาควิชากายวิภาคศาสตร์ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย ถนนอังรีดูนังต์ แขวงปทุมวัน เขตปทุมวัน กรุงเทพฯ 10330 ประเทศไทย</p>
+                    <p><strong id="foot-lbl-tel">โทร:</strong> <span>+66 (0) 2218-9697</span></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Department of Anatomy, Faculty of Veterinary Science, Chulalongkorn University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/lang-engine.js"></script>
+</body>
+</html>

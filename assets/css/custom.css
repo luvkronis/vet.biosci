@@ -46,17 +46,20 @@ body {
 /* =======================================================
 * 3. NAVBAR (Floating Glassmorphism & Bento Dropdown)
 * ======================================================= */
+/* =======================================================
+* 3. NAVBAR (Floating Glassmorphism & Logo Integration)
+* ======================================================= */
 .navbar {
   position: sticky;
-  top: 16px;                     
+  top: 16px; /* คงระยะห่างจากขอบบน (ลอย) */                     
   z-index: 1000;
-  max-width: 1140px;             
+  max-width: 1240px; /* ปรับให้กล่องกว้างขึ้นเล็กน้อยเพื่อรองรับโลโก้ */             
   margin: 0 auto;
   background-color: var(--glass-bg);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(226, 232, 240, 0.7);
-  border-radius: 30px;           
+  border-radius: 30px; /* คงขอบมน (แคปซูล) ไว้เหมือนเดิม */           
   box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
   transition: var(--transition-smooth);
 }
@@ -69,11 +72,69 @@ body {
   width: 100%;
 }
 
-.nav-logo {
+/* 🌟 จัดกลุ่มโลโก้และชื่อแบรนด์ให้อยู่ชิดซ้ายด้วยกัน */
+.nav-brand-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.nav-main-logo {
+  height: 36px; /* ขนาดโลโก้กำลังพอดีกับ Navbar แบบลอย */
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-logo-text {
   font-weight: 700;
   font-size: 13px;
   color: var(--text-main);
   letter-spacing: 0.3px;
+}
+
+/* =======================================================
+* โค้ดเมนูส่วนที่เหลือ (คงเดิม 100%)
+* ======================================================= */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 8px;                     
+  align-items: center;
+}
+
+.nav-item {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 8px 16px;
+  border-radius: 20px;          
+  transition: var(--transition-smooth);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-item:hover, .nav-item.active {
+  color: var(--text-main);
+  background-color: rgba(15, 23, 42, 0.04); 
+}
+
+.nav-item.active {
+  font-weight: 600;
+}
+
+.arrow-icon {
+  font-size: 10px;
+  transition: var(--transition-smooth);
+}
+
+/* ปรับโลโก้ในหน้าจอมือถือเล็กน้อย */
+@media screen and (max-width: 768px) {
+  .nav-main-logo {
+    height: 32px;
+  }
 }
 
 .nav-links {
@@ -605,4 +666,127 @@ body.lang-th span.lang-th { display: inline !important; }
 
 body.lang-en span.lang-th { display: none !important; }
 body.lang-en span.lang-en { display: inline !important; }
+
+/* =======================================================
+* 🛠️ FACULTY PAGE ENHANCEMENTS (Bento Profile)
+* ======================================================= */
+.faculty-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.faculty-profile-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 32px;
+    margin-bottom: 24px;
+}
+
+.faculty-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faculty-img {
+    width: 100%;
+    max-width: 280px;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.faculty-name-th {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary-pink);
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.faculty-name-en {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.faculty-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.faculty-table td {
+    padding: 14px 16px;
+    border: 1px solid var(--border-color);
+    vertical-align: top;
+    line-height: 1.6;
+}
+
+.faculty-table td:first-child {
+    font-weight: 600;
+    width: 220px;
+    background-color: var(--bg-secondary);
+    color: var(--text-main);
+}
+
+.faculty-table td:last-child {
+    color: var(--text-muted);
+    background-color: #ffffff;
+}
+
+.faculty-table ol {
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.faculty-table li { margin-bottom: 6px; }
+.faculty-table li:last-child { margin-bottom: 0; }
+
+.faculty-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    border-top: 1px dashed var(--border-color);
+    padding-top: 24px;
+}
+
+.btn-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+    background: var(--bg-main);
+    color: var(--text-main);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.btn-action svg { stroke: var(--primary-pink); }
+
+.btn-action:hover {
+    border-color: var(--primary-pink);
+    color: var(--primary-pink);
+    background: var(--primary-pink-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(222, 78, 132, 0.1);
+}
+
+@media (max-width: 768px) {
+    .faculty-profile-grid { grid-template-columns: 1fr; gap: 24px; }
+    .faculty-img { max-width: 220px; }
+    .faculty-table td { display: block; width: 100%; }
+    .faculty-table td:first-child { border-bottom: none; }
+}
 
