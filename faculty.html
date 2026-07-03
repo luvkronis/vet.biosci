@@ -27,6 +27,60 @@
             color: var(--text-muted);
             margin-bottom: 16px;
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        .toc-container {
+            margin-bottom: 48px;
+            padding-left: 24px;
+            border-left: 4px solid #000000;
+            background-color: var(--bg-main);
+        }
+        .toc-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 24px;
+        }
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px 32px;
+        }
+        @media screen and (max-width: 768px) {
+            .toc-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .toc-list-item {
+            list-style: none;
+            font-size: 16px;
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+        }
+        .toc-num {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            color: #1a202c;
+            font-weight: 600;
+        }
+        .toc-link {
+            color: #1a202c;
+            text-decoration: none;
+            border-bottom: 1px dashed #718096;
+            padding-bottom: 2px;
+            transition: var(--transition-smooth);
+            line-height: 1.5;
+        }
+        .toc-link:hover {
+            color: var(--primary-pink);
+            border-bottom-color: var(--primary-pink);
+        }
+        .scroll-mt {
+            scroll-margin-top: 100px;
+        }
     </style>
 </head>
 
@@ -102,8 +156,112 @@
 
             <div class="faculty-list-container">
 
+                <!-- Table of Contents -->
+                <div class="toc-container">
+                    <h2 class="toc-title lang-th">คณาจารย์ประจำหลักสูตร</h2>
+                    <h2 class="toc-title lang-en">Faculty Members</h2>
+                    <ul class="toc-grid">
+                        <li class="toc-list-item">
+                            <span class="toc-num">01.</span>
+                            <a href="#faculty-1" class="toc-link lang-th">รศ.สพ.ญ.ดร. กรรณาภรณ์ สุริยผล</a>
+                            <a href="#faculty-1" class="toc-link lang-en">Assoc. Prof. Gunnaporn Suriyaphon</a>
+                        </li>
+                        <li class="toc-list-item">
+                            <span class="toc-num">02.</span>
+                            <a href="#faculty-2" class="toc-link lang-th">รศ.น.สพ.ดร. สฤษฏิ์วิชญ์ ปัญญาบริบาลบ์</a>
+                            <a href="#faculty-2" class="toc-link lang-en">Assoc. Prof. Saritvich Panyaboriban</a>
+                        </li>
+                        <li class="toc-list-item">
+                            <span class="toc-num">03.</span>
+                            <a href="#faculty-3" class="toc-link lang-th">ผศ.สพ.ญ.ดร. เบญจพร ลิ้มเจริญ</a>
+                            <a href="#faculty-3" class="toc-link lang-en">Asst. Prof. Benjapon Limcharoen</a>
+                        </li>
+                        <li class="toc-list-item">
+                            <span class="toc-num">04.</span>
+                            <a href="#faculty-4" class="toc-link lang-th">ศ.น.สพ.ดร. ไพศาล เทียนไทย</a>
+                            <a href="#faculty-4" class="toc-link lang-en">Prof. Paisan Tienthai</a>
+                        </li>
+                        <li class="toc-list-item">
+                            <span class="toc-num">05.</span>
+                            <a href="#faculty-5" class="toc-link lang-th">รศ.สพ.ญ. ศริยา อัศวกาญจน์</a>
+                            <a href="#faculty-5" class="toc-link lang-en">Assoc. Prof. Sariya Asavakarn</a>
+                        </li>
+                        <li class="toc-list-item">
+                            <span class="toc-num">06.</span>
+                            <a href="#faculty-6" class="toc-link lang-th">รศ.สพ.ญ.ดร. ศยามณ ศรีสุวัฒนาสกุล</a>
+                            <a href="#faculty-6" class="toc-link lang-en">Assoc. Prof. Sayamon Srisuwatanasagul</a>
+                        </li>
+                        <li class="toc-list-item">
+                            <span class="toc-num">07.</span>
+                            <a href="#faculty-7" class="toc-link lang-th">รศ.สพ.ญ.ดร. สฤณี กลันทกานนท์ ทองทรง</a>
+                            <a href="#faculty-7" class="toc-link lang-en">Assoc. Prof. Sarinee Kalandakanond Thongsong</a>
+                        </li>
+                        <li class="toc-list-item">
+                            <span class="toc-num">08.</span>
+                            <a href="#faculty-8" class="toc-link lang-th">รศ.น.สพ.ดร. เจนภพ สว่างเมฆ</a>
+                            <a href="#faculty-8" class="toc-link lang-en">Assoc. Prof. Janpop Sawangmake</a>
+                        </li>
+                        <li class="toc-list-item">
+                            <span class="toc-num">09.</span>
+                            <a href="#faculty-9" class="toc-link lang-th">รศ.น.สพ.ดร. สัมพันธ์ ธรรมเจริญ</a>
+                            <a href="#faculty-9" class="toc-link lang-en">Assoc. Prof. Sumphan Thammacharoen</a>
+                        </li>
+                        <li class="toc-list-item">
+                            <span class="toc-num">10.</span>
+                            <a href="#faculty-10" class="toc-link lang-th">รศ.น.สพ. ก้องเกียรติ ศรีสุวัฒนาสกุล</a>
+                            <a href="#faculty-10" class="toc-link lang-en">Assoc. Prof. Kongkiat Srisuwatanasagul</a>
+                        </li>
+                        <li class="toc-list-item">
+                            <span class="toc-num">11.</span>
+                            <a href="#faculty-11" class="toc-link lang-th">รศ.สพ.ญ.ดร. แนน ช้อยสุนิรชร</a>
+                            <a href="#faculty-11" class="toc-link lang-en">Assoc. Prof. Nan Choisunirachon</a>
+                        </li>
+                        <li class="toc-list-item">
+                            <span class="toc-num">12.</span>
+                            <a href="#faculty-12" class="toc-link lang-th">รศ.น.สพ.ดร. ชุติมน ธนบูรณ์นิพัทธ์</a>
+                            <a href="#faculty-12" class="toc-link lang-en">Assoc. Prof. Chutimon Thanaboonnipat</a>
+                        </li>
+                        <li class="toc-list-item">
+                            <span class="toc-num">13.</span>
+                            <a href="#faculty-13" class="toc-link lang-th">ผศ.น.สพ.ดร. ประพฤติดี ปิยะวิริยะกุล</a>
+                            <a href="#faculty-13" class="toc-link lang-en">Asst. Prof. Prapruddee Piyaviriyakul</a>
+                        </li>
+                        <li class="toc-list-item">
+                            <span class="toc-num">14.</span>
+                            <a href="#faculty-14" class="toc-link lang-th">ผศ.น.สพ.ดร. กิตติพงษ์ ทาจําปา</a>
+                            <a href="#faculty-14" class="toc-link lang-en">Asst. Prof. Kittipong Tachampa</a>
+                        </li>
+                        <li class="toc-list-item">
+                            <span class="toc-num">15.</span>
+                            <a href="#faculty-15" class="toc-link lang-th">ผศ.สพ.ญ.ดร. ศิริรัตน์ รัตนภุชพงศ์</a>
+                            <a href="#faculty-15" class="toc-link lang-en">Asst. Prof. Sirirat Rattanaphuchapong</a>
+                        </li>
+                        <li class="toc-list-item">
+                            <span class="toc-num">16.</span>
+                            <a href="#faculty-16" class="toc-link lang-th">อ.สพ.ญ.ดร. เพราพิลาส ภักดีดินแดน</a>
+                            <a href="#faculty-16" class="toc-link lang-en">Lect. Praopilas Phakdeedindan</a>
+                        </li>
+                        <li class="toc-list-item">
+                            <span class="toc-num">17.</span>
+                            <a href="#faculty-17" class="toc-link lang-th">อ.สพ.ญ.ดร. ศิรินันท์ พิสมัย ทับเที่ยง</a>
+                            <a href="#faculty-17" class="toc-link lang-en">Lect. Sirinun Pissamai Tubtiang</a>
+                        </li>
+                        <li class="toc-list-item">
+                            <span class="toc-num">18.</span>
+                            <a href="#faculty-18" class="toc-link lang-th">อ.สพ.ญ.ดร. ศิริวรรณ สาครินทร์</a>
+                            <a href="#faculty-18" class="toc-link lang-en">Lect. Siriwan Sakarin</a>
+                        </li>
+                        <li class="toc-list-item">
+                            <span class="toc-num">19.</span>
+                            <a href="#faculty-19" class="toc-link lang-th">อ.น.สพ.ดร. สพล เสมเสริมบุญ</a>
+                            <a href="#faculty-19" class="toc-link lang-en">Lect. Sapol Semisermboon</a>
+                        </li>
+                    </ul>
+                </div>
+
+
                 <!-- อาจารย์ท่านที่ 1 -->
-                <div class="bento-card">
+                <div id="faculty-1" class="bento-card scroll-mt">
                     <div class="faculty-profile-grid">
                         <div class="faculty-left">
                             <div class="lang-th">
@@ -207,7 +365,7 @@
                 </div>
 
                 <!-- อาจารย์ท่านที่ 2 -->
-                <div class="bento-card">
+                <div id="faculty-2" class="bento-card scroll-mt">
                     <div class="faculty-profile-grid">
                         <div class="faculty-left">
                             <div class="lang-th">
@@ -311,7 +469,7 @@
                 </div>
 
                 <!-- อาจารย์ท่านที่ 3 -->
-                <div class="bento-card">
+                <div id="faculty-3" class="bento-card scroll-mt">
                     <div class="faculty-profile-grid">
                         <div class="faculty-left">
                             <div class="lang-th">
@@ -415,7 +573,7 @@
                 </div>
 
                 <!-- อาจารย์ท่านที่ 4 -->
-                <div class="bento-card">
+                <div id="faculty-4" class="bento-card scroll-mt">
                     <div class="faculty-profile-grid">
                         <div class="faculty-left">
                             <div class="lang-th">
@@ -519,7 +677,7 @@
                 </div>
 
                 <!-- อาจารย์ท่านที่ 5 -->
-                <div class="bento-card">
+                <div id="faculty-5" class="bento-card scroll-mt">
                     <div class="faculty-profile-grid">
                         <div class="faculty-left">
                             <div class="lang-th">
@@ -623,7 +781,7 @@
                 </div>
 
                 <!-- อาจารย์ท่านที่ 6 -->
-                <div class="bento-card">
+                <div id="faculty-6" class="bento-card scroll-mt">
                     <div class="faculty-profile-grid">
                         <div class="faculty-left">
                             <div class="lang-th">
@@ -727,7 +885,7 @@
                 </div>
 
                 <!-- อาจารย์ท่านที่ 7 -->
-                <div class="bento-card">
+                <div id="faculty-7" class="bento-card scroll-mt">
                     <div class="faculty-profile-grid">
                         <div class="faculty-left">
                             <div class="lang-th">
@@ -831,7 +989,7 @@
                 </div>
 
                 <!-- อาจารย์ท่านที่ 8 -->
-                <div class="bento-card">
+                <div id="faculty-8" class="bento-card scroll-mt">
                     <div class="faculty-profile-grid">
                         <div class="faculty-left">
                             <div class="lang-th">
@@ -935,7 +1093,7 @@
                 </div>
 
                 <!-- อาจารย์ท่านที่ 9 -->
-                <div class="bento-card">
+                <div id="faculty-9" class="bento-card scroll-mt">
                     <div class="faculty-profile-grid">
                         <div class="faculty-left">
                             <div class="lang-th">
@@ -1039,7 +1197,7 @@
                 </div>
 
                 <!-- อาจารย์ท่านที่ 10 -->
-                <div class="bento-card">
+                <div id="faculty-10" class="bento-card scroll-mt">
                     <div class="faculty-profile-grid">
                         <div class="faculty-left">
                             <div class="lang-th">
@@ -1143,7 +1301,7 @@
                 </div>
 
                 <!-- อาจารย์ท่านที่ 11 -->
-                <div class="bento-card">
+                <div id="faculty-11" class="bento-card scroll-mt">
                     <div class="faculty-profile-grid">
                         <div class="faculty-left">
                             <div class="lang-th">
@@ -1247,7 +1405,7 @@
                 </div>
 
                 <!-- อาจารย์ท่านที่ 12 -->
-                <div class="bento-card">
+                <div id="faculty-12" class="bento-card scroll-mt">
                     <div class="faculty-profile-grid">
                         <div class="faculty-left">
                             <div class="lang-th">
@@ -1351,7 +1509,7 @@
                 </div>
 
                 <!-- อาจารย์ท่านที่ 13 -->
-                <div class="bento-card">
+                <div id="faculty-13" class="bento-card scroll-mt">
                     <div class="faculty-profile-grid">
                         <div class="faculty-left">
                             <div class="lang-th">
@@ -1455,7 +1613,7 @@
                 </div>
 
                 <!-- อาจารย์ท่านที่ 14 -->
-                <div class="bento-card">
+                <div id="faculty-14" class="bento-card scroll-mt">
                     <div class="faculty-profile-grid">
                         <div class="faculty-left">
                             <div class="lang-th">
@@ -1559,7 +1717,7 @@
                 </div>
 
                 <!-- อาจารย์ท่านที่ 15 -->
-                <div class="bento-card">
+                <div id="faculty-15" class="bento-card scroll-mt">
                     <div class="faculty-profile-grid">
                         <div class="faculty-left">
                             <div class="lang-th">
@@ -1663,7 +1821,7 @@
                 </div>
 
                 <!-- อาจารย์ท่านที่ 16 -->
-                <div class="bento-card">
+                <div id="faculty-16" class="bento-card scroll-mt">
                     <div class="faculty-profile-grid">
                         <div class="faculty-left">
                             <div class="lang-th">
@@ -1767,7 +1925,7 @@
                 </div>
 
                 <!-- อาจารย์ท่านที่ 17 -->
-                <div class="bento-card">
+                <div id="faculty-17" class="bento-card scroll-mt">
                     <div class="faculty-profile-grid">
                         <div class="faculty-left">
                             <div class="lang-th">
@@ -1871,7 +2029,7 @@
                 </div>
 
                 <!-- อาจารย์ท่านที่ 18 -->
-                <div class="bento-card">
+                <div id="faculty-18" class="bento-card scroll-mt">
                     <div class="faculty-profile-grid">
                         <div class="faculty-left">
                             <div class="lang-th">
@@ -1975,7 +2133,7 @@
                 </div>
 
                 <!-- อาจารย์ท่านที่ 19 -->
-                <div class="bento-card">
+                <div id="faculty-19" class="bento-card scroll-mt">
                     <div class="faculty-profile-grid">
                         <div class="faculty-left">
                             <div class="lang-th">
