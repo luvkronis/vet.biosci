@@ -1,20 +1,17 @@
 /* =======================================================
-* JavaScript Client-Side Translation Engine
+* JavaScript Client-Side Translation & Render Engine
 * File Location: assets/js/lang-engine.js
 * ======================================================= */
 
-// 1. คลังข้อมูลชุดคำแปลภาษาไทยและภาษาอังกฤษ
 const translations = {
     th: {
         navHome: "หน้าแรก",
         navPrograms: "หลักสูตร",
         navFaculty: "คณาจารย์",
         navContact: "ติดต่อสอบถาม",
-        
         bannerSub: "หลักสูตรบัณฑิตศึกษา",
         bannerMain: "ชีวศาสตร์ทางสัตวแพทย์",
         bannerDesc: "แนวทางสำหรับผู้สนใจเข้าศึกษาต่อระดับปริญญาโทและปริญญาเอก",
-
         topBrand: "หลักสูตรบัณฑิตศึกษา คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย",
         mainTitle: "ชีวศาสตร์ทางสัตวแพทย์ (2022)",
         subTitle: "หลักสูตรบัณฑิตศึกษา สาขาวิชาชีวศาสตร์ทางสัตวแพทย์",
@@ -31,7 +28,7 @@ const translations = {
         headStruct: "โครงสร้างหลักสูตร",
         tblThProgram: "หลักสูตร",
         tblThTime: "ระยะเวลาการศึกษา",
-        tblMName: "วิทยาศาสตรมหาบัณฑิต (วท.ม.)",
+        tblMName: "วิทยาศาสตรมหาบันฑิต (วท.ม.)",
         tblMTime: "2 ปี",
         tblPName: "วิทยาศาสตรดุษฎีบัณฑิต (วท.ด.)",
         tblPSub: "(สำหรับผู้สมัครที่สำเร็จการศึกษา หรือไม่ได้สำเร็จการศึกษาระดับปริญญาโท)",
@@ -58,14 +55,8 @@ const translations = {
         contactTitle: "คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย",
         contactAddress: "ถนนอังรีดูนังต์ แขวงปทุมวัน เขตปทุมวัน กรุงเทพมหานคร 10330",
         lblUg: "(ศึกษาต่อและปริญญาตรี)",
-        lblGrad: "(บัทธิปศึกษา)",
+        lblGrad: "(บัณฑิตศึกษา)",
         lblFax: "โทรสาร",
-        noticeMasterTitle: "วิทยาศาสตรมหาบัณฑิต (วท.ม.)",
-        noticeMasterDesc: "หน้านี้กำลังอยู่ในช่วงของการปรับปรุงและจัดเตรียมข้อมูลหลักสูตรปริญญาโท 2 ปี ขออภัยในความไม่สะดวก",
-        noticePhdTitle: "วิทยาศาสตรดุษฎีบัณฑิต (วท.ด.)",
-        noticePhdDesc: "หน้านี้กำลังอยู่ในช่วงของการปรับปรุงและจัดเตรียมข้อมูลหลักสูตรปริญญาเอก 3 หรือ 5 ปี ขออภัยในความไม่สะดวก",
-        noticeNewsTitle: "ข่าวสารและประชาสัมพันธ์",
-        noticeNewsDesc: "หน้านี้กำลังอยู่ในช่วงของการปรับปรุงและจัดเตรียมข้อมูลข่าวสารและกิจกรรมของหลักสูตร ขออภัยในความไม่สะดวก",
         facultyBadge: "คณาจารย์ประจำหลักสูตร",
         lblRoleMain: "อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์",
         lblRoleSub: "ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย",
@@ -77,14 +68,13 @@ const translations = {
         lblTblResearch: "งานวิจัยที่สนใจ",
         lblBtnCV: "Download CV",
         lblBtnResearcher: "Researcher Chula",
-        lblBtnScholar: "Google Scholar",
+        lblBtnScholar: "Google Scholar"
     },
     en: {
         navHome: "Home",
         navPrograms: "Programs",
         navFaculty: "Faculty",
         navContact: "Contact",
-        
         bannerSub: "Graduate Program",
         bannerMain: "Veterinary Biosciences",
         bannerDesc: "Guideline for Prospective M.Sc. and Ph.D. Students",
@@ -133,12 +123,6 @@ const translations = {
         lblUg: "(Admissions & Undergraduate)",
         lblGrad: "(Graduate Studies)",
         lblFax: "Fax",
-        noticeMasterTitle: "Master of Science (M.Sc.)",
-        noticeMasterDesc: "This page is currently under construction and preparing information for the 2-year Master's program. We apologize for any inconvenience.",
-        noticePhdTitle: "Doctor of Philosophy (Ph.D.)",
-        noticePhdDesc: "This page is currently under construction and preparing information for the 3 or 5-year Ph.D. program. We apologize for any inconvenience.",
-        noticeNewsTitle: "News and Announcements",
-        noticeNewsDesc: "This page is currently under construction and preparing news and events of the program. We apologize for any inconvenience.",
         facultyBadge: "Faculty Members",
         lblRoleMain: "Faculty Member, Veterinary Biosciences",
         lblRoleSub: "Expert, Faculty of Veterinary Science, Chulalongkorn University",
@@ -154,27 +138,23 @@ const translations = {
     }
 };
 
-// =======================================================
-// ตัวแปรเก็บข้อมูลคณาจารย์จาก JSON
-// =======================================================
 let facultyDataArray = [];
+if (typeof facultyDataList !== 'undefined') {
+    facultyDataArray = facultyDataList;
+}
 
-// 2. ฟังก์ชันหลักในการเปลี่ยนเนื้อหาตาม DOM ID ที่ถูกผูกไว้ในหน้าเว็บ HTML
 function changeLang(lang) {
     const data = translations[lang];
     if (!data) return;
 
-    // ระบบสลับภาษาแบบใช้ Class ควบคุม HTML (สำหรับส่วนทั่วไป)
     document.body.classList.remove('lang-th', 'lang-en');
     document.body.classList.add('lang-' + lang);
 
-    let imgPrefix = "";
-    if (window.location.pathname.includes("/programs/")) { imgPrefix = "../"; }
+    let imgPrefix = window.location.pathname.includes("/programs/") ? "../" : "";
 
     const bannerSubText = document.getElementById('banner-sub-text');
     const bannerMainText = document.getElementById('banner-main-text');
     const bannerDescText = document.getElementById('banner-desc-text');
-    
     if (bannerSubText) bannerSubText.innerText = data.bannerSub;
     if (bannerMainText) bannerMainText.innerText = data.bannerMain;
     if (bannerDescText) bannerDescText.innerText = data.bannerDesc;
@@ -203,7 +183,6 @@ function changeLang(lang) {
     const mobileNavHome = document.querySelector('.mobile-nav-links li:nth-child(1) a');
     const mobileNavFaculty = document.querySelector('.mobile-nav-links li:nth-child(6) a');
     const mobileNavContact = document.querySelector('.mobile-nav-links li:nth-child(7) a');
-
     if (mobileNavHome) mobileNavHome.innerText = data.navHome;
     if (mobileNavFaculty) mobileNavFaculty.innerText = data.navFaculty;
     if (mobileNavContact) mobileNavContact.innerText = data.navContact;
@@ -310,14 +289,13 @@ function changeLang(lang) {
     if(btnTh && btnEn) {
         if(lang === 'th') {
             btnTh.classList.add('active');
-            btnEn.classList.remove('active');
+            btnEn.classList.remove('remove');
         } else {
             btnEn.classList.add('active');
             btnTh.classList.remove('active');
         }
     }
     
-    // อัปเดตข้อมูลบนหน้าเว็บเมื่อมีการกดเปลี่ยนภาษา
     if (facultyDataArray.length > 0) {
         initFacultySlider(lang, imgPrefix);
         renderFacultyPage(lang, imgPrefix);
@@ -337,35 +315,6 @@ function renderListArray(elementId, itemsArray) {
     });
 }
 
-// ฟังก์ชันดึงข้อมูลจาก JSON
-async function fetchFacultyData() {
-    try {
-        const response = await fetch('faculty-data.json');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        // ในไฟล์ JSON ข้อมูลถูกครอบด้วย {"faculty-data": [ ... ]}
-        if(data && data["faculty-data"]) {
-            facultyDataArray = data["faculty-data"];
-        } else {
-            facultyDataArray = data; // เผื่อกรณี JSON เป็น Array ตรงๆ
-        }
-        
-        const savedLanguageSetting = localStorage.getItem('preferredBentoLang') || 'th';
-        let imgPrefix = window.location.pathname.includes("/programs/") ? "../" : "";
-        
-        changeLang(savedLanguageSetting);
-        initFacultySlider(savedLanguageSetting, imgPrefix);
-        renderFacultyPage(savedLanguageSetting, imgPrefix);
-        startSlideAutoPlay();
-        
-    } catch (error) {
-        console.error("Could not fetch faculty data:", error);
-    }
-}
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const mobileToggle = document.getElementById("mobile-toggle");
     const mobileMenu = document.getElementById("mobile-menu");
@@ -376,13 +325,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
     
-    // โหลดข้อมูลเมื่อหน้าเว็บพร้อม
-    fetchFacultyData();
+    const savedLanguageSetting = localStorage.getItem('preferredBentoLang') || 'th';
+    changeLang(savedLanguageSetting);
+    
+    if (facultyDataArray.length > 0) {
+        startSlideAutoPlay();
+    }
 });
 
-// =======================================================
-// 🛠️ กลไกควบคุมระบบ Bento Slider (Dynamic Generation)
-// =======================================================
 let currentSlideIndex = 0;
 let slideTimer = null;
 
@@ -397,7 +347,6 @@ function initFacultySlider(lang, prefix = "") {
         const slideDiv = document.createElement('div');
         slideDiv.className = `slide ${idx === currentSlideIndex ? 'active' : ''}`;
         
-        // เลือกชื่อให้ตรงกับภาษา
         const profName = lang === 'th' ? prof.name_th : prof.name_en;
         
         slideDiv.innerHTML = `
@@ -470,12 +419,6 @@ function resetProgressBarAnimate() {
     setTimeout(() => { progressBar.style.width = '100%'; }, 20);
 }
 
-
-// =======================================================
-// 🛠️ กลไกเรนเดอร์หน้า Faculty.html (Dynamic Generation)
-// =======================================================
-
-// ฟังก์ชันแปลงข้อความที่มี comma เป็นรายการ ol
 function createListHTML(textStr) {
     if (!textStr || textStr === "-") return "-";
     const items = textStr.split(',').map(item => item.trim()).filter(item => item.length > 0);
@@ -496,12 +439,10 @@ function renderFacultyPage(lang, prefix = "") {
     
     const dataLang = translations[lang];
     
-    // เคลียร์เนื้อหาเดิมก่อน
     tocContainer.innerHTML = '';
     facultyListContainer.innerHTML = '';
     
     facultyDataArray.forEach((prof, idx) => {
-        // --- 1. สร้างสารบัญ (TOC) ---
         const listNum = (idx + 1).toString().padStart(2, '0') + '.';
         const tocItem = document.createElement('li');
         tocItem.className = 'toc-list-item';
@@ -514,14 +455,11 @@ function renderFacultyPage(lang, prefix = "") {
         `;
         tocContainer.appendChild(tocItem);
         
-        // --- 2. สร้างการ์ดอาจารย์ ---
         const facultyCard = document.createElement('div');
         facultyCard.id = prof.id;
         facultyCard.className = 'bento-card scroll-mt';
         
         const profNameSub = lang === 'th' ? prof.name_en : prof.name_th;
-        
-        // แปลง comma-separated เป็น HTML List
         const expertiseHTML = createListHTML(prof.expertise);
         const researchHTML = createListHTML(prof.research);
 
@@ -569,7 +507,6 @@ function renderFacultyPage(lang, prefix = "") {
                 <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> ${dataLang.lblBtnScholar}</a>
             </div>
         `;
-        
         facultyListContainer.appendChild(facultyCard);
     });
 }

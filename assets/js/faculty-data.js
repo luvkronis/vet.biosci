@@ -1,0 +1,216 @@
+/* =======================================================
+* Faculty Members Global Data List (19 Professors)
+* File Location: assets/js/faculty-data.js
+* ======================================================= */
+
+const facultyDataList = [
+    {
+        "id": "prof1",
+        "name_th": "รศ.สพ.ญ.ดร. กรรณาภรณ์ สุริยผล",
+        "name_en": "Assoc. Prof. Gunnaporn Suriyaphol",
+        "res": "Dr. rer. nat. (Biology), M.S. (Veterinary Microbiology), M.Sc. (Molecular Genetics and Genetic Engineering), D.V.M.",
+        "email": "-",
+        "phone": "-",
+        "expertise": "Biology, Veterinary Microbiology, Molecular Genetics",
+        "research": "Proteomic profiles for corneal wound healing, comparative genomics of endangered species, salivary metabolomic biomarkers for oral melanoma, and gut resistome analysis",
+        "img": "assets/images/faculty/prof1.jpg"
+    },
+    {
+        "id": "prof2",
+        "name_th": "รศ.น.สพ. ก้องเกียรติ ศรีสุวัฒนาสกุล",
+        "name_en": "Assoc. Prof. Kongkiat Srisuwatanasagul",
+        "res": "M.Sc. (Veterinary Surgery), D.V.M.",
+        "email": "-",
+        "phone": "-",
+        "expertise": "Veterinary Surgery",
+        "research": "Geographic variation in testicular morphometrics, cytochrome P450 aromatase expression in testes, and morphophysiological assessment of reproductive organs",
+        "img": "assets/images/faculty/prof10.jpg"
+    },
+    {
+        "id": "prof3",
+        "name_th": "ผศ.น.สพ.ดร. กิตติพงษ์ ทาจำปา",
+        "name_en": "Asst. Prof. Kittipong Tachampa",
+        "res": "Ph.D. (Physiology and Biophysics), M.Sc. (Physiology), D.V.M.",
+        "email": "-",
+        "phone": "-",
+        "expertise": "Physiology and Biophysics",
+        "research": "Ultrasonographic diaphragmatic parameters, effects of cardiac orientation on vertebral heart score, and evaluation of plasma cardiac troponin I",
+        "img": "assets/images/faculty/prof14.jpg"
+    },
+    {
+        "id": "prof4",
+        "name_th": "รศ.สพ.ญ.ดร. ชุติมน ธนบูรณ์นิพัทธ์",
+        "name_en": "Assoc. Prof. Chutimon Thanaboonnipat",
+        "res": "Ph.D. (Veterinary Biosciences), D.V.M. (1st Class Honors)",
+        "email": "-",
+        "phone": "-",
+        "expertise": "Veterinary Biosciences",
+        "research": "Automatic classification of canine tracheal collapse using deep learning, post-chemotherapy lymph node observations, and computed tomographic evaluations in healthy animals",
+        "img": "assets/images/faculty/prof12.jpg"
+    },
+    {
+        "id": "prof5",
+        "name_th": "รศ.น.สพ.ดร. เจนภพ สว่างเมฆ",
+        "name_en": "Assoc. Prof. Janpop Sawangmake",
+        "res": "Ph.D. (Veterinary Biosciences), M.Sc. (Veterinary Pharmacology), D.V.M.",
+        "email": "-",
+        "phone": "-",
+        "expertise": "Veterinary Biosciences, Veterinary Pharmacology",
+        "research": "Regenerative tissue engineering, decellularized tissue for tracheal reconstruction, and generation of transplantable insulin-producing cells from stem cells",
+        "img": "assets/images/faculty/prof8.jpg"
+    },
+    {
+        "id": "prof6",
+        "name_th": "รศ.สพ.ญ.ดร. แนน ช้อยสุนิรชร",
+        "name_en": "Assoc. Prof. Nan Choisunirachon",
+        "res": "Ph.D. (Veterinary Medical Science), M.Sc. (Veterinary Surgery), D.V.M.",
+        "email": "-",
+        "phone": "-",
+        "expertise": "Veterinary Medical Science, Veterinary Surgery",
+        "research": "Computed tomographic evaluation of internal organs, ultrasonographic kidney and adrenal dimensions, and contrast-enhanced computed tomography for infarction detection",
+        "img": "assets/images/faculty/prof11.jpg"
+    },
+    {
+        "id": "prof7",
+        "name_th": "ผศ.น.สพ.ดร. ประพฤติดี ปิยะวิริยะกุล",
+        "name_en": "Asst. Prof. Prapruddee Piyaviriyakul",
+        "res": "Ph.D. (Applied Marine Bioscience), M.Sc. (Molecular Genetics and Genetic Engineering), D.V.M.",
+        "email": "-",
+        "phone": "-",
+        "expertise": "Applied Marine Bioscience, Molecular Genetics",
+        "research": "Application of microfluidic devices for microfilarial detection and single cell trapping and culturing of leukemia cell lines",
+        "img": "assets/images/faculty/prof13.jpg"
+    },
+    {
+        "id": "prof8",
+        "name_th": "ศ.น.สพ.ดร. ไพศาล เทียนไทย",
+        "name_en": "Prof. Paisan Tienthai",
+        "res": "Ph.D. (Obstetrics and Gynaecology), M.Sc. (Obstetrics and Gynaecology), D.V.M.",
+        "email": "-",
+        "phone": "-",
+        "expertise": "Veterinary Anatomy, Obstetrics and Gynaecology",
+        "research": "Reproductive organ morphology, oxytocin receptor distribution in sows, apoptosis in interplacental areas, and anti-Müllerian hormone immunolocalization",
+        "img": "assets/images/faculty/prof4.jpg"
+    },
+    {
+        "id": "prof9",
+        "name_th": "อ.สพ.ญ.ดร. เพราพิลาส ภักดีดินแดน",
+        "name_en": "Lect. Praopilas Phakdeedindan",
+        "res": "Ph.D. (Veterinary Bioscience), M.Sc. (Veterinary Bioscience), D.V.M.",
+        "email": "-",
+        "phone": "-",
+        "expertise": "Veterinary Bioscience",
+        "research": "Effect of heat stress on egg production, establishment of canine mast cell tumour cell lines, and DNA methylation in testicular cells",
+        "img": "assets/images/faculty/prof16.jpg"
+    },
+    {
+        "id": "prof10",
+        "name_th": "ผศ.สพ.ญ.ดร. เบญจพร ลิ้มเจริญ",
+        "name_en": "Asst. Prof. Benjapon Limcharoen",
+        "res": "Ph.D. (Veterinary Pathobiology), D.V.M. (2nd Class Honors)",
+        "email": "-",
+        "phone": "-",
+        "expertise": "Veterinary Pathobiology",
+        "research": "Optical methods for visualizing transdermal drug delivery with microneedles, immune responses following viral infections, and bioscaffolds for pulp tissue regeneration",
+        "img": "assets/images/faculty/prof3.jpg"
+    },
+    {
+        "id": "prof11",
+        "name_th": "รศ.สพ.ญ.ดร. ศยามณ ศรีสุวัฒนาสกุล",
+        "name_en": "Assoc. Prof. Sayamon Srisuwatanasagul",
+        "res": "Ph.D. (Anatomy and Cell Biology), M.Sc. (Reproductive Histology), D.V.M. (2nd Class Honors)",
+        "email": "-",
+        "phone": "-",
+        "expertise": "Anatomy and Cell Biology, Reproductive Histology",
+        "research": "Ovarian stage-dependent gene expression, decellularized tissue as cell carrier systems, and morphophysiological assessment of the cervix",
+        "img": "assets/images/faculty/prof6.jpg"
+    },
+    {
+        "id": "prof12",
+        "name_th": "รศ.สพ.ญ. ศริยา อัศวกาญจน์",
+        "name_en": "Assoc. Prof. Sariya Asavakarn",
+        "res": "M.Sc. (Biochemistry), D.V.M.",
+        "email": "-",
+        "phone": "-",
+        "expertise": "Biochemistry",
+        "research": "Mass spectrometry-based serum peptidomic profiling, cardiac biomarkers for canine heartworm disease, and microfluidic devices for microfilarial detection",
+        "img": "assets/images/faculty/prof5.jpg"
+    },
+    {
+        "id": "prof13",
+        "name_th": "รศ.น.สพ.ดร. สฤษฎ์วิชญ์ ปัญญาบริบาลบ์",
+        "name_en": "Assoc. Prof. Saritvich Panyaboriban",
+        "res": "Ph.D. (Animal Reproduction), D.V.M.",
+        "email": "-",
+        "phone": "-",
+        "expertise": "Animal Reproduction",
+        "research": "Hormonal treatments for embryo survival, detection of protein biomarkers for sperm characteristics in wild felidae, and semen cryopreservation",
+        "img": "assets/images/faculty/prof2.jpg"
+    },
+    {
+        "id": "prof14",
+        "name_th": "รศ.สพ.ญ.ดร. สฤณี กลันทกานนท์ ทองทรง",
+        "name_en": "Assoc. Prof. Sarinee Kalandakanond Thongsong",
+        "res": "Ph.D. (Physiology), D.V.M. (Honors)",
+        "email": "-",
+        "phone": "-",
+        "expertise": "Physiology",
+        "research": "Preventive effects of phytoestrogens on anxiety-like behaviors, nail cortisol for welfare assessment, and cardiac remodeling in mitral regurgitation",
+        "img": "assets/images/faculty/prof7.jpg"
+    },
+    {
+        "id": "prof15",
+        "name_th": "อ.น.สพ.ดร. สพล เสมเสริมบุญ",
+        "name_en": "Lect. Sapol Semsirmboon",
+        "res": "Ph.D. (Animal Physiology), D.V.M. (2nd Class Honors)",
+        "email": "-",
+        "phone": "-",
+        "expertise": "Animal Physiology",
+        "research": "High dietary cation and anion difference effects on renal response, behavioral responses in stray dogs, and natural high ambient temperature-induced respiratory hypocapnia",
+        "img": "assets/images/faculty/prof19.jpg"
+    },
+    {
+        "id": "prof16",
+        "name_th": "รศ.น.สพ.ดร. สัมพันธ์ ธรรมเจริญ",
+        "name_en": "Assoc. Prof. Sumphan Thammacharoen",
+        "res": "Ph.D. (Physiology), M.Sc. (Animal Physiology), D.V.M.",
+        "email": "-",
+        "phone": "-",
+        "expertise": "Physiology, Animal Physiology",
+        "research": "Effects of salinity and drought on ruminants, high dietary cation and anion difference in goats, and physiological responses to high ambient temperature",
+        "img": "assets/images/faculty/prof9.jpg"
+    },
+    {
+        "id": "prof17",
+        "name_th": "ผศ.สพ.ญ.ดร. ศิริรัตน์ รัตนภุชพงศ์",
+        "name_en": "Asst. Prof. Sirirat Rattanapuchpong",
+        "res": "Ph.D. (Veterinary Biosciences), D.V.M. (2nd Class Honors)",
+        "email": "-",
+        "phone": "-",
+        "expertise": "Veterinary Biosciences",
+        "research": "Osteogenic potentials in canine mesenchymal stem cells, regenerative tissue engineering for oral reconstruction, and Wnt components in osteogenic differentiation",
+        "img": "assets/images/faculty/prof15.jpg"
+    },
+    {
+        "id": "prof18",
+        "name_th": "อ.สพ.ญ.ดร. ศิรินันท์ พิสมัย ทับเที่ยง",
+        "name_en": "Lect. Sirinun Pissamai Tubtiang",
+        "res": "Ph.D. (Veterinary Bioscience), D.V.M.",
+        "email": "-",
+        "phone": "-",
+        "expertise": "Veterinary Bioscience",
+        "research": "Nanostructured lipid carriers for periodontal therapy, morphometric variations of the tympanic bulla, and tissue transcriptome profiling in canine oral melanoma",
+        "img": "assets/images/faculty/prof17.jpg"
+    },
+    {
+        "id": "prof19",
+        "name_th": "อ.สพ.ญ.ดร. ศิริวรรณ สาครินทร์",
+        "name_en": "Lect. Siriwan Sakarin",
+        "res": "Ph.D. (Veterinary Internal Medicine), M.Sc. (Veterinary Internal Medicine), D.V.M.",
+        "email": "-",
+        "phone": "-",
+        "expertise": "Veterinary Internal Medicine",
+        "research": "Proteomic and phosphoproteomic analysis in dogs with pulmonary hypertension, and anti-proliferative effects of cannabinoids on cancer cells",
+        "img": "assets/images/faculty/prof18.jpg"
+    }
+];
