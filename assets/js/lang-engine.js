@@ -11,7 +11,6 @@ const translations = {
         navFaculty: "คณาจารย์",
         navContact: "ติดต่อสอบถาม",
         
-        // แบนเนอร์หลัก
         bannerSub: "หลักสูตรบัณฑิตศึกษา",
         bannerMain: "ชีวศาสตร์ทางสัตวแพทย์",
         bannerDesc: "แนวทางสำหรับผู้สนใจเข้าศึกษาต่อระดับปริญญาโทและปริญญาเอก",
@@ -68,27 +67,17 @@ const translations = {
         noticeNewsTitle: "ข่าวสารและประชาสัมพันธ์",
         noticeNewsDesc: "หน้านี้กำลังอยู่ในช่วงของการปรับปรุงและจัดเตรียมข้อมูลข่าวสารและกิจกรรมของหลักสูตร ขออภัยในความไม่สะดวก",
         facultyBadge: "คณาจารย์ประจำหลักสูตร",
-        facultyData: [
-            { name: "รศ.สพ.ญ.ดร. กรรณาภรณ์ สุริยผล", res: "Dr. rer. nat. (Biology)", img: "assets/images/faculty/prof1.jpg" },
-            { name: "รศ.น.สพ.ดร. สฤษฏิ์วิชญ์ ปัญญาบริบาลบ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (วิทยาการสืบพันธุ์สัตว์)", img: "assets/images/faculty/prof2.jpg" },
-            { name: "ผศ.สพ.ญ.ดร. เบญจพร ลิ้มเจริญ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (พยาธิชีววิทยาทางสัตวแพทย์)", img: "assets/images/faculty/prof3.jpg" },
-            { name: "ศ.น.สพ.ดร. ไพศาล เทียนไทย", res: "Ph.D (Obstetrics and Gynaecology)", img: "assets/images/faculty/prof4.jpg" },
-            { name: "รศ.สพ.ญ. ศริยา อัศวกาญจน์", res: "M.Sc (Biochemistry)", img: "assets/images/faculty/prof5.jpg" },
-            { name: "รศ.สพ.ญ.ดร. ศยามณ ศรีสุวัฒนาสกุล", res: "Ph.D (Anatomy and cell biology)", img: "assets/images/faculty/prof6.jpg" },
-            { name: "รศ.สพ.ญ.ดร. สฤณี กลันทกานนท์ ทองทรง", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof7.jpg" },
-            { name: "รศ.น.สพ.ดร. เจนภพ สว่างเมฆ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof8.jpg" },
-            { name: "รศ.น.สพ.ดร. สัมพันธ์ ธรรมเจริญ", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof9.jpg" },
-            { name: "รศ.น.สพ. ก้องเกียรติ ศรีสุวัฒนาสกุล", res: "วิทยาศาสตรมหาบัณฑิต (ศัลยศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof10.jpg" },
-            { name: "รศ.สพ.ญ.ดร. แนน ช้อยสุนิรชร", res: "Ph.D. (Veterinary Medical Science)", img: "assets/images/faculty/prof11.jpg" },
-            { name: "รศ.น.สพ.ดร. ชุติมน ธนบูรณ์นิพัทธ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof12.jpg" },
-            { name: "ผศ.น.สพ.ดร. ประพฤติดี ปิยะวิริยะกุล", res: "Ph.D. (Applied Marine Bioscience)", img: "assets/images/faculty/prof13.jpg" },
-            { name: "ผศ.น.สพ.ดร. กิตติพงษ์ ทาจําปา", res: "Ph.D. (Physiology & biophysics)", img: "assets/images/faculty/prof14.jpg" },
-            { name: "ผศ.สพ.ญ.ดร. ศิริรัตน์ รัตนภุชพงศ์", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (ชีวศาสตร์ทางสัตวแพทย์)", img: "assets/images/faculty/prof15.jpg" },
-            { name: "อ.สพ.ญ.ดร. เพราพิลาส ภักดีดินแดน", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof16.jpg" },
-            { name: "อ.สพ.ญ.ดร. ศิรินันท์ พิสมัย ทับเที่ยง", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof17.jpg" },
-            { name: "อ.สพ.ญ.ดร. ศิริวรรณ สาครินทร์", res: "วิทยาศาสตรดุษฎีบัณฑิต (อายุรศาสตรสัตวแพทย์)", img: "assets/images/faculty/prof18.jpg" },
-            { name: "อ.น.สพ.ดร. สพล เสมเสริมบุญ", res: "วิทยาศาสตร์ดุษฎีบัณฑิต (สรีรวิทยาการสัตว์)", img: "assets/images/faculty/prof19.jpg" }
-        ]
+        lblRoleMain: "อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์",
+        lblRoleSub: "ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย",
+        lblTblEmail: "อีเมล",
+        lblTblPhone: "โทรศัพท์",
+        lblTblAffiliation: "สังกัดหลักสูตร",
+        valTblAffiliation: "M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์",
+        lblTblExpertise: "ความเชี่ยวชาญ",
+        lblTblResearch: "งานวิจัยที่สนใจ",
+        lblBtnCV: "Download CV",
+        lblBtnResearcher: "Researcher Chula",
+        lblBtnScholar: "Google Scholar",
     },
     en: {
         navHome: "Home",
@@ -151,36 +140,31 @@ const translations = {
         noticeNewsTitle: "News and Announcements",
         noticeNewsDesc: "This page is currently under construction and preparing news and events of the program. We apologize for any inconvenience.",
         facultyBadge: "Faculty Members",
-        facultyData: [
-            { name: "Assoc. Prof. Gunnaporn Suriyaphon, D.V.M., Dr. rer. nat.", res: "Dr. rer. nat. (Biology)", img: "assets/images/faculty/prof1.jpg" },
-            { name: "Assoc. Prof. Saritvich Panyaboriban, D.V.M., Ph.D.", res: "Doctor of Philosophy (Animal Theriogenology)", img: "assets/images/faculty/prof2.jpg" },
-            { name: "Asst. Prof. Benjapon Limcharoen, D.V.M., Ph.D.", res: "Doctor of Philosophy (Veterinary Pathobiology)", img: "assets/images/faculty/prof3.jpg" },
-            { name: "Prof. Paisan Tienthai, D.V.M., Ph.D.", res: "Ph.D. (Obstetrics and Gynaecology)", img: "assets/images/faculty/prof4.jpg" },
-            { name: "Assoc. Prof. Sariya Asavakarn, D.V.M., M.Sc.", res: "M.Sc. (Biochemistry)", img: "assets/images/faculty/prof5.jpg" },
-            { name: "Assoc. Prof. Sayamon Srisuwatanasagul, D.V.M., Ph.D.", res: "Ph.D. (Anatomy and cell biology)", img: "assets/images/faculty/prof6.jpg" },
-            { name: "Assoc. Prof. Sarinee Kalandakanond Thongsong, D.V.M., Ph.D.", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof7.jpg" },
-            { name: "Assoc. Prof. Janpop Sawangmake, D.V.M., Ph.D.", res: "Doctor of Philosophy (Veterinary Biosciences)", img: "assets/images/faculty/prof8.jpg" },
-            { name: "Assoc. Prof. Sumphan Thammacharoen, D.V.M., Ph.D.", res: "Ph.D. (Physiology)", img: "assets/images/faculty/prof9.jpg" },
-            { name: "Assoc. Prof. Kongkiat Srisuwatanasagul, D.V.M., M.V.Sc.", res: "Master of Veterinary Science (Veterinary Surgery)", img: "assets/images/faculty/prof10.jpg" },
-            { name: "Assoc. Prof. Nan Choisunirachon, D.V.M., Ph.D.", res: "Ph.D. (Veterinary Medical Science)", img: "assets/images/faculty/prof11.jpg" },
-            { name: "Assoc. Prof. Chutimon Thanaboonnipat, D.V.M., Ph.D.", res: "Doctor of Philosophy (Veterinary Biosciences)", img: "assets/images/faculty/prof12.jpg" },
-            { name: "Asst. Prof. Prapruddee Piyaviriyakul, D.V.M., Ph.D.", res: "Ph.D. (Applied Marine Bioscience)", img: "assets/images/faculty/prof13.jpg" },
-            { name: "Asst. Prof. Kittipong Tachampa, D.V.M., Ph.D.", res: "Ph.D. (Physiology & biophysics)", img: "assets/images/faculty/prof14.jpg" },
-            { name: "Asst. Prof. Sirirat Rattanaphuchapong, D.V.M., Ph.D.", res: "Doctor of Philosophy (Veterinary Biosciences)", img: "assets/images/faculty/prof15.jpg" },
-            { name: "Lect. Praopilas Phakdeedindan, D.V.M., Ph.D.", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof16.jpg" },
-            { name: "Lect. Sirinun Pissamai Tubtiang, D.V.M., Ph.D.", res: "Ph.D. (Veterinary Bioscience)", img: "assets/images/faculty/prof17.jpg" },
-            { name: "Lect. Siriwan Sakarin, D.V.M., Ph.D.", res: "Doctor of Philosophy (Veterinary Medicine)", img: "assets/images/faculty/prof18.jpg" },
-            { name: "Lect. Sapol Semisermboon, D.V.M., Ph.D.", res: "Doctor of Philosophy (Animal Physiology)", img: "assets/images/faculty/prof19.jpg" }
-        ]
+        lblRoleMain: "Faculty Member, Veterinary Biosciences",
+        lblRoleSub: "Expert, Faculty of Veterinary Science, Chulalongkorn University",
+        lblTblEmail: "Email",
+        lblTblPhone: "Phone & Fax",
+        lblTblAffiliation: "Graduate Program Affiliation",
+        valTblAffiliation: "M.Sc. in Veterinary Biosciences<br>Ph.D. in Veterinary Biosciences",
+        lblTblExpertise: "Expertise",
+        lblTblResearch: "Research Area",
+        lblBtnCV: "Download CV",
+        lblBtnResearcher: "Researcher Chula",
+        lblBtnScholar: "Google Scholar"
     }
 };
+
+// =======================================================
+// ตัวแปรเก็บข้อมูลคณาจารย์จาก JSON
+// =======================================================
+let facultyDataArray = [];
 
 // 2. ฟังก์ชันหลักในการเปลี่ยนเนื้อหาตาม DOM ID ที่ถูกผูกไว้ในหน้าเว็บ HTML
 function changeLang(lang) {
     const data = translations[lang];
     if (!data) return;
 
-    // ระบบสลับภาษาแบบใช้ Class ควบคุม HTML (สำหรับหน้า Faculty)
+    // ระบบสลับภาษาแบบใช้ Class ควบคุม HTML (สำหรับส่วนทั่วไป)
     document.body.classList.remove('lang-th', 'lang-en');
     document.body.classList.add('lang-' + lang);
 
@@ -215,8 +199,6 @@ function changeLang(lang) {
         if (pTitle) pTitle.innerText = lang === 'th' ? "วิทยาศาสตรดุษฎีบัณฑิต" : "Doctor of Philosophy";
         if (pDesc) pDesc.innerText = lang === 'th' ? "สาขาวิชาชีวศาสตร์ทางสัตวแพทย์ (หลักสูตร 3 หรือ 5 ปี)" : "Program in Veterinary Biosciences (3 or 5 Years)";
     }
-
-    initFacultySlider(lang, imgPrefix);
 
     const mobileNavHome = document.querySelector('.mobile-nav-links li:nth-child(1) a');
     const mobileNavFaculty = document.querySelector('.mobile-nav-links li:nth-child(6) a');
@@ -334,6 +316,13 @@ function changeLang(lang) {
             btnTh.classList.remove('active');
         }
     }
+    
+    // อัปเดตข้อมูลบนหน้าเว็บเมื่อมีการกดเปลี่ยนภาษา
+    if (facultyDataArray.length > 0) {
+        initFacultySlider(lang, imgPrefix);
+        renderFacultyPage(lang, imgPrefix);
+    }
+    
     localStorage.setItem('preferredBentoLang', lang);
 }
 
@@ -348,6 +337,35 @@ function renderListArray(elementId, itemsArray) {
     });
 }
 
+// ฟังก์ชันดึงข้อมูลจาก JSON
+async function fetchFacultyData() {
+    try {
+        const response = await fetch('faculty-data.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        // ในไฟล์ JSON ข้อมูลถูกครอบด้วย {"faculty-data": [ ... ]}
+        if(data && data["faculty-data"]) {
+            facultyDataArray = data["faculty-data"];
+        } else {
+            facultyDataArray = data; // เผื่อกรณี JSON เป็น Array ตรงๆ
+        }
+        
+        const savedLanguageSetting = localStorage.getItem('preferredBentoLang') || 'th';
+        let imgPrefix = window.location.pathname.includes("/programs/") ? "../" : "";
+        
+        changeLang(savedLanguageSetting);
+        initFacultySlider(savedLanguageSetting, imgPrefix);
+        renderFacultyPage(savedLanguageSetting, imgPrefix);
+        startSlideAutoPlay();
+        
+    } catch (error) {
+        console.error("Could not fetch faculty data:", error);
+    }
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const mobileToggle = document.getElementById("mobile-toggle");
     const mobileMenu = document.getElementById("mobile-menu");
@@ -357,30 +375,36 @@ document.addEventListener("DOMContentLoaded", () => {
             mobileMenu.classList.toggle("open");
         });
     }
+    
+    // โหลดข้อมูลเมื่อหน้าเว็บพร้อม
+    fetchFacultyData();
 });
 
 // =======================================================
-// 🛠️ กลไกควบคุมระบบ Bento Slider (Dynamic Generation 19 ท่าน)
+// 🛠️ กลไกควบคุมระบบ Bento Slider (Dynamic Generation)
 // =======================================================
 let currentSlideIndex = 0;
 let slideTimer = null;
 
 function initFacultySlider(lang, prefix = "") {
     const sliderWrapper = document.getElementById('faculty-slider');
-    if (!sliderWrapper) return;
+    if (!sliderWrapper || facultyDataArray.length === 0) return;
     
     const data = translations[lang];
     sliderWrapper.innerHTML = ''; 
 
-    data.facultyData.forEach((prof, idx) => {
+    facultyDataArray.forEach((prof, idx) => {
         const slideDiv = document.createElement('div');
         slideDiv.className = `slide ${idx === currentSlideIndex ? 'active' : ''}`;
         
+        // เลือกชื่อให้ตรงกับภาษา
+        const profName = lang === 'th' ? prof.name_th : prof.name_en;
+        
         slideDiv.innerHTML = `
-            <img src="${prefix}${prof.img}" alt="${prof.name}" class="slider-img" onerror="this.src='https://placehold.co/400x500/f4f6f9/475569?text=Faculty+Image'">
+            <img src="${prefix}${prof.img}" alt="${profName}" class="slider-img" onerror="this.src='https://placehold.co/400x500/f4f6f9/475569?text=Faculty+Image'">
             <div class="slider-overlay">
                 <span class="slider-badge">${data.facultyBadge}</span>
-                <h3 class="prof-name">${prof.name}</h3>
+                <h3 class="prof-name">${profName}</h3>
                 <p class="prof-res">${prof.res}</p>
             </div>
         `;
@@ -446,14 +470,106 @@ function resetProgressBarAnimate() {
     setTimeout(() => { progressBar.style.width = '100%'; }, 20);
 }
 
-// ตรวจสอบภาษาเริ่มต้นเพื่อรันข้อมูลขึ้นโครงสร้างเมื่อโหลดหน้าเว็บครั้งแรก
-const savedLanguageSetting = localStorage.getItem('preferredBentoLang') || 'th';
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-        changeLang(savedLanguageSetting);
-        startSlideAutoPlay();
+
+// =======================================================
+// 🛠️ กลไกเรนเดอร์หน้า Faculty.html (Dynamic Generation)
+// =======================================================
+
+// ฟังก์ชันแปลงข้อความที่มี comma เป็นรายการ ol
+function createListHTML(textStr) {
+    if (!textStr || textStr === "-") return "-";
+    const items = textStr.split(',').map(item => item.trim()).filter(item => item.length > 0);
+    if (items.length === 0) return "-";
+    let listHTML = "<ol>";
+    items.forEach(item => {
+        listHTML += `<li>${item}</li>`;
     });
-} else {
-    changeLang(savedLanguageSetting);
-    startSlideAutoPlay();
+    listHTML += "</ol>";
+    return listHTML;
+}
+
+function renderFacultyPage(lang, prefix = "") {
+    const tocContainer = document.getElementById('dynamic-toc-grid');
+    const facultyListContainer = document.getElementById('dynamic-faculty-list');
+    
+    if (!tocContainer || !facultyListContainer || facultyDataArray.length === 0) return;
+    
+    const dataLang = translations[lang];
+    
+    // เคลียร์เนื้อหาเดิมก่อน
+    tocContainer.innerHTML = '';
+    facultyListContainer.innerHTML = '';
+    
+    facultyDataArray.forEach((prof, idx) => {
+        // --- 1. สร้างสารบัญ (TOC) ---
+        const listNum = (idx + 1).toString().padStart(2, '0') + '.';
+        const tocItem = document.createElement('li');
+        tocItem.className = 'toc-list-item';
+        
+        const profName = lang === 'th' ? prof.name_th : prof.name_en;
+        
+        tocItem.innerHTML = `
+            <span class="toc-num">${listNum}</span>
+            <a href="#${prof.id}" class="toc-link">${profName}</a>
+        `;
+        tocContainer.appendChild(tocItem);
+        
+        // --- 2. สร้างการ์ดอาจารย์ ---
+        const facultyCard = document.createElement('div');
+        facultyCard.id = prof.id;
+        facultyCard.className = 'bento-card scroll-mt';
+        
+        const profNameSub = lang === 'th' ? prof.name_en : prof.name_th;
+        
+        // แปลง comma-separated เป็น HTML List
+        const expertiseHTML = createListHTML(prof.expertise);
+        const researchHTML = createListHTML(prof.research);
+
+        facultyCard.innerHTML = `
+            <div class="faculty-profile-grid">
+                <div class="faculty-left">
+                    <div>
+                        <h2 class="faculty-name-${lang === 'th' ? 'th' : 'en'}">${profName}</h2>
+                        <p class="faculty-name-sub">${profNameSub}</p>
+                    </div>
+                    <img src="${prefix}${prof.img}" alt="Profile" class="faculty-img" onerror="this.src='https://placehold.co/300x400/f4f6f9/475569?text=Profile'">
+                </div>
+                <div class="faculty-right">
+                    <div>
+                        <div class="faculty-role">${dataLang.lblRoleMain}</div>
+                        <div class="faculty-role-sub">${dataLang.lblRoleSub}</div>
+                    </div>
+                    <table class="faculty-table">
+                        <tr>
+                            <td>${dataLang.lblTblEmail}</td>
+                            <td>${prof.email}</td>
+                        </tr>
+                        <tr>
+                            <td>${dataLang.lblTblPhone}</td>
+                            <td>${prof.phone}</td>
+                        </tr>
+                        <tr>
+                            <td>${dataLang.lblTblAffiliation}</td>
+                            <td>${dataLang.valTblAffiliation}</td>
+                        </tr>
+                        <tr>
+                            <td>${dataLang.lblTblExpertise}</td>
+                            <td>${expertiseHTML}</td>
+                        </tr>
+                        <tr>
+                            <td>${dataLang.lblTblResearch}</td>
+                            <td>${researchHTML}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="faculty-actions">
+                <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> ${dataLang.lblBtnCV}</a>
+                <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> ${dataLang.lblBtnResearcher}</a>
+                <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> ${dataLang.lblBtnScholar}</a>
+            </div>
+        `;
+        
+        facultyListContainer.appendChild(facultyCard);
+    });
 }
