@@ -790,3 +790,97 @@ body.lang-en span.lang-en { display: inline !important; }
     .faculty-table td:first-child { border-bottom: none; }
 }
 
+/* 🌟 จัดการแต่งสไตล์รายการความเชี่ยวชาญและงานวิจัยให้เป็นจุดสีชมพูสวยงาม */
+        .faculty-table ul {
+            list-style: none; /* ปิดจุดวงกลมสีดำเดิมของเบราว์เซอร์ */
+            padding-left: 0;
+            margin: 0;
+        }
+        .faculty-table li {
+            position: relative;
+            padding-left: 20px; /* ขยับตัวอักษรเพื่อเว้นพื้นที่ให้จุดสีชมพู */
+            margin-bottom: 6px;
+            line-height: 1.6;
+        }
+        .faculty-table li:last-child {
+            margin-bottom: 0;
+        }
+        /* สร้างจุดวงกลมสีชมพูตามธีมหลักสูตร */
+        .faculty-table li::before {
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 10px; /* จัดตำแหน่งกึ่งกลางตามแนวบรรทัด */
+            width: 6px;
+            height: 6px;
+            background-color: var(--primary-pink); /* ดึงค่าสีชมพูของธีมมาใช้ */
+            border-radius: 50%; /* ทำให้เป็นวงกลม */
+        }
+
+        /* 🌟 ปรับสี "ชื่อหลัก" (บรรทัดแรก) ให้เป็นสีชมพูพรีเมียมตามธีมแบรนด์ดิ่ง เหมือนกันทั้งสองภาษา */
+        .faculty-name-th, 
+        .faculty-name-en {
+            font-size: 22px;
+            font-weight: 700;
+            color: #DE4E84 !important; /* บังคับให้เป็นสีชมพูเฉดแบรนด์ดิ่งหลักทั้งหมด */
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+
+        /* 🌟 ปรับสี "ชื่อรอง" (บรรทัดที่สอง) ให้เป็นสีเข้ม/เทาเข้มตามต้นฉบับเดิม */
+        .faculty-name-sub {
+            font-size: 14px;
+            color: var(--text-muted, #475569) !important; /* บังคับให้เป็นสีรอง (สีดำ/เทาเข้ม) */
+            margin-bottom: 12px;
+            line-height: 1.4;
+            font-weight: 400;
+        }
+
+        /* 🌟 สไตล์สำหรับปุ่ม Back to Top */
+        #backToTopBtn {
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            z-index: 99;
+            background-color: #DE4E84; /* สีชมพูพรีเมียมตามธีมหลักสูตร */
+            color: #FFFFFF;
+            border: none;
+            outline: none;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%; /* ทรงกลมมนตามสมัยนิยม */
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(222, 78, 132, 0.3); /* ใส่เงาสีชมพูฟุ้งๆ นุ่มนวล */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0; /* เริ่มต้นซ่อนปุ่มไว้ */
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); /* เอฟเฟกต์การเคลื่อนไหวสมูทพรีเมียม */
+            transform: translateY(10px);
+        }
+
+        /* เอฟเฟกต์การแสดงตัวปุ่ม */
+        #backToTopBtn.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        /* เอฟเฟกต์เมื่อเอาเมาส์ไปชี้ (Hover) */
+        #backToTopBtn:hover {
+            background-color: #C53B6D; /* สีชมพูเข้มขึ้นเล็กน้อยเมื่อชี้ */
+            box-shadow: 0 6px 16px rgba(222, 78, 132, 0.45);
+            transform: translateY(-3px); /* ลอยตัวขึ้นเล็กน้อยเมื่อ Hover */
+        }
+        
+        /* รองรับหน้าจออุปกรณ์เคลื่อนที่ (Mobile) */
+        @media screen and (max-width: 768px) {
+            #backToTopBtn {
+                bottom: 20px;
+                right: 20px;
+                width: 42px;
+                height: 42px;
+            }
+        }
+

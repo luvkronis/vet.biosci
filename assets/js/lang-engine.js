@@ -59,10 +59,10 @@ const translations = {
         lblFax: "โทรสาร",
         facultyBadge: "คณาจารย์ประจำหลักสูตร",
         lblRoleMain: "อาจารย์ประจำหลักสูตรชีวศาสตร์ทางสัตวแพทย์",
-        lblRoleSub: "ผู้เชี่ยวชาญ คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย",
+        lblRoleSub: "คณะสัตวแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย",
         lblTblEmail: "อีเมล",
         lblTblPhone: "โทรศัพท์",
-        lblTblAffiliation: "สังกัดหลักสูตร",
+        lblTblAffiliation: "คุณวุฒิ",
         valTblAffiliation: "M.Sc. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์<br>Ph.D. สาขาวิชาชีวศาสตร์ทางสัตวแพทย์",
         lblTblExpertise: "ความเชี่ยวชาญ",
         lblTblResearch: "งานวิจัยที่สนใจ",
@@ -125,10 +125,10 @@ const translations = {
         lblFax: "Fax",
         facultyBadge: "Faculty Members",
         lblRoleMain: "Faculty Member, Veterinary Biosciences",
-        lblRoleSub: "Expert, Faculty of Veterinary Science, Chulalongkorn University",
+        lblRoleSub: "Faculty of Veterinary Science, Chulalongkorn University",
         lblTblEmail: "Email",
         lblTblPhone: "Phone & Fax",
-        lblTblAffiliation: "Graduate Program Affiliation",
+        lblTblAffiliation: "Qualification",
         valTblAffiliation: "M.Sc. in Veterinary Biosciences<br>Ph.D. in Veterinary Biosciences",
         lblTblExpertise: "Expertise",
         lblTblResearch: "Research Area",
@@ -419,18 +419,31 @@ function resetProgressBarAnimate() {
     setTimeout(() => { progressBar.style.width = '100%'; }, 20);
 }
 
+/* =======================================================
+* 🛠️ ส่วนฟังก์ชันจัดการข้อมูลและการเรนเดอร์ (แทนที่ท้ายไฟล์ lang-engine.js)
+* ======================================================= */
+
+// 1. ฟังก์ชันแปลงข้อความให้เป็นรายการแบบจุดกลม (ไม่มีเลขข้อ)
 function createListHTML(textStr) {
     if (!textStr || textStr === "-") return "-";
     const items = textStr.split(',').map(item => item.trim()).filter(item => item.length > 0);
     if (items.length === 0) return "-";
-    let listHTML = "<ol>";
+    let listHTML = "<ul>"; // มั่นใจว่าใช้โครงสร้าง ul เพื่อรับกับ CSS ใหม่
     items.forEach(item => {
         listHTML += `<li>${item}</li>`;
     });
-    listHTML += "</ol>";
+    listHTML += "</ul>";
     return listHTML;
 }
 
+// 2. ฟังก์ชันพิเศษสำหรับจัดรูปแบบ Qualification ให้แยกบรรทัดใหม่
+function createDegreeListHTML(degreeStr) {
+    if (!degreeStr || degreeStr === "-") return "-";
+    // ตัดแบ่งด้วยเครื่องหมาย Comma แล้วเชื่อมกลับด้วยการขึ้นบรรทัดใหม่ (<br>)
+    return degreeStr.split(',').map(item => item.trim()).filter(item => item.length > 0).join('<br>');
+}
+
+// 3. ฟังก์ชันเรนเดอร์หน้าจอคณาจารย์ฉบับปรับปรุงโครงสร้างแสดงผล
 function renderFacultyPage(lang, prefix = "") {
     const tocContainer = document.getElementById('dynamic-toc-grid');
     const facultyListContainer = document.getElementById('dynamic-faculty-list');
@@ -460,8 +473,15 @@ function renderFacultyPage(lang, prefix = "") {
         facultyCard.className = 'bento-card scroll-mt';
         
         const profNameSub = lang === 'th' ? prof.name_en : prof.name_th;
+        
+        // ประมวลผลสร้างโครงสร้างรายการแบบจุดกลม (ไม่มีตัวเลข) และแยกบรรทัดคุณวุฒิ
+        const qualificationHTML = createDegreeListHTML(prof.res);
         const expertiseHTML = createListHTML(prof.expertise);
         const researchHTML = createListHTML(prof.research);
+        
+        const cvLink = prof.cv_link ? prof.cv_link : "#";
+        const resLink = prof.researcher_link ? prof.researcher_link : "#";
+        const schoLink = prof.scholar_link ? prof.scholar_link : "#";
 
         facultyCard.innerHTML = `
             <div class="faculty-profile-grid">
@@ -488,7 +508,7 @@ function renderFacultyPage(lang, prefix = "") {
                         </tr>
                         <tr>
                             <td>${dataLang.lblTblAffiliation}</td>
-                            <td>${dataLang.valTblAffiliation}</td>
+                            <td style="line-height: var(--line-height-premium, 1.8);">${qualificationHTML}</td>
                         </tr>
                         <tr>
                             <td>${dataLang.lblTblExpertise}</td>
@@ -502,11 +522,38 @@ function renderFacultyPage(lang, prefix = "") {
                 </div>
             </div>
             <div class="faculty-actions">
-                <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> ${dataLang.lblBtnCV}</a>
-                <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> ${dataLang.lblBtnResearcher}</a>
-                <a href="#" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> ${dataLang.lblBtnScholar}</a>
+                <a href="${cvLink}" target="_blank" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> ${dataLang.lblBtnCV}</a>
+                <a href="${resLink}" target="_blank" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> ${dataLang.lblBtnResearcher}</a>
+                <a href="${schoLink}" target="_blank" class="btn-action"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4z"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M17 19c0-2.8-2.2-5-5-5s-5 2.2-5 5"/></svg> ${dataLang.lblBtnScholar}</a>
             </div>
         `;
+        
         facultyListContainer.appendChild(facultyCard);
     });
 }
+
+// =======================================================
+// 🛠️ กลไกควบคุมปุ่ม Back to Top
+// =======================================================
+document.addEventListener("DOMContentLoaded", () => {
+    const backToTopBtn = document.getElementById("backToTopBtn");
+    if (!backToTopBtn) return;
+
+    // ตรวจสอบความลึกของการเลื่อนหน้าจอ (Scroll)
+    window.addEventListener("scroll", () => {
+        // หากเลื่อนลงมาเกิน 400 พิกเซล จะเปิดการแสดงผลปุ่ม
+        if (window.scrollY > 400) {
+            backToTopBtn.classList.add("show");
+        } else {
+            backToTopBtn.classList.remove("show");
+        }
+    });
+
+    // สั่งงานเมื่อมีการคลิกปุ่ม กลับขึ้นด้านบนสุดอย่างนุ่มนวล
+    backToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // เลื่อนขึ้นไปแบบพรีเมียม นุ่มนวล ไม่กระตุก
+        });
+    });
+});
