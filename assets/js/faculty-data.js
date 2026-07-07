@@ -14,7 +14,7 @@ const facultyDataList = [
         "expertise": "Biology, Veterinary Microbiology, Molecular Genetics",
         "research": "Proteomic profiles for corneal wound healing, comparative genomics of endangered species, Salivary metabolomic biomarkers for oral melanoma, Gut resistome analysis",
         "img": "assets/images/faculty/prof1.jpg",
-        "cv_link": "#",
+        "cv_link": "assets/pdf/prof1.pdf",
         "researcher_link": "#",
         "scholar_link": "#"
     },
@@ -28,7 +28,7 @@ const facultyDataList = [
         "expertise": "Veterinary Surgery",
         "research": "Geographic variation in testicular morphometrics, Cytochrome P450 aromatase expression in testes, Morphophysiological assessment of reproductive organs",
         "img": "assets/images/faculty/prof10.jpg",
-        "cv_link": "#",
+        "cv_link": "assets/pdf/prof2.pdf",
         "researcher_link": "#",
         "scholar_link": "#"
     },
@@ -42,7 +42,7 @@ const facultyDataList = [
         "expertise": "Physiology and Biophysics",
         "research": "Ultrasonographic diaphragmatic parameters, Effects of cardiac orientation on vertebral heart score, Evaluation of plasma cardiac troponin I",
         "img": "assets/images/faculty/prof14.jpg",
-        "cv_link": "#",
+        "cv_link": "assets/pdf/prof3.pdf",
         "researcher_link": "#",
         "scholar_link": "#"
     },
@@ -56,7 +56,7 @@ const facultyDataList = [
         "expertise": "Veterinary Biosciences",
         "research": "Automatic classification of canine tracheal collapse using deep learning, Post-chemotherapy lymph node observations, Computed tomographic evaluations in healthy animals",
         "img": "assets/images/faculty/prof12.jpg",
-        "cv_link": "#",
+        "cv_link": "assets/pdf/prof4.pdf",
         "researcher_link": "#",
         "scholar_link": "#"
     },
@@ -70,7 +70,7 @@ const facultyDataList = [
         "expertise": "Veterinary Biosciences, Veterinary Pharmacology",
         "research": "Regenerative tissue engineering, Decellularized tissue for tracheal reconstruction, Generation of transplantable insulin-producing cells from stem cells",
         "img": "assets/images/faculty/prof8.jpg",
-        "cv_link": "#",
+        "cv_link": "assets/pdf/prof5.pdf",
         "researcher_link": "#",
         "scholar_link": "#"
     },
@@ -84,7 +84,7 @@ const facultyDataList = [
         "expertise": "Veterinary Medical Science, Veterinary Surgery",
         "research": "Computed tomographic evaluation of internal organs, Ultrasonographic kidney and adrenal dimensions, Contrast-enhanced computed tomography for infarction detection",
         "img": "assets/images/faculty/prof11.jpg",
-        "cv_link": "#",
+        "cv_link": "assets/pdf/prof6.pdf",
         "researcher_link": "#",
         "scholar_link": "#"
     },
@@ -98,7 +98,7 @@ const facultyDataList = [
         "expertise": "Applied Marine Bioscience, Molecular Genetics",
         "research": "Application of microfluidic devices for microfilarial detection and single cell trapping and culturing of leukemia cell lines",
         "img": "assets/images/faculty/prof13.jpg",
-        "cv_link": "#",
+        "cv_link": "assets/pdf/prof7.pdf",
         "researcher_link": "#",
         "scholar_link": "#"
     },
@@ -112,7 +112,7 @@ const facultyDataList = [
         "expertise": "Veterinary Anatomy, Obstetrics and Gynaecology",
         "research": "Reproductive organ morphology, Oxytocin receptor distribution in sows, Apoptosis in interplacental areas, Anti-Müllerian hormone immunolocalization",
         "img": "assets/images/faculty/prof4.jpg",
-        "cv_link": "#",
+        "cv_link": "assets/pdf/prof8.pdf",
         "researcher_link": "#",
         "scholar_link": "#"
     },
@@ -126,7 +126,7 @@ const facultyDataList = [
         "expertise": "Veterinary Bioscience",
         "research": "Effect of heat stress on egg production, Establishment of canine mast cell tumour cell lines, DNA methylation in testicular cells",
         "img": "assets/images/faculty/prof16.jpg",
-        "cv_link": "#",
+        "cv_link": "assets/pdf/prof9.pdf",
         "researcher_link": "#",
         "scholar_link": "#"
     },
@@ -140,7 +140,7 @@ const facultyDataList = [
         "expertise": "Veterinary Pathobiology",
         "research": "Optical methods for visualizing transdermal drug delivery with microneedles, Immune responses following viral infections, Bioscaffolds for pulp tissue regeneration",
         "img": "assets/images/faculty/prof3.jpg",
-        "cv_link": "#",
+        "cv_link": "assets/pdf/prof10.pdf",
         "researcher_link": "#",
         "scholar_link": "#"
     },
@@ -154,7 +154,7 @@ const facultyDataList = [
         "expertise": "Anatomy and Cell Biology, Reproductive Histology",
         "research": "Ovarian stage-dependent gene expression, Decellularized tissue as cell carrier systems, Morphophysiological assessment of the cervix",
         "img": "assets/images/faculty/prof6.jpg",
-        "cv_link": "#",
+        "cv_link": "assets/pdf/prof11.pdf",
         "researcher_link": "#",
         "scholar_link": "#"
     },
@@ -168,7 +168,7 @@ const facultyDataList = [
         "expertise": "Biochemistry",
         "research": "Mass spectrometry-based serum peptidomic profiling, Cardiac biomarkers for canine heartworm disease, Microfluidic devices for microfilarial detection",
         "img": "assets/images/faculty/prof5.jpg",
-        "cv_link": "#",
+        "cv_link": "assets/pdf/prof12.pdf",
         "researcher_link": "#",
         "scholar_link": "#"
     },
@@ -182,7 +182,7 @@ const facultyDataList = [
         "expertise": "Animal Reproduction",
         "research": "Hormonal treatments for embryo survival, Detection of protein biomarkers for sperm characteristics in wild felidae, Semen cryopreservation",
         "img": "assets/images/faculty/prof2.jpg",
-        "cv_link": "#",
+        "cv_link": "assets/pdf/prof13.pdf",
         "researcher_link": "#",
         "scholar_link": "#"
     },
@@ -196,7 +196,7 @@ const facultyDataList = [
         "expertise": "Physiology",
         "research": "Preventive effects of phytoestrogens on anxiety-like behaviors, Nail cortisol for welfare assessment, Cardiac remodeling in mitral regurgitation",
         "img": "assets/images/faculty/prof7.jpg",
-        "cv_link": "#",
+        "cv_link": "assets/pdf/prof14.pdf",
         "researcher_link": "#",
         "scholar_link": "#"
     },
@@ -210,7 +210,7 @@ const facultyDataList = [
         "expertise": "Animal Physiology",
         "research": "High dietary cation and anion difference effects on renal response, Behavioral responses in stray dogs, Natural high ambient temperature-induced respiratory hypocapnia",
         "img": "assets/images/faculty/prof19.jpg",
-        "cv_link": "#",
+        "cv_link": "assets/pdf/prof15.pdf",
         "researcher_link": "#",
         "scholar_link": "#"
     },
@@ -224,7 +224,7 @@ const facultyDataList = [
         "expertise": "Physiology, Animal Physiology",
         "research": "Effects of salinity and drought on ruminants, High dietary cation and anion difference in goats, Physiological responses to high ambient temperature",
         "img": "assets/images/faculty/prof9.jpg",
-        "cv_link": "#",
+        "cv_link": "assets/pdf/prof16.pdf",
         "researcher_link": "#",
         "scholar_link": "#"
     },
@@ -238,7 +238,7 @@ const facultyDataList = [
         "expertise": "Veterinary Biosciences",
         "research": "Osteogenic potentials in canine mesenchymal stem cells, Regenerative tissue engineering for oral reconstruction, Wnt components in osteogenic differentiation",
         "img": "assets/images/faculty/prof15.jpg",
-        "cv_link": "#",
+        "cv_link": "assets/pdf/prof17.pdf",
         "researcher_link": "#",
         "scholar_link": "#"
     },
@@ -252,7 +252,7 @@ const facultyDataList = [
         "expertise": "Veterinary Bioscience",
         "research": "Nanostructured lipid carriers for periodontal therapy, Morphometric variations of the tympanic bulla, Tissue transcriptome profiling in canine oral melanoma",
         "img": "assets/images/faculty/prof17.jpg",
-        "cv_link": "#",
+        "cv_link": "assets/pdf/prof18.pdf",
         "researcher_link": "#",
         "scholar_link": "#"
     },
@@ -266,7 +266,7 @@ const facultyDataList = [
         "expertise": "Veterinary Internal Medicine",
         "research": "Proteomic and phosphoproteomic analysis in dogs with pulmonary hypertension, Anti-proliferative effects of cannabinoids on cancer cells",
         "img": "assets/images/faculty/prof18.jpg",
-        "cv_link": "#",
+        "cv_link": "assets/pdf/prof19.pdf",
         "researcher_link": "#",
         "scholar_link": "#"
     }
