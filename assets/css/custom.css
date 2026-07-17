@@ -1,23 +1,24 @@
 /* =======================================================
-* Theme: Premium, Trustworthy, and Modern Minimalist
-* Enhancement: Mesh Gradient, Visual Cards, Dynamic Accents
+* Theme: Chulalongkorn University (Light & Modern Pink Theme)
 * ======================================================= */
 
 /* 1. CSS VARIABLES */
 :root {
-  --primary-pink: #DE4E84;       
-  --primary-pink-hover: #C53B6D; 
-  --primary-pink-light: #FDF2F6; 
+  /* โทนสีจากภาพอ้างอิง (ชมพูหวาน สว่าง สะอาดตา) */
+  --primary-pink: #ED7298;       
+  --primary-pink-hover: #D85D83; 
+  --primary-pink-light: #FDF1F4; 
+  --primary-brand: #27324B; 
   
   --bg-main: #FFFFFF;
   --bg-secondary: #F8FAFC;       
-  --text-main: #0F172A;          
-  --text-muted: #475569;         
+  --text-main: #27324B; /* สีกรมท่า/น้ำเงินเข้มตามภาพ */       
+  --text-muted: #64748B;         
   --border-color: #E2E8F0;
-  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-bg: rgba(255, 255, 255, 0.95);
   
-  --font-stack: 'Inter', 'Noto Sans Thai', 'Sarabun', sans-serif;
-  --line-height-premium: 1.8;
+  --font-stack: 'Sarabun', 'Inter', 'Noto Sans Thai', sans-serif;
+  --line-height-premium: 1.7;
   
   --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   --card-radius: 16px;
@@ -44,23 +45,20 @@ body {
 ::-webkit-scrollbar-thumb:hover { background: var(--primary-pink); }
 
 /* =======================================================
-* 3. NAVBAR (Floating Glassmorphism & Bento Dropdown)
-* ======================================================= */
-/* =======================================================
 * 3. NAVBAR (Floating Glassmorphism & Logo Integration)
 * ======================================================= */
 .navbar {
   position: sticky;
-  top: 16px; /* คงระยะห่างจากขอบบน (ลอย) */                     
+  top: 16px;                     
   z-index: 1000;
-  max-width: 1240px; /* ปรับให้กล่องกว้างขึ้นเล็กน้อยเพื่อรองรับโลโก้ */             
+  max-width: 1240px;             
   margin: 0 auto;
   background-color: var(--glass-bg);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(226, 232, 240, 0.7);
-  border-radius: 30px; /* คงขอบมน (แคปซูล) ไว้เหมือนเดิม */           
-  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
+  border-radius: 30px;           
+  box-shadow: 0 4px 20px rgba(39, 50, 75, 0.04);
   transition: var(--transition-smooth);
 }
 
@@ -72,7 +70,6 @@ body {
   width: 100%;
 }
 
-/* 🌟 จัดกลุ่มโลโก้และชื่อแบรนด์ให้อยู่ชิดซ้ายด้วยกัน */
 .nav-brand-group {
   display: flex;
   align-items: center;
@@ -81,7 +78,7 @@ body {
 }
 
 .nav-main-logo {
-  height: 36px; /* ขนาดโลโก้กำลังพอดีกับ Navbar แบบลอย */
+  height: 36px;
   width: auto;
   object-fit: contain;
 }
@@ -93,9 +90,6 @@ body {
   letter-spacing: 0.3px;
 }
 
-/* =======================================================
-* โค้ดเมนูส่วนที่เหลือ (คงเดิม 100%)
-* ======================================================= */
 .nav-links {
   display: flex;
   list-style: none;
@@ -118,7 +112,7 @@ body {
 
 .nav-item:hover, .nav-item.active {
   color: var(--text-main);
-  background-color: rgba(15, 23, 42, 0.04); 
+  background-color: rgba(39, 50, 75, 0.04); 
 }
 
 .nav-item.active {
@@ -130,43 +124,8 @@ body {
   transition: var(--transition-smooth);
 }
 
-/* ปรับโลโก้ในหน้าจอมือถือเล็กน้อย */
 @media screen and (max-width: 768px) {
-  .nav-main-logo {
-    height: 32px;
-  }
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 8px;                     
-  align-items: center;
-}
-
-.nav-item {
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text-muted);
-  padding: 8px 16px;
-  border-radius: 20px;          
-  transition: var(--transition-smooth);
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.nav-item:hover, .nav-item.active {
-  color: var(--text-main);
-  background-color: rgba(15, 23, 42, 0.04); 
-}
-
-.nav-item.active { font-weight: 600; }
-
-.arrow-icon {
-  font-size: 10px;
-  transition: var(--transition-smooth);
+  .nav-main-logo { height: 32px; }
 }
 
 .has-bento-dropdown { position: relative; }
@@ -197,7 +156,7 @@ body {
 }
 
 .bento-drop-grid {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(20px);
   border: 1px solid var(--border-color);
   border-radius: 16px;
@@ -205,7 +164,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   gap: 12px;
-  box-shadow: 0 30px 50px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 30px 50px rgba(39, 50, 75, 0.08);
 }
 
 .drop-sub-card {
@@ -213,7 +172,7 @@ body {
   background-color: var(--bg-secondary);
   padding: 20px;
   border-radius: 12px;
-  border-top: 3px solid var(--primary-brand, #476a6f);
+  border-top: 3px solid var(--primary-brand);
   transition: var(--transition-smooth);
   display: block;
 }
@@ -238,7 +197,7 @@ body {
 }
 
 .phd-theme .drop-badge {
-  background-color: #fff0f3;
+  background-color: var(--primary-pink-light);
   color: var(--primary-pink);
 }
 
@@ -289,7 +248,7 @@ body {
   border-top: none;
   border-radius: 0 0 20px 20px;
   padding: 24px;
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 20px 40px rgba(39, 50, 75, 0.08);
   max-height: 0;
   overflow: hidden;
   opacity: 0;
@@ -334,7 +293,7 @@ body {
   color: var(--text-main);
   font-size: 14px;
   font-weight: 600;
-  border-left: 3px solid var(--primary-brand, #476a6f);
+  border-left: 3px solid var(--primary-brand);
 }
 
 .mobile-drop-card.m-phd-theme { border-left-color: var(--primary-pink); }
@@ -343,7 +302,7 @@ body {
   font-size: 10px;
   font-weight: 700;
   padding: 2px 6px;
-  background-color: var(--white-color);
+  background-color: var(--bg-main);
   border-radius: 4px;
   border: 1px solid var(--border-color);
 }
@@ -357,20 +316,14 @@ body {
 * ======================================================= */
 .main-content {
   background-image: 
-    radial-gradient(at 0% 0%, rgba(223, 75, 119, 0.03) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, rgba(15, 23, 42, 0.02) 0px, transparent 50%),
-    linear-gradient(var(--bg-secondary), var(--bg-secondary));
+    radial-gradient(at 0% 0%, rgba(237, 114, 152, 0.04) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(39, 50, 75, 0.02) 0px, transparent 50%),
+    linear-gradient(var(--bg-main), var(--bg-main));
   padding: 40px 0 80px 0;
 }
 
 .main-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 .banner-wrapper { margin-bottom: 32px; text-align: center; }
-.header-banner-img {
-  width: 100%;
-  height: auto;
-  border-radius: var(--card-radius);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-}
 
 /* =======================================================
 * 5. BENTO GRID ARCHITECTURE
@@ -394,14 +347,14 @@ body {
 
 .bento-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 25px 40px -5px rgba(15, 23, 42, 0.05), 0 10px 15px -5px rgba(0, 0, 0, 0.01);
+  box-shadow: 0 25px 40px -5px rgba(39, 50, 75, 0.05), 0 10px 15px -5px rgba(0, 0, 0, 0.01);
   background-color: var(--bg-main);
-  border-color: rgba(223, 75, 119, 0.25);
+  border-color: rgba(237, 114, 152, 0.25);
 }
 
 .bento-hero {
   grid-column: span 2;
-  background: linear-gradient(145deg, #ffffff 0%, #fff9fb 100%);
+  background: linear-gradient(145deg, #ffffff 0%, var(--primary-pink-light) 100%);
   border-top: 4px solid var(--primary-pink);
 }
 
@@ -411,7 +364,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--primary-pink);
-  background-color: #fff0f3;
+  background-color: var(--primary-pink-light);
   padding: 4px 12px;
   border-radius: 20px;
   margin-bottom: 12px;
@@ -422,10 +375,7 @@ body {
   font-size: 32px;
   font-weight: 700;
   letter-spacing: -0.5px;
-  background: linear-gradient(90deg, var(--text-main) 30%, var(--primary-pink) 100%);
-  background-clip: text;          
-  -webkit-background-clip: text;  
-  -webkit-text-fill-color: transparent;
+  color: var(--text-main);
 }
 
 .sub-program-title {
@@ -449,7 +399,7 @@ body {
   left: 0;
   right: 0;
   padding: 24px;
-  background: linear-gradient(transparent, rgba(15, 23, 42, 0.75));
+  background: linear-gradient(transparent, rgba(39, 50, 75, 0.85));
 }
 .img-badge {
   font-size: 12px;
@@ -495,9 +445,6 @@ body {
 .meta-info-stack p { font-size: 15px; margin-bottom: 10px; color: var(--text-muted); }
 .meta-info-stack strong { color: var(--text-main); }
 
-/* =======================================================
-* ล้างสไตล์เก่าที่ซ้อนทับกัน (Ordered List Reset)
-* ======================================================= */
 .bento-ordered-list {
   counter-reset: bento-counter;
   list-style: none !important; 
@@ -522,7 +469,7 @@ body {
   font-size: 11px;
   font-weight: 700;
   color: var(--primary-pink);
-  background-color: #fff0f3;
+  background-color: var(--primary-pink-light);
   padding: 3px 6px;
   border-radius: 4px;
   position: static !important;        
@@ -537,7 +484,7 @@ body {
   font-size: 15px;
   font-weight: 500;
   color: var(--text-main);
-  background-color: #fffcfd;
+  background-color: var(--primary-pink-light);
   border-left: 3px solid var(--primary-pink);
   padding: 14px 18px;
   border-radius: 0 8px 8px 0;
@@ -558,7 +505,7 @@ body {
 .program-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 12px; }
 .program-table th {
   padding: 12px;
-  background-color: rgba(15, 23, 42, 0.02);
+  background-color: rgba(39, 50, 75, 0.03);
   color: var(--text-main);
   font-weight: 600;
   border-bottom: 2px solid var(--border-color);
@@ -574,30 +521,36 @@ body {
   content: '•'; color: var(--primary-pink); font-size: 18px; position: absolute; left: 4px; top: -2px;
 }
 
-.bento-admission { background: linear-gradient(180deg, #ffffff 0%, #fcfcfd 100%); }
-.admission-title { font-size: 20px; text-align: center; margin-bottom: 28px; }
+.bento-admission { background: linear-gradient(180deg, #ffffff 0%, var(--bg-secondary) 100%); }
+.admission-title { font-size: 20px; text-align: center; margin-bottom: 28px; color: var(--text-main); }
 .admission-split { display: flex; gap: 48px; }
 .admission-col { flex: 1; }
 .admission-sub-title {
-  font-size: 15px; font-weight: 600; margin-bottom: 16px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;
+  font-size: 15px; font-weight: 600; margin-bottom: 16px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; color: var(--text-main);
 }
 
 .gallery-section { display: flex; gap: 24px; justify-content: center; margin-top: 32px; }
-.gallery-section img { max-width: calc(50% - 12px); height: auto; border-radius: var(--card-radius); box-shadow: 0 4px 15px rgba(0,0,0,0.01); }
+.gallery-section img { max-width: calc(50% - 12px); height: auto; border-radius: var(--card-radius); box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
 
 /* =======================================================
-* 7. PREMIUM FOOTER
+* 7. LIGHT & CLEAN FOOTER
 * ======================================================= */
-.footer { background-color: #0b0f19; color: #94a3b8; padding: 64px 0 24px 0; font-size: 14px; }
+.footer { 
+  background-color: var(--bg-secondary); 
+  color: var(--text-muted); 
+  padding: 64px 0 24px 0; 
+  font-size: 14px; 
+  border-top: 1px solid var(--border-color); 
+}
 .footer-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-.footer-grid { display: flex; justify-content: space-between; gap: 40px; border-bottom: 1px solid #1e293b; padding-bottom: 40px; }
+.footer-grid { display: flex; justify-content: space-between; gap: 40px; border-bottom: 1px solid var(--border-color); padding-bottom: 40px; }
 .footer-col { flex: 1; }
-.footer-col h3 { color: var(--bg-main); font-size: 15px; margin-bottom: 16px; }
-.contact-name { color: var(--bg-main); margin-bottom: 4px; }
-.label-muted { color: #475569; }
-.footer-col a { color: var(--primary-pink); text-decoration: none; transition: var(--transition-smooth); }
-.footer-col a:hover { color: #ff769f; }
-.footer-bottom { padding-top: 24px; text-align: center; font-size: 12px; color: #475569; }
+.footer-col h3 { color: var(--text-main); font-size: 16px; margin-bottom: 16px; font-weight: 700; }
+.contact-name { color: var(--text-main); margin-bottom: 4px; font-weight: 600; }
+.label-muted { color: var(--text-muted); }
+.footer-col a { color: var(--primary-pink); text-decoration: none; transition: var(--transition-smooth); font-weight: 500; }
+.footer-col a:hover { color: var(--primary-pink-hover); }
+.footer-bottom { padding-top: 24px; text-align: center; font-size: 13px; color: var(--text-muted); }
 
 /* 8. RESPONSIVE DESIGN */
 @media screen and (max-width: 1024px) {
@@ -623,11 +576,11 @@ body {
 .slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; visibility: hidden; transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.6s; z-index: 1; }
 .slide.active { opacity: 1; visibility: visible; z-index: 2; }
 .slider-img { width: 100%; height: 100%; object-fit: cover; }
-.slider-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 28px 24px; background: linear-gradient(transparent, rgba(15, 23, 42, 0.95)); color: var(--bg-main); z-index: 3; }
-.slider-badge { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--primary-pink); background-color: rgba(255, 240, 243, 0.9); padding: 2px 10px; border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px; }
+.slider-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 28px 24px; background: linear-gradient(transparent, rgba(39, 50, 75, 0.95)); color: var(--bg-main); z-index: 3; }
+.slider-badge { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--primary-pink); background-color: var(--primary-pink-light); padding: 2px 10px; border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px; }
 .prof-name { font-size: 16px; font-weight: 600; margin-bottom: 6px; line-height: 1.4; }
 .prof-res { font-size: 12px; color: #cbd5e1; line-height: 1.5; }
-.slide-nav { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255, 255, 255, 0.25); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.3); color: var(--text-main); width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 12px; transition: var(--transition-smooth); opacity: 0; }
+.slide-nav { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255, 255, 255, 0.3); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.4); color: var(--text-main); width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 12px; transition: var(--transition-smooth); opacity: 0; }
 .bento-slider-card:hover .slide-nav { opacity: 1; }
 .slide-nav:hover { background: var(--bg-main); color: var(--primary-pink); transform: translateY(-50%) scale(1.08); }
 .slide-nav.prev { left: 16px; }
@@ -635,35 +588,73 @@ body {
 @media screen and (max-width: 768px) { .bento-slider-card { min-height: 320px; } .slide-nav { opacity: 1; } }
 
 /* =======================================================
-* PREMIUM DYNAMIC BANNER (CUVET PINK THEME)
+* LIGHT & CLEAN DYNAMIC BANNER
 * ======================================================= */
 .premium-gradient-banner {
-    background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 45%, #6B1130 100%);
-    border-radius: var(--card-radius); padding: 60px 40px; text-align: left; position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05); border: 1px solid rgba(222, 78, 132, 0.15); 
+    background: linear-gradient(135deg, #FDF1F4 0%, #FFF5F7 100%);
+    border-radius: var(--card-radius); 
+    padding: 60px 40px; 
+    text-align: center; 
+    position: relative; 
+    overflow: hidden; 
+    box-shadow: 0 10px 30px rgba(39, 50, 75, 0.04); 
+    border: 1px solid rgba(237, 114, 152, 0.1); 
 }
+
 .premium-gradient-banner::before {
-    content: ''; position: absolute; top: -40%; right: -10%; width: 350px; height: 350px; background: var(--primary-pink); opacity: 0.25; filter: blur(70px); border-radius: 50%; pointer-events: none;
+    content: ''; 
+    position: absolute; 
+    top: -40%; 
+    right: -10%; 
+    width: 350px; 
+    height: 350px; 
+    background: #FFFFFF; 
+    opacity: 0.6; 
+    filter: blur(60px); 
+    border-radius: 50%; 
+    pointer-events: none;
 }
+
 .banner-content { position: relative; z-index: 2; }
-.banner-sub { font-size: 12px; font-weight: 700; text-transform: uppercase; color: var(--primary-pink); letter-spacing: 1.5px; }
-.banner-main { font-size: 36px; font-weight: 700; color: #FFFFFF; margin: 4px 0 8px 0; letter-spacing: -0.5px; }
-.banner-text-desc { font-size: 16px; color: #CBD5E1; font-weight: 400; }
-@media screen and (max-width: 768px) { .premium-gradient-banner { padding: 40px 24px; } .banner-main { font-size: 28px; } }
+
+.banner-sub { 
+    font-size: 14px; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    color: var(--primary-pink); 
+    letter-spacing: 1.5px; 
+    display: block;
+    margin-bottom: 8px;
+}
+
+.banner-main { 
+    font-size: 36px; 
+    font-weight: 700; 
+    color: var(--text-main); 
+    margin: 4px 0 12px 0; 
+    letter-spacing: -0.5px; 
+}
+
+.banner-text-desc { 
+    font-size: 16px; 
+    color: var(--text-muted); 
+    font-weight: 400; 
+}
+
+@media screen and (max-width: 768px) { 
+    .premium-gradient-banner { padding: 40px 24px; } 
+    .banner-main { font-size: 28px; } 
+}
 
 /* =======================================================
 * 🛠️ LANGUAGE TOGGLE (For Manual HTML Dual-Language Content)
 * ======================================================= */
-/* ซ่อนภาษาที่ไม่ถูกเลือก สำหรับ Element ที่เป็น Block */
 body.lang-th .lang-en { display: none !important; }
 body.lang-th .lang-th { display: block !important; }
-
 body.lang-en .lang-th { display: none !important; }
 body.lang-en .lang-en { display: block !important; }
-
-/* สำหรับ Element ที่เป็น Inline (เผื่อคุณอยากสลับภาษาในปุ่มเดียว หรือ span เล็กๆ) */
 body.lang-th span.lang-en { display: none !important; }
 body.lang-th span.lang-th { display: inline !important; }
-
 body.lang-en span.lang-th { display: none !important; }
 body.lang-en span.lang-en { display: inline !important; }
 
@@ -699,22 +690,6 @@ body.lang-en span.lang-en { display: inline !important; }
     box-shadow: 0 4px 10px rgba(0,0,0,0.03);
 }
 
-.faculty-name-th {
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--primary-pink);
-    margin-bottom: 6px;
-    line-height: 1.4;
-}
-
-.faculty-name-en {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--text-main);
-    margin-bottom: 6px;
-    line-height: 1.4;
-}
-
 .faculty-table {
     width: 100%;
     border-collapse: collapse;
@@ -737,7 +712,7 @@ body.lang-en span.lang-en { display: inline !important; }
 
 .faculty-table td:last-child {
     color: var(--text-muted);
-    background-color: #ffffff;
+    background-color: var(--bg-main);
 }
 
 .faculty-table ol {
@@ -780,7 +755,7 @@ body.lang-en span.lang-en { display: inline !important; }
     color: var(--primary-pink);
     background: var(--primary-pink-light);
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(222, 78, 132, 0.1);
+    box-shadow: 0 4px 10px rgba(237, 114, 152, 0.15);
 }
 
 @media (max-width: 768px) {
@@ -790,97 +765,94 @@ body.lang-en span.lang-en { display: inline !important; }
     .faculty-table td:first-child { border-bottom: none; }
 }
 
-/* 🌟 จัดการแต่งสไตล์รายการความเชี่ยวชาญและงานวิจัยให้เป็นจุดสีชมพูสวยงาม */
-        .faculty-table ul {
-            list-style: none; /* ปิดจุดวงกลมสีดำเดิมของเบราว์เซอร์ */
-            padding-left: 0;
-            margin: 0;
-        }
-        .faculty-table li {
-            position: relative;
-            padding-left: 20px; /* ขยับตัวอักษรเพื่อเว้นพื้นที่ให้จุดสีชมพู */
-            margin-bottom: 6px;
-            line-height: 1.6;
-        }
-        .faculty-table li:last-child {
-            margin-bottom: 0;
-        }
-        /* สร้างจุดวงกลมสีชมพูตามธีมหลักสูตร */
-        .faculty-table li::before {
-            content: "";
-            position: absolute;
-            left: 4px;
-            top: 10px; /* จัดตำแหน่งกึ่งกลางตามแนวบรรทัด */
-            width: 6px;
-            height: 6px;
-            background-color: var(--primary-pink); /* ดึงค่าสีชมพูของธีมมาใช้ */
-            border-radius: 50%; /* ทำให้เป็นวงกลม */
-        }
+.faculty-table ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
 
-        /* 🌟 ปรับสี "ชื่อหลัก" (บรรทัดแรก) ให้เป็นสีชมพูพรีเมียมตามธีมแบรนด์ดิ่ง เหมือนกันทั้งสองภาษา */
-        .faculty-name-th, 
-        .faculty-name-en {
-            font-size: 22px;
-            font-weight: 700;
-            color: #DE4E84 !important; /* บังคับให้เป็นสีชมพูเฉดแบรนด์ดิ่งหลักทั้งหมด */
-            margin-bottom: 6px;
-            line-height: 1.4;
-        }
+.faculty-table li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 6px;
+    line-height: 1.6;
+}
 
-        /* 🌟 ปรับสี "ชื่อรอง" (บรรทัดที่สอง) ให้เป็นสีเข้ม/เทาเข้มตามต้นฉบับเดิม */
-        .faculty-name-sub {
-            font-size: 14px;
-            color: var(--text-muted, #475569) !important; /* บังคับให้เป็นสีรอง (สีดำ/เทาเข้ม) */
-            margin-bottom: 12px;
-            line-height: 1.4;
-            font-weight: 400;
-        }
+.faculty-table li:last-child {
+    margin-bottom: 0;
+}
 
-        /* 🌟 สไตล์สำหรับปุ่ม Back to Top */
-        #backToTopBtn {
-            position: fixed;
-            bottom: 32px;
-            right: 32px;
-            z-index: 99;
-            background-color: #DE4E84; /* สีชมพูพรีเมียมตามธีมหลักสูตร */
-            color: #FFFFFF;
-            border: none;
-            outline: none;
-            width: 48px;
-            height: 48px;
-            border-radius: 50%; /* ทรงกลมมนตามสมัยนิยม */
-            cursor: pointer;
-            box-shadow: 0 4px 12px rgba(222, 78, 132, 0.3); /* ใส่เงาสีชมพูฟุ้งๆ นุ่มนวล */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0; /* เริ่มต้นซ่อนปุ่มไว้ */
-            visibility: hidden;
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); /* เอฟเฟกต์การเคลื่อนไหวสมูทพรีเมียม */
-            transform: translateY(10px);
-        }
+.faculty-table li::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary-pink);
+    border-radius: 50%;
+}
 
-        /* เอฟเฟกต์การแสดงตัวปุ่ม */
-        #backToTopBtn.show {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
+.faculty-name-th, 
+.faculty-name-en {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary-pink) !important;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
 
-        /* เอฟเฟกต์เมื่อเอาเมาส์ไปชี้ (Hover) */
-        #backToTopBtn:hover {
-            background-color: #C53B6D; /* สีชมพูเข้มขึ้นเล็กน้อยเมื่อชี้ */
-            box-shadow: 0 6px 16px rgba(222, 78, 132, 0.45);
-            transform: translateY(-3px); /* ลอยตัวขึ้นเล็กน้อยเมื่อ Hover */
-        }
-        
-        /* รองรับหน้าจออุปกรณ์เคลื่อนที่ (Mobile) */
-        @media screen and (max-width: 768px) {
-            #backToTopBtn {
-                bottom: 20px;
-                right: 20px;
-                width: 42px;
-                height: 42px;
-            }
-        }
+.faculty-name-sub {
+    font-size: 14px;
+    color: var(--text-muted) !important;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    font-weight: 400;
+}
 
+/* =======================================================
+* 🛠️ BACK TO TOP BUTTON
+* ======================================================= */
+#backToTopBtn {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 99;
+    background-color: var(--primary-pink);
+    color: var(--bg-main);
+    border: none;
+    outline: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(237, 114, 152, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-smooth);
+    transform: translateY(10px);
+}
+
+#backToTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#backToTopBtn:hover {
+    background-color: var(--primary-pink-hover);
+    box-shadow: 0 6px 16px rgba(237, 114, 152, 0.45);
+    transform: translateY(-3px);
+}
+
+@media screen and (max-width: 768px) {
+    #backToTopBtn {
+        bottom: 20px;
+        right: 20px;
+        width: 42px;
+        height: 42px;
+    }
+}
